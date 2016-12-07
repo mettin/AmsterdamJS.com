@@ -1,0 +1,23 @@
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+	padding: 70px 0;
+	background: url(../img/f-bg.jpg) center top no-repeat;
+}
+
+.f-logo{
+	font: 18px/1.52 $lato;
+	text-align: center;
+	background: url(../svg/f-logo.svg) center top no-repeat;
+	padding: 190px 0 0;
+
+	a{
+		color: $clr-black;
+		text-decoration: underline;
+
+		&:hover{
+			color: $clr-red;
+		}
+	}
+}

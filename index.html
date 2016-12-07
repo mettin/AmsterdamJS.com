@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>AmsterdamJs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="shortcut icon" href="img/favicon.png" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+		<nav class="container">
+
+			<div class="menu-btn"></div>
+
+			<nav class="main-nav">
+				<ul class="main-menu">
+					<li class="main-menu__item"><a href="#event" class="main-menu__link">The Event</a></li>
+					<li class="main-menu__item"><a href="#location" class="main-menu__link">Location</a></li>
+					<li class="main-menu__item"><a href="#speakers" class="main-menu__link">Speakers</a></li>
+					<li class="main-menu__item"><a href="#shedule" class="main-menu__link">Schedule</a></li>
+					<li class="main-menu__item"><a href="#sponsors" class="main-menu__link">Sponsors</a></li>
+					<li class="main-menu__item"><a href="#contacts" class="main-menu__link">Contact us</a></li>
+				</ul>
+			</nav>
+		</nav>
+	</header><!-- .header -->
+
+	<main class="content">
+
+		<section class="section home" id="home">
+			<video class="home__video" preload="auto" muted autoplay loop poster="img/dummy_bg.jpg" id="bgvid">
+				<source src="video/video.webm" type="video/webm">
+				<source src="video/video.mp4" type="video/mp4">
+			</video>
+
+			<div class="home__overlay"></div>
+
+			<div class="container aligner">
+
+				<div class="logo">
+					<a href="/" class="logo__link ir">AmsterdamJs</a>
+				</div>
+
+				<h1 class="home__title">Amsterdam<span>Js</span></h1>
+				<p class="home__desc">Welcome to the largest<br/> and longest-running JavaScript<br/> event in town!<br/>
+				<span class="home__tip">Full day annual conference this time placed in Amsterdam Zoo. Be prepared to have a lunch next to Flamingos and dinner in gorgeous Aquarium or restaurant surrounded by Cheetah aviary</p>
+
+				<div class="btn-block">
+					<a href="#" class="basic-btn white">Buy tickets</a>
+				</div>
+
+			</div>
+
+			<div id="map1"></div>
+
+		</section>
+
+		<section class="section event no-flex" id="event">
+			<div class="container aligner">
+
+				<div class="event-info">
+					<div class="event-info__desc">
+						<h3 class="section__subtitle">AmsterdamJS, the largest and<br/> longest-running JavaScript meetup in town</h3>
+						<p class="section__desc">We are organizing four events per year, accessible to all and free of charge. Events take place on Thursday evenings and are hosted in varying venues provided by friends of the community. Each event will feature a couple of talks by members or guests of the community. Speakers are carefully curated and vetted by the organizing team to guarantee top notch quality. Before and after the talks there will be plenty of opportunity to have a drink, meet old friends and make new ones.</p>
+
+						<div class="socials-wrap">
+							<ul class="socials">
+								<li class="socials__item">
+									<a class="socials__link" href="#"><span class="icon-tw"></span></a>
+								</li>
+
+								<li class="socials__item">
+									<a class="socials__link" href="#"><span class="icon-fb"></span></a>
+								</li>
+
+								<li class="socials__item">
+									<a class="socials__link" href="#"><span class="icon-yt"></span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section location no-flex" id="location">
+
+			<div class="location__desc">
+				<div class="container aligner">
+					<h2 class="section__title">location</h2>
+					<p class="section__subtitle">Natura Artis Magistra</p>
+					<p class="section__desc">It is the oldest zoo in the Netherlands and one of the oldest zoos of mainland Europe. Artis Royal Zoo is not just a zoo, it also contains an aquarium and a planetarium. Artis also has an arboretum and a fairly large art collection. Artis contains 27 monumental buildings, most of which are used as enclosures for the animals, making Artis a unique cultural heritage of the 19th century.</p>
+				</div>
+			</div>
+
+			<div class="map">
+				<div class="map__content">
+					<div class="map__desc">
+						<p class="map__title">Plantage Kerklaan 38-40<br/>
+						1018 CZ Amsterdam<br/>
+						The Netherlands</p>
+						<a class="basic-btn transparent" href="#">view on map</a>
+					</div>
+				</div>
+
+				<div id="map2"></div>
+			</div>
+		</section>
+
+		<section class="section speakers" id="speakers">
+			<div class="container aligner">
+
+				<h2 class="section__title">Speakers</h2>
+
+				<ul class="participants-list">
+					<li class="participants-list__item">
+						<div class="participants-list__img-wrap">
+							<img class="participants-list__img" src="pic/speaker_1.jpg" height="194" width="194" alt="">
+						</div>
+
+						<h4 class="participants-list__name">Forbes Lindesay</h4>
+
+						<p class="participants-list__info">Google, Sun Francisco</p>
+						<p class="participants-list__desc">Software Engineer at Facebook who works on React Native performance. </p>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="participants-list__item">
+						<div class="participants-list__img-wrap">
+							<img class="participants-list__img" src="pic/speaker_2.jpg" height="194" width="194" alt="">
+						</div>
+
+						<h4 class="participants-list__name">Mike Grabowski</h4>
+
+						<p class="participants-list__info">Base, London</p>
+						<p class="participants-list__desc">Director of Open Source at Formidable and the author of libraries like Slick Carousel, McFly, react-music, webpack-dashboard, Spectacle.</p>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="participants-list__item">
+						<div class="participants-list__img-wrap">
+							<img class="participants-list__img" src="pic/speaker_3.jpg" height="194" width="194" alt="">
+						</div>
+
+						<h4 class="participants-list__name">Clara Mulligan</h4>
+
+						<p class="participants-list__info">LET&CONT, Amsterdam</p>
+						<p class="participants-list__desc">Sharing my experience building loveable UIs. Talking about presentational components and pattern types for build scalable web apps in React.</p>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="participants-list__item">
+						<div class="participants-list__img-wrap">
+							<img class="participants-list__img" src="pic/speaker_4.jpg" height="194" width="194" alt="">
+						</div>
+
+						<h4 class="participants-list__name">Mark Peck</h4>
+
+						<p class="participants-list__info">Straw castle, Berlin</p>
+						<p class="participants-list__desc">Software Engineer at Netflix, specializes in enterprise single-page applications.</p>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="participants-list__item">
+						<div class="participants-list__img-wrap">
+							<img class="participants-list__img" src="pic/speaker_5.jpg" height="194" width="194" alt="">
+						</div>
+
+						<h4 class="participants-list__name">Stefano Masini</h4>
+
+						<p class="participants-list__info">Balsamiq, The Netherlands</p>
+						<p class="participants-list__desc">Software Engineer at Facebook who works on React Native performance. </p>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="participants-list__item">
+						<div class="participants-list__img-wrap">
+							<img class="participants-list__img" src="pic/speaker_6.jpg" height="194" width="194" alt="">
+						</div>
+
+						<h4 class="participants-list__name">Mike Grabowski</h4>
+
+						<p class="participants-list__info">Base, London</p>
+						<p class="participants-list__desc">Director of Open Source at Formidable and the author of libraries like Slick Carousel, McFly, react-music, webpack-dashboard, Spectacle.</p>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="participants-list__item">
+						<div class="participants-list__img-wrap">
+							<img class="participants-list__img" src="pic/speaker_7.jpg" height="194" width="194" alt="">
+						</div>
+
+						<h4 class="participants-list__name">Clara Mulligan</h4>
+
+						<p class="participants-list__info">LET&CONT, Amsterdam</p>
+						<p class="participants-list__desc">Sharing my experience building loveable UIs. Talking about presentational components and pattern types for build scalable web apps in React.</p>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="participants-list__item">
+						<div class="participants-list__img-wrap">
+							<img class="participants-list__img" src="pic/speaker_8.jpg" height="194" width="194" alt="">
+						</div>
+
+						<h4 class="participants-list__name">Martin Shveller</h4>
+
+						<p class="participants-list__info">Google, Norway</p>
+						<p class="participants-list__desc">Software Engineer at Facebook who works on React Native performance. He will talk about React Native architecture and best practices to get all the benefits of using the platform</p>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="participants-list__item">
+						<div class="participants-list__img-wrap">
+							<img class="participants-list__img" src="pic/speaker_9.jpg" height="194" width="194" alt="">
+						</div>
+
+						<h4 class="participants-list__name">Paul van Dam</h4>
+
+						<p class="participants-list__topic">Introducing and Implementing React at Coolblue</p>
+						<p class="participants-list__desc">About the good parts of writing styles in javascript using JSS. Comparison to other existing CSS solutions and points about negative aspects got so far.</p>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="participants-list__item">
+						<div class="participants-list__img-wrap">
+							<img class="participants-list__img" src="pic/speaker_10.jpg" height="194" width="194" alt="">
+						</div>
+
+						<h4 class="participants-list__name">Mike Grabowski</h4>
+
+						<p class="participants-list__info">Base, London</p>
+						<p class="participants-list__desc">Director of Open Source at Formidable and the author of libraries like Slick Carousel, McFly, react-music, webpack-dashboard, Spectacle.</p>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="participants-list__item">
+						<p class="participants-list__propose-new">Want to join the movement?</p>
+						<a class="basic-btn red participants-list__btn" href="#">submit proposal</a>
+					</li>
+
+					<li class="participants-list__item">
+						<!-- empty -->
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section shedule no-flex" id="shedule">
+			<div class="container">
+
+				<h2 class="section__title">Schedule</h2>
+
+				<ul class="shedule-list clearfix">
+					<li class="shedule-list__item">
+						<div class="shedule-list__container">
+							<div class="shedule-list__time">10.00</div>
+							<div class="shedule-list__speaker">Open up</div>
+							<div class="shedule-list__desc">
+								<h3 class="shedule-list__title thin">Say, HELLO!</h3>
+							</div>
+						</div>
+					</li>
+
+					<li class="shedule-list__item">
+						<div class="shedule-list__container">
+							<div class="shedule-list__time">10.30</div>
+							<div class="shedule-list__speaker">War Hummer</div>
+							<div class="shedule-list__desc">
+								<h3 class="shedule-list__title">Mastering Server-rendered Apps</h3>
+								<p class="shedule-list__p">NodeJS environment and in the browser using React TestUtils and other third party libraries that make it easy to test your components. We'll see how to build components in a way that makes them more maintainable, testable and easier to work with.</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="shedule-list__item">
+						<div class="shedule-list__container">
+							<div class="shedule-list__time">11.45</div>
+							<div class="shedule-list__speaker">Robert Z.</div>
+							<div class="shedule-list__desc">
+								<h3 class="shedule-list__title">Building Reactive GraphQL Apps With Apollo</h3>
+								<p class="shedule-list__p">In this talk, I’ll introduce our efforts to design a reactive system to automatically re-run GraphQL queries when the underlying data changes. You will see how to make the collaborative parts of your app update in real time with little extra code, how to integrate with a SQL database or REST API, and how this works in concert with GraphQL’s best features to simplify your app’s data management while being predictable and maintainable.</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="shedule-list__item">
+						<div class="shedule-list__container">
+							<div class="shedule-list__time">12.30</div>
+							<div class="shedule-list__speaker">Mark Peck</div>
+							<div class="shedule-list__desc">
+								<h3 class="shedule-list__title">The React Native Playground</h3>
+								<p class="shedule-list__p">The React Native Playground breaks down barriers to mobile development by making it easy to write React Native apps right in the browser, and test them across platforms and devices.</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="shedule-list__item">
+						<div class="shedule-list__container">
+							<div class="shedule-list__time">13.15</div>
+							<div class="shedule-list__speaker">Oleg Dad</div>
+							<div class="shedule-list__desc">
+								<h3 class="shedule-list__title">State Management is Easy</h3>
+								<p class="shedule-list__p">GraphQL queries when the underlying data changes. You will see how to make the collaborative parts of your app update in real time with little extra code, how to integrate with a SQL database or REST API, and how this works in concert with GraphQL’s best features to simplify your app’s data management while being predictable.</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="shedule-list__item">
+						<div class="shedule-list__container">
+							<div class="shedule-list__time">14.00</div>
+							<div class="shedule-list__speaker">Coffee Break!</div>
+							<div class="shedule-list__desc">
+								<h3 class="shedule-list__title thin">Lifes good</h3>
+							</div>
+						</div>
+					</li>
+
+					<li class="shedule-list__item">
+						<div class="shedule-list__container">
+							<div class="shedule-list__time">14.45</div>
+							<div class="shedule-list__speaker">Steve Boshmann</div>
+							<div class="shedule-list__desc">
+								<h3 class="shedule-list__title">Building Reactive GraphQL Apps With Apollo</h3>
+								<p class="shedule-list__p">Queries when the underlying data changes. You will see how to make the collaborative parts of your app update in real time with little extra code, how to integrate with a SQL database or REST API, and how this works in concert with GraphQL’s best features to simplify your app’s data.</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="shedule-list__item">
+						<div class="shedule-list__container">
+							<div class="shedule-list__time">15.30</div>
+							<div class="shedule-list__speaker">Mark Peck</div>
+							<div class="shedule-list__desc">
+								<h3 class="shedule-list__title">The React Native Playground</h3>
+								<p class="shedule-list__p">The React Native Playground breaks down barriers to mobile development by making it easy to write React Native apps right in the browser, and test them across platforms and devices.</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="shedule-list__item">
+						<div class="shedule-list__container">
+							<div class="shedule-list__time">16.15</div>
+							<div class="shedule-list__speaker">Oleg Dad</div>
+							<div class="shedule-list__desc">
+								<h3 class="shedule-list__title">State Management is Easy</h3>
+								<p class="shedule-list__p">GraphQL queries when the underlying data changes. You will see how to make the collaborative parts of your app update in real time with little extra code, how to integrate with a SQL database or REST API.</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="shedule-list__item">
+						<div class="shedule-list__container">
+							<div class="shedule-list__time">17.00</div>
+							<div class="shedule-list__speaker">Coffee Break!</div>
+							<div class="shedule-list__desc">
+								<h3 class="shedule-list__title thin">Lifes good</h3>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section sponsors" id="sponsors">
+			<div class="container aligner">
+
+				<h2 class="section__title">Sponsors</h2>
+
+				<div class="sponsors-block">
+					<p class="sponsors-block__desc">Our general sponsor who made this awesome experience possible:</p>
+
+					<a class="sponsors-block__img-wrap" href="#">
+						<img src="pic/sponsor_1.jpg" height="217" width="363" alt="" class="sponsors-block__img">
+					</a>
+					<a class="sponsors-block__img-wrap" href="#">
+						<img src="pic/sponsor_2.jpg" height="186" width="428" alt="" class="sponsors-block__img">
+					</a>
+
+					<p class="sponsors-block__desc">Gold sponsors</p>
+
+					<a class="sponsors-block__img-wrap" href="#">
+						<img src="pic/sponsor_3.jpg" height="107" width="107" alt="" class="sponsors-block__img">
+					</a>
+					<a class="sponsors-block__img-wrap" href="#">
+						<img src="pic/sponsor_4.jpg" height="68" width="286" alt="" class="sponsors-block__img">
+					</a>
+					<a class="sponsors-block__img-wrap" href="#">
+						<img src="pic/sponsor_5.jpg" height="54" width="188" alt="" class="sponsors-block__img">
+					</a>
+					<a class="sponsors-block__img-wrap" href="#">
+						<img src="pic/sponsor_7.jpg" height="86" width="302" alt="" class="sponsors-block__img">
+					</a>
+					<a class="sponsors-block__img-wrap" href="#">
+						<img src="pic/sponsor_6.jpg" height="122" width="133" alt="" class="sponsors-block__img">
+					</a>
+					<a class="sponsors-block__img-wrap" href="#">
+						<img src="pic/sponsor_8.jpg" height="36" width="244" alt="" class="sponsors-block__img">
+					</a>
+
+					<p class="sponsors-block__desc">Partners</p>
+
+					<a class="sponsors-block__img-wrap" href="#">
+						<img src="pic/sponsor_9.jpg" height="62" width="282" alt="" class="sponsors-block__img">
+					</a>
+					<a class="sponsors-block__img-wrap" href="#">
+						<img src="pic/sponsor_10.jpg" height="45" width="229" alt="" class="sponsors-block__img">
+					</a>
+					<a class="sponsors-block__img-wrap" href="#">
+						<img src="pic/sponsor_11.jpg" height="60" width="240" alt="" class="sponsors-block__img">
+					</a>
+					<a class="sponsors-block__img-wrap" href="#">
+						<img src="pic/sponsor_12.jpg" height="125" width="136" alt="" class="sponsors-block__img">
+					</a>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section contacts" id="contacts">
+			<div class="container aligner">
+
+				<h2 class="section__title">Organizers</h2>
+
+				<ul class="participants-list orgs">
+					<li class="participants-list__item">
+						<div class="participants-list__img-wrap">
+							<img class="participants-list__img" src="pic/organizer_1.jpg" height="252" width="252" alt="">
+						</div>
+
+						<h4 class="participants-list__name">Denis Radin</h4>
+
+						<p class="participants-list__info">LIBERTY GLOBAL, Amsterdam</p>
+						<p class="participants-list__desc">
+							<a href="mailto:denis.radin@gmail.com">denis.radin@gmail.com</a><br/>
+							+31 638 482 851<br/>
+							Skype: lp_funky
+						</p>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="participants-list__item">
+						<div class="participants-list__img-wrap">
+							<img class="participants-list__img" src="pic/organizer_2.jpg" height="252" width="252" alt="">
+						</div>
+
+						<h4 class="participants-list__name">Robert Haritonov</h4>
+
+						<p class="participants-list__info">LIBERTY GLOBAL, Amsterdam</p>
+						<p class="participants-list__desc">
+							<a href="mailto:r@rhr.me">r@rhr.me</a><br/>
+							+31 618 699 604<br/>
+							Skype: haritonov.r
+						</p>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
+							</li>
+
+							<li class="socials__item">
+								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="socials-wrap">
+					<p class="socials-wrap__title">Follow us</p>
+
+					<ul class="socials big red">
+						<li class="socials__item">
+							<a class="socials__link" href="#"><span class="icon-tw"></span></a>
+						</li>
+
+						<li class="socials__item">
+							<a class="socials__link" href="#"><span class="icon-fb"></span></a>
+						</li>
+
+						<li class="socials__item">
+							<a class="socials__link" href="#"><span class="icon-yt"></span></a>
+						</li>
+					</ul>
+				</div>
+
+				<p class="help">
+					<a href="#" class="help__link">Interested in sponsoring</a>
+					<a href="#" class="help__link">Interested in volunteering</a>
+				</p>
+
+			</div>
+		</section>
+
+
+	</main><!-- .content -->
+
+	<footer class="footer">
+
+		<div class="f-logo">
+			Event by<br/>
+			<a href="#">Foundation Frontend Amsterdam</a>
+		</div>
+
+	</footer><!-- .footer -->
+
+</div>
+
+<script>
+  function initMap() {
+	var mapDiv1 = document.getElementById('map1');
+	var map1 = new google.maps.Map(mapDiv1, {
+		center: {lat: 52.365976, lng: 4.916509},
+		zoom: 18,
+		disableDefaultUI: true,
+		draggable: false,
+		mapTypeId: google.maps.MapTypeId.SATELLITE
+	});
+
+	var mapDiv2 = document.getElementById('map2');
+	var map2 = new google.maps.Map(mapDiv2, {
+		center: {lat: 52.366633, lng: 4.915365},
+		zoom: 17,
+		disableDefaultUI: true,
+		draggable: false
+	});
+
+	var styles = [
+		{
+			"featureType": "all",
+			"elementType": "labels.text.fill",
+			"stylers": [
+				{
+					"visibility": "on"
+				},
+				{
+					"saturation": "0"
+				},
+				{
+					"lightness": "-0"
+				},
+				{
+					"gamma": "2.00"
+				},
+				{
+					"color": "#252525"
+				}
+			]
+		},
+		{
+			"featureType": "all",
+			"elementType": "labels.text.stroke",
+			"stylers": [
+				{
+					"color": "#919191"
+				}
+			]
+		},
+		{
+			"featureType": "all",
+			"elementType": "labels.icon",
+			"stylers": [
+				{
+					"visibility": "on"
+				},
+				{
+					"saturation": "-100"
+				},
+				{
+					"gamma": "0.84"
+				},
+				{
+					"lightness": "-29"
+				}
+			]
+		},
+		{
+			"featureType": "administrative",
+			"elementType": "all",
+			"stylers": [
+				{
+					"saturation": "-100"
+				}
+			]
+		},
+		{
+			"featureType": "landscape",
+			"elementType": "all",
+			"stylers": [
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": 65
+				},
+				{
+					"visibility": "on"
+				}
+			]
+		},
+		{
+			"featureType": "landscape.man_made",
+			"elementType": "geometry.fill",
+			"stylers": [
+				{
+					"color": "#919191"
+				}
+			]
+		},
+		{
+			"featureType": "landscape.man_made",
+			"elementType": "geometry.stroke",
+			"stylers": [
+				{
+					"color": "#888888"
+				}
+			]
+		},
+		{
+			"featureType": "landscape.natural",
+			"elementType": "geometry.fill",
+			"stylers": [
+				{
+					"color": "#888888"
+				}
+			]
+		},
+		{
+			"featureType": "poi",
+			"elementType": "geometry",
+			"stylers": [
+				{
+					"color": "#888888"
+				}
+			]
+		},
+		{
+			"featureType": "road",
+			"elementType": "all",
+			"stylers": [
+				{
+					"visibility": "on"
+				}
+			]
+		},
+		{
+			"featureType": "road",
+			"elementType": "geometry.fill",
+			"stylers": [
+				{
+					"color": "#9b9c9c"
+				}
+			]
+		},
+		{
+			"featureType": "road",
+			"elementType": "labels.text.fill",
+			"stylers": [
+				{
+					"color": "#282828"
+				}
+			]
+		},
+		{
+			"featureType": "road.highway",
+			"elementType": "all",
+			"stylers": [
+				{
+					"visibility": "simplified"
+				}
+			]
+		},
+		{
+			"featureType": "road.local",
+			"elementType": "all",
+			"stylers": [
+				{
+					"visibility": "simplified"
+				}
+			]
+		},
+		{
+			"featureType": "road.local",
+			"elementType": "geometry.fill",
+			"stylers": [
+				{
+					"color": "#969796"
+				}
+			]
+		},
+		{
+			"featureType": "transit",
+			"elementType": "geometry",
+			"stylers": [
+				{
+					"color": "#7c7c7c"
+				}
+			]
+		},
+		{
+			"featureType": "transit",
+			"elementType": "labels.text",
+			"stylers": [
+				{
+					"visibility": "simplified"
+				}
+			]
+		},
+		{
+			"featureType": "water",
+			"elementType": "geometry",
+			"stylers": [
+				{
+					"lightness": -25
+				},
+				{
+					"saturation": -97
+				},
+				{
+					"color": "#797979"
+				}
+			]
+		},
+		{
+			"featureType": "water",
+			"elementType": "labels",
+			"stylers": [
+				{
+					"lightness": -25
+				},
+				{
+					"saturation": -100
+				}
+			]
+		},
+		{
+			"featureType": "water",
+			"elementType": "labels.text.fill",
+			"stylers": [
+				{
+					"color": "#252525"
+				}
+			]
+		},
+		{
+			"featureType": "water",
+			"elementType": "labels.text.stroke",
+			"stylers": [
+				{
+					"color": "#ffffff"
+				}
+			]
+		}
+	];
+
+	var marker1 = new google.maps.Marker({
+		position: new google.maps.LatLng(52.366898, 4.912581),
+		map: map2,
+		title: 'conf',
+		icon: 'svg/marker_1.svg'
+	});
+
+	var marker2 = new google.maps.Marker({
+		position: new google.maps.LatLng(52.367406, 4.915730),
+		map: map2,
+		title: 'coffee break',
+		icon: 'svg/marker_2.svg'
+	});
+
+	var marker3 = new google.maps.Marker({
+		position: new google.maps.LatLng(52.365919, 4.914963),
+		map: map2,
+		title: 'dinner',
+		icon: 'svg/marker_3.svg',
+		zIndex:99999999
+	});
+
+	var marker4 = new google.maps.Marker({
+		position: new google.maps.LatLng(52.365251, 4.918772),
+		map: map2,
+		title: 'lunch',
+		icon: 'svg/marker_4.svg'
+	});
+
+	map2.setOptions({styles: styles});
+  }
+</script>
+
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-ZEocFpuybFyJZg92LhWsvIJdo56S34s&callback=initMap">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

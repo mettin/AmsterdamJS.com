@@ -1,0 +1,74 @@
+/* Buttons
+-----------------------------------------------------------------------------*/
+
+.btn-block{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: stretch;
+	align-items: flex-start;
+
+	.basic-btn{
+		order: 0;
+		flex: 0 1 auto;
+		align-self: auto;
+	}
+}
+
+.basic-btn{
+	font: 16px/56px $latoB;
+	height: 60px;
+	text-align: center;
+	color: #000;
+	border: 2px solid #fff;
+	border-radius: 30px;
+	text-align: center;
+	display: flex;
+	padding: 0 20px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+
+	&:hover{
+	}
+
+	&.yellow{
+		border-color: #000;
+		background-color: $clr-yellow;
+		color: #000;
+
+		&:hover{
+			color: #fff;
+			background-color: #000;
+		}
+	}
+
+	&.white{
+		background-color: #fff;
+		color: #000;
+
+		&:hover{
+			color: $clr-red;
+		}
+	}
+
+	&.red{
+		background-color: #fff;
+		border-color: $clr-red;
+
+		&:hover{
+			color: #fff;
+			background: $clr-red;
+		}
+	}
+
+	&.transparent{
+		background-color: transparent;
+		color: #fff;
+
+		&:hover{
+			background-color: #fff;
+			color: $clr-black;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+/* Icons
+-----------------------------------------------------------------------------*/
+
+.icon-sprite {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icon-heart{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(../svg/heart.svg) center center no-repeat;
+	background-size: 80%;
+	animation: beat 1.4s infinite ease;
+}
+
+@keyframes beat {
+	0% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1.0);
+	}
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	@include transition (color linear .2s);
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fb:before {
+  content: "\ea90";
+}
+.icon-tw:before {
+  content: "\ea96";
+}
+.icon-yt:before {
+  content: "\ea9d";
+}
+.icon-gh:before {
+  content: "\eab0";
+}
