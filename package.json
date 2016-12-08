@@ -1,7 +1,7 @@
 {
   "name": "AmsterdamJS.com",
   "version": "1.0.0",
-  "description": "React Amsterdam Conference website.",
+  "description": "AmsterdamJS Conference website.",
   "scripts": {
     "test": "echo \"Success!\"",
     "dev": "gulp dev",

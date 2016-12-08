@@ -6,7 +6,7 @@
 	width: 60px;
 	height: 60px;
 	margin: 0 auto;
-	
+
 	&__link {
 		position: absolute;
 		left: 0;
@@ -19,7 +19,6 @@
 }
 
 .content {
-	
 }
 
 .section{
@@ -28,6 +27,10 @@
 	min-height: 100vh;
 	padding: 34px 0;
 	color: #000;
+
+  &.half-height {
+    min-height: 50vh;
+  }
 
 	&.no-flex{
 		display: block;
@@ -138,7 +141,7 @@
 .home{
 	overflow: hidden;
 
-	&__video{ 
+	&__video{
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -181,6 +184,16 @@
 		font-weight: 300;
 		margin: 72px 0 78px;
 		letter-spacing: 0.06em;
+
+    a {
+      color: #fff;
+
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
 	}
 
 	&__tip{
@@ -191,6 +204,10 @@
 		display: block;
 		margin: 28px auto;
 		max-width: 720px;
+
+    strong {
+      font-family: 'LatoBlack';
+    }
 	}
 
 	.container{
@@ -464,7 +481,7 @@
 		margin: 33px 0px;
 		font-size: 15px;
 	}
-	
+
 	.socials{
 		margin: 16px 0 20px;
 
