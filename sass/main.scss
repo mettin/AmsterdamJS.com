@@ -16,6 +16,7 @@ body {
 	background: #fff;
 	color: #000;
 	font: 16px/1.4 $lato;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 @include selection {
