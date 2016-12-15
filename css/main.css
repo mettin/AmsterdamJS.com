@@ -1442,6 +1442,17 @@ h6 {
   border: 2px solid #fff;
   border-radius: 50%;
   background: url(../svg/arrow_l.svg) center center no-repeat;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.slider-nav .slick-prev:hover,
+.slider-nav .slick-next:hover {
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
 }
 .slider-nav .slick-prev.slick-disabled,
 .slider-nav .slick-next.slick-disabled {

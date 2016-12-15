@@ -673,6 +673,11 @@
 		border: 2px solid #fff;
 		border-radius: 50%;
 		background: url(../svg/arrow_l.svg) center center no-repeat;
+		@include transition (all linear .1s);
+
+		&:hover{
+			@include transform (scale(0.95));
+		}
 
 		&.slick-disabled{
 			display: none !important;
