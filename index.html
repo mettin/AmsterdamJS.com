@@ -1,448 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<title>AmsterdamJS Conference 2017</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="css/main.css?09122016" />
-	<link rel="shortcut icon" href="img/favicon.png" />
+  <meta charset="utf-8"/>
+  <title>AmsterdamJS Conference 2017</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/main.css?15122016"/>
+  <link rel="shortcut icon" href="img/favicon.png"/>
 
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 
 <body>
 
 <div class="wrapper">
 
-	<header class="header">
-		<nav class="container">
+  <header class="header">
+    <nav class="container">
 
-			<div class="menu-btn"></div>
+      <div class="menu-btn"></div>
 
-			<nav class="main-nav">
-				<ul class="main-menu">
-					<li class="main-menu__item"><a href="#event" class="main-menu__link">The Event</a></li>
-					<li class="main-menu__item"><a href="#location" class="main-menu__link">Location</a></li>
-          <!--<li class="main-menu__item"><a href="#speakers" class="main-menu__link">Speakers</a></li>
-                    <li class="main-menu__item"><a href="#shedule" class="main-menu__link">Schedule</a></li>
-                    <li class="main-menu__item"><a href="#sponsors" class="main-menu__link">Sponsors</a></li>-->
-					<li class="main-menu__item"><a href="#contacts" class="main-menu__link">Contact us</a></li>
-				</ul>
-			</nav>
-		</nav>
-	</header><!-- .header -->
+      <nav class="main-nav">
+        <ul class="main-menu">
+          <li class="main-menu__item"><a href="#event" class="main-menu__link">The Event</a></li>
+          <li class="main-menu__item"><a href="#location" class="main-menu__link">Location</a></li>
+          <!--<li class="main-menu__item"><a href="#speakers" class="main-menu__link">Speakers</a></li>-->
+          <!--<li class="main-menu__item"><a href="#shedule" class="main-menu__link">Schedule</a></li>-->
+          <!--<li class="main-menu__item"><a href="#sponsors" class="main-menu__link">Sponsors</a></li>-->
+          <li class="main-menu__item"><a href="#contacts" class="main-menu__link">Contact us</a></li>
+          <li class="main-menu__item main-menu__item_red">
+            <a href="https://goo.gl/forms/yRZ7PCrFfuvo4NPd2" class="main-menu__link">Submit Talk Proposal</a></li>
+        </ul>
+      </nav>
+    </nav>
+  </header><!-- .header -->
 
-	<main class="content">
+  <main class="content">
 
-		<section class="section home" id="home">
-			<video class="home__video" preload="auto" muted autoplay loop poster="img/dummy_bg.jpg" id="bgvid">
-				<source src="video/video.webm" type="video/webm">
-				<source src="video/video.mp4" type="video/mp4">
-			</video>
+    <section class="section home" id="home">
+      <video class="home__video" preload="auto" muted autoplay loop poster="img/dummy_bg.jpg" id="bgvid">
+        <source src="video/video.webm" type="video/webm">
+        <source src="video/video.mp4" type="video/mp4">
+      </video>
 
-			<div class="home__overlay"></div>
+      <div class="home__overlay"></div>
 
-			<div class="container aligner">
+      <div class="container aligner">
 
-				<div class="logo">
-					<a href="/" class="logo__link ir">AmsterdamJs</a>
-				</div>
+        <div class="logo">
+          <a href="/" class="logo__link ir">AmsterdamJs</a>
+        </div>
 
-				<h1 class="home__title">Amsterdam<span>Js</span></h1>
-				<p class="home__desc">
+        <h1 class="home__title">Amsterdam<span>Js</span></h1>
+        <p class="home__desc">
           The largest and longest-running JavaScript community in town<br/>
-				  <span class="home__tip">Apart from friendly evening <a href="https://www.meetup.com/AmsterdamJS/">meetups</a>, starting from 2017 we kick-off an annual JavaScript Conference in the heart of The Netherlands, with the first edition coming <strong>on 9th of June!</strong></span>
+          <span class="home__tip">Apart from friendly evening <a href="https://www.meetup.com/AmsterdamJS/">meetups</a>, starting from 2017 we kick-off an annual JavaScript Conference in the heart of The Netherlands, with the first edition coming <strong>on 9th of June!</strong></span>
         </p>
 
-				<div class="btn-block">
-					<a href="https://twitter.com/amsterdamjs" class="basic-btn white">Follow us for updates</a>
-				</div>
+        <div class="btn-block">
+          <a href="https://twitter.com/amsterdamjs" class="basic-btn white">Follow us for updates</a>
+        </div>
 
-			</div>
+      </div>
 
-			<div id="map1"></div>
+      <div id="map1"></div>
 
-		</section>
+    </section>
 
-		<section class="section event no-flex" id="event">
-			<div class="container aligner">
+    <section class="section event no-flex" id="event">
+      <div class="container aligner">
 
-				<div class="event-info">
-					<div class="event-info__desc">
-						<h3 class="section__subtitle">First dedicated JavaScript conference in Amsterdam</h3>
-						<div class="section__desc">
+        <div class="event-info">
+          <div class="event-info__desc">
+            <h3 class="section__subtitle">First dedicated JavaScript conference in Amsterdam</h3>
+            <div class="section__desc">
               <p>
-                Taking our biggest and longest-running JavaScript community forward, we're adding a new event to our family - a full-day, two-track conference covering the latest and greatest news and insights from the global JavaScript network.<br>
-                Join us and a group of internationally known JavaScript enthusiasts to share inspiration and spend a great, summer day in one of the most unique Amsterdam locations.
+                Taking our biggest and longest-running JavaScript community forward, we're adding a new event to our
+                family - a full-day, two-track conference covering the latest and greatest news and insights from the
+                global JavaScript network.<br>
+                Join us and a group of internationally known JavaScript enthusiasts to share inspiration and spend a
+                great, summer day in one of the most unique Amsterdam locations.
               </p>
               <p>
-                Call For Papers and tickets updates coming soon. Follow us via social networks to hear the news first.
+                Tickets updates coming soon - follow us via social networks to hear the news first.
               </p>
             </div>
 
-						<div class="socials-wrap">
-							<ul class="socials">
-								<li class="socials__item">
-									<a class="socials__link" href="https://twitter.com/amsterdamjs"><span class="icon-tw"></span></a>
-								</li>
-
-								<li class="socials__item">
-									<a class="socials__link" href="https://www.facebook.com/amsterdamjs/"><span class="icon-fb"></span></a>
-								</li>
-
-								<li class="socials__item">
-									<a class="socials__link" href="https://www.youtube.com/channel/UCQM428Hwrvxla8DCgjGONSQ"><span class="icon-yt"></span></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</section>
-
-		<section class="section location no-flex" id="location">
-			<div class="slider-wrap clearfix">
-				<div class="slider-nav"></div>
-				
-				<ul class="slider">
-					<li class="slider__item" style="background: url(pic/place_1.jpg) center center no-repeat; background-size: cover;">
-						<div class="location__desc">
-							<div class="container aligner">
-								<h2 class="section__title">location</h2>
-								<p class="section__subtitle">Natura Artis Magistra</p>
-								<p class="section__desc">
-									The oldest Zoo in The Netherlands and one of the oldest nature parks of mainland Europe. Artis Royal Zoo is an unique place both for carefully treated animals and visitors of all ages.<br>The Zoo territory includes few event spaces, aquarium, planetarium and 27 monumental buildings, most of which are used as enclosures for the animals, making Artis a unique cultural heritage of the 19th century.
-								</p>
-							</div>
-						</div>
-					</li>
-
-					<li class="slider__item" style="background: url(pic/place_2.jpg) center center no-repeat; background-size: cover;">
-						<div class="location__desc">
-							<div class="container aligner">
-								<h2 class="section__title">location</h2>
-								<p class="section__subtitle">Natura Artis Magistra</p>
-								<p class="section__desc">
-									The oldest Zoo in The Netherlands and one of the oldest nature parks of mainland Europe. Artis Royal Zoo is an unique place both for carefully treated animals and visitors of all ages.<br>The Zoo territory includes few event spaces, aquarium, planetarium and 27 monumental buildings, most of which are used as enclosures for the animals, making Artis a unique cultural heritage of the 19th century.
-								</p>
-							</div>
-						</div>
-					</li>
-
-					<li class="slider__item" style="background: url(pic/place_3.jpg) center center no-repeat; background-size: cover;">
-						<div class="location__desc">
-							<div class="container aligner">
-								<h2 class="section__title">location</h2>
-								<p class="section__subtitle">Natura Artis Magistra</p>
-								<p class="section__desc">
-									The oldest Zoo in The Netherlands and one of the oldest nature parks of mainland Europe. Artis Royal Zoo is an unique place both for carefully treated animals and visitors of all ages.<br>The Zoo territory includes few event spaces, aquarium, planetarium and 27 monumental buildings, most of which are used as enclosures for the animals, making Artis a unique cultural heritage of the 19th century.
-								</p>
-							</div>
-						</div>
-					</li>
-
-					<li class="slider__item" style="background: url(pic/place_4.jpg) center center no-repeat; background-size: cover;">
-						<div class="location__desc">
-							<div class="container aligner">
-								<h2 class="section__title">location</h2>
-								<p class="section__subtitle">Natura Artis Magistra</p>
-								<p class="section__desc">
-									The oldest Zoo in The Netherlands and one of the oldest nature parks of mainland Europe. Artis Royal Zoo is an unique place both for carefully treated animals and visitors of all ages.<br>The Zoo territory includes few event spaces, aquarium, planetarium and 27 monumental buildings, most of which are used as enclosures for the animals, making Artis a unique cultural heritage of the 19th century.
-								</p>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-
-			 <div class="map">
-				<div class="map__content">
-					<div class="map__desc">
-						<p class="map__title">Plantage Kerklaan 38-40<br/>
-						1018 CZ Amsterdam<br/>
-						The Netherlands</p>
-						<a class="basic-btn transparent" href="#">view on map</a>
-					</div>
-				</div>
-
-				<div id="map2"></div>
-			</div>
-		</section>
-
-		<!--<section class="section speakers half-height" id="speakers">-->
-			<!--<div class="container aligner">-->
-
-				<!--<h2 class="section__title">Want to become a speaker?</h2>-->
-
-				<!--<ul class="participants-list">-->
-					<!--<li class="participants-list__item">
-						<div class="participants-list__img-wrap">
-							<img class="participants-list__img" src="pic/speaker_1.jpg" height="194" width="194" alt="">
-						</div>
-
-						<h4 class="participants-list__name">Forbes Lindesay</h4>
-
-						<p class="participants-list__info">Google, Sun Francisco</p>
-						<p class="participants-list__desc">Software Engineer at Facebook who works on React Native performance. </p>
-
-						<ul class="socials">
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
-							</li>
-						</ul>
-					</li>
-
-					<li class="participants-list__item">
-						<div class="participants-list__img-wrap">
-							<img class="participants-list__img" src="pic/speaker_2.jpg" height="194" width="194" alt="">
-						</div>
-
-						<h4 class="participants-list__name">Mike Grabowski</h4>
-
-						<p class="participants-list__info">Base, London</p>
-						<p class="participants-list__desc">Director of Open Source at Formidable and the author of libraries like Slick Carousel, McFly, react-music, webpack-dashboard, Spectacle.</p>
-
-						<ul class="socials">
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
-							</li>
-						</ul>
-					</li>
-
-					<li class="participants-list__item">
-						<div class="participants-list__img-wrap">
-							<img class="participants-list__img" src="pic/speaker_3.jpg" height="194" width="194" alt="">
-						</div>
-
-						<h4 class="participants-list__name">Clara Mulligan</h4>
-
-						<p class="participants-list__info">LET&CONT, Amsterdam</p>
-						<p class="participants-list__desc">Sharing my experience building loveable UIs. Talking about presentational components and pattern types for build scalable web apps in React.</p>
-
-						<ul class="socials">
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
-							</li>
-						</ul>
-					</li>
-
-					<li class="participants-list__item">
-						<div class="participants-list__img-wrap">
-							<img class="participants-list__img" src="pic/speaker_4.jpg" height="194" width="194" alt="">
-						</div>
-
-						<h4 class="participants-list__name">Mark Peck</h4>
-
-						<p class="participants-list__info">Straw castle, Berlin</p>
-						<p class="participants-list__desc">Software Engineer at Netflix, specializes in enterprise single-page applications.</p>
-
-						<ul class="socials">
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
-							</li>
-						</ul>
-					</li>
-
-					<li class="participants-list__item">
-						<div class="participants-list__img-wrap">
-							<img class="participants-list__img" src="pic/speaker_5.jpg" height="194" width="194" alt="">
-						</div>
-
-						<h4 class="participants-list__name">Stefano Masini</h4>
-
-						<p class="participants-list__info">Balsamiq, The Netherlands</p>
-						<p class="participants-list__desc">Software Engineer at Facebook who works on React Native performance. </p>
-
-						<ul class="socials">
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
-							</li>
-						</ul>
-					</li>
-
-					<li class="participants-list__item">
-						<div class="participants-list__img-wrap">
-							<img class="participants-list__img" src="pic/speaker_6.jpg" height="194" width="194" alt="">
-						</div>
-
-						<h4 class="participants-list__name">Mike Grabowski</h4>
-
-						<p class="participants-list__info">Base, London</p>
-						<p class="participants-list__desc">Director of Open Source at Formidable and the author of libraries like Slick Carousel, McFly, react-music, webpack-dashboard, Spectacle.</p>
-
-						<ul class="socials">
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
-							</li>
-						</ul>
-					</li>
-
-					<li class="participants-list__item">
-						<div class="participants-list__img-wrap">
-							<img class="participants-list__img" src="pic/speaker_7.jpg" height="194" width="194" alt="">
-						</div>
-
-						<h4 class="participants-list__name">Clara Mulligan</h4>
-
-						<p class="participants-list__info">LET&CONT, Amsterdam</p>
-						<p class="participants-list__desc">Sharing my experience building loveable UIs. Talking about presentational components and pattern types for build scalable web apps in React.</p>
-
-						<ul class="socials">
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
-							</li>
-						</ul>
-					</li>
-
-					<li class="participants-list__item">
-						<div class="participants-list__img-wrap">
-							<img class="participants-list__img" src="pic/speaker_8.jpg" height="194" width="194" alt="">
-						</div>
-
-						<h4 class="participants-list__name">Martin Shveller</h4>
-
-						<p class="participants-list__info">Google, Norway</p>
-						<p class="participants-list__desc">Software Engineer at Facebook who works on React Native performance. He will talk about React Native architecture and best practices to get all the benefits of using the platform</p>
-
-						<ul class="socials">
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
-							</li>
-						</ul>
-					</li>
-
-					<li class="participants-list__item">
-						<div class="participants-list__img-wrap">
-							<img class="participants-list__img" src="pic/speaker_9.jpg" height="194" width="194" alt="">
-						</div>
-
-						<h4 class="participants-list__name">Paul van Dam</h4>
-
-						<p class="participants-list__topic">Introducing and Implementing React at Coolblue</p>
-						<p class="participants-list__desc">About the good parts of writing styles in javascript using JSS. Comparison to other existing CSS solutions and points about negative aspects got so far.</p>
-
-						<ul class="socials">
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
-							</li>
-						</ul>
-					</li>
-
-					<li class="participants-list__item">
-						<div class="participants-list__img-wrap">
-							<img class="participants-list__img" src="pic/speaker_10.jpg" height="194" width="194" alt="">
-						</div>
-
-						<h4 class="participants-list__name">Mike Grabowski</h4>
-
-						<p class="participants-list__info">Base, London</p>
-						<p class="participants-list__desc">Director of Open Source at Formidable and the author of libraries like Slick Carousel, McFly, react-music, webpack-dashboard, Spectacle.</p>
-
-						<ul class="socials">
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-tw"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-gh"></span></a>
-							</li>
-
-							<li class="socials__item">
-								<a class="socials__link" href="#"><span class="icon-yt"></span></a>
-							</li>
-						</ul>
-					</li>-->
-
-					<!--<li class="participants-list__item">-->
-						<!--<p class="participants-list__propose-new">Join the club!</p>-->
-						<!--<a class="basic-btn red participants-list__btn" href="https://docs.google.com/forms/d/19HUzF0niKkdAjV335OVTWrG_i8PnTpW6IYNxHCCYPx8">submit proposal</a>-->
-					<!--</li>-->
-
-					<!--<li class="participants-list__item">-->
-						<!--&lt;!&ndash; empty &ndash;&gt;-->
-					<!--</li>-->
-				<!--</ul>-->
-			<!--</div>-->
-		<!--</section>-->
+            <div class="socials-wrap">
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="https://twitter.com/amsterdamjs"><span class="icon-tw"></span></a>
+                </li>
+
+                <li class="socials__item">
+                  <a class="socials__link" href="https://www.facebook.com/amsterdamjs/"><span class="icon-fb"></span></a>
+                </li>
+
+                <li class="socials__item">
+                  <a class="socials__link" href="https://www.youtube.com/channel/UCQM428Hwrvxla8DCgjGONSQ"><span class="icon-yt"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section location no-flex" id="location">
+      <div class="slider-wrap clearfix">
+        <div class="slider-nav"></div>
+
+        <ul class="slider">
+          <li class="slider__item" style="background: url(pic/place_1.jpg) center center no-repeat; background-size: cover;">
+            <div class="location__desc">
+              <div class="container aligner">
+                <h2 class="section__title">location</h2>
+                <p class="section__subtitle">Natura Artis Magistra</p>
+                <p class="section__desc">
+                  The oldest Zoo in The Netherlands and one of the oldest nature parks of mainland Europe. Artis Royal
+                  Zoo is an unique place both for carefully treated animals and visitors of all ages.<br>The Zoo
+                  territory includes few event spaces, aquarium, planetarium and 27 monumental buildings, most of which
+                  are used as enclosures for the animals, making Artis a unique cultural heritage of the 19th century.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="slider__item" style="background: url(pic/place_2.jpg) center center no-repeat; background-size: cover;">
+            <div class="location__desc">
+              <div class="container aligner">
+                <h2 class="section__title">location</h2>
+                <p class="section__subtitle">Natura Artis Magistra</p>
+                <p class="section__desc">
+                  The oldest Zoo in The Netherlands and one of the oldest nature parks of mainland Europe. Artis Royal
+                  Zoo is an unique place both for carefully treated animals and visitors of all ages.<br>The Zoo
+                  territory includes few event spaces, aquarium, planetarium and 27 monumental buildings, most of which
+                  are used as enclosures for the animals, making Artis a unique cultural heritage of the 19th century.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="slider__item" style="background: url(pic/place_3.jpg) center center no-repeat; background-size: cover;">
+            <div class="location__desc">
+              <div class="container aligner">
+                <h2 class="section__title">location</h2>
+                <p class="section__subtitle">Natura Artis Magistra</p>
+                <p class="section__desc">
+                  The oldest Zoo in The Netherlands and one of the oldest nature parks of mainland Europe. Artis Royal
+                  Zoo is an unique place both for carefully treated animals and visitors of all ages.<br>The Zoo
+                  territory includes few event spaces, aquarium, planetarium and 27 monumental buildings, most of which
+                  are used as enclosures for the animals, making Artis a unique cultural heritage of the 19th century.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="slider__item" style="background: url(pic/place_4.jpg) center center no-repeat; background-size: cover;">
+            <div class="location__desc">
+              <div class="container aligner">
+                <h2 class="section__title">location</h2>
+                <p class="section__subtitle">Natura Artis Magistra</p>
+                <p class="section__desc">
+                  The oldest Zoo in The Netherlands and one of the oldest nature parks of mainland Europe. Artis Royal
+                  Zoo is an unique place both for carefully treated animals and visitors of all ages.<br>The Zoo
+                  territory includes few event spaces, aquarium, planetarium and 27 monumental buildings, most of which
+                  are used as enclosures for the animals, making Artis a unique cultural heritage of the 19th century.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="map">
+        <div class="map__content">
+          <div class="map__desc">
+            <p class="map__title">
+              Plantage Middenlaan 45<br/>
+              1018 DC Amsterdam<br/>
+              The Netherlands
+            </p>
+            <a class="basic-btn transparent" href="https://goo.gl/maps/K69KpGhcTLx">view on map</a>
+          </div>
+        </div>
+
+        <div id="map2"></div>
+      </div>
+    </section>
+
+    <!--<section class="section speakers half-height" id="speakers">-->
+    <!--<div class="container aligner">-->
+
+    <!--<h2 class="section__title">Want to become a speaker?</h2>-->
+
+    <!--<ul class="participants-list">-->
+    <!--<li class="participants-list__item">
+                  <div class="participants-list__img-wrap">
+                      <img class="participants-list__img" src="pic/speaker_1.jpg" height="194" width="194" alt="">
+                  </div>
+
+                  <h4 class="participants-list__name">Forbes Lindesay</h4>
+
+                  <p class="participants-list__info">Google, Sun Francisco</p>
+                  <p class="participants-list__desc">Software Engineer at Facebook who works on React Native performance. </p>
+
+                  <ul class="socials">
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-tw"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-gh"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-yt"></span></a>
+                      </li>
+                  </ul>
+              </li>
+
+              <li class="participants-list__item">
+                  <div class="participants-list__img-wrap">
+                      <img class="participants-list__img" src="pic/speaker_2.jpg" height="194" width="194" alt="">
+                  </div>
+
+                  <h4 class="participants-list__name">Mike Grabowski</h4>
+
+                  <p class="participants-list__info">Base, London</p>
+                  <p class="participants-list__desc">Director of Open Source at Formidable and the author of libraries like Slick Carousel, McFly, react-music, webpack-dashboard, Spectacle.</p>
+
+                  <ul class="socials">
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-tw"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-gh"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-yt"></span></a>
+                      </li>
+                  </ul>
+              </li>
+
+              <li class="participants-list__item">
+                  <div class="participants-list__img-wrap">
+                      <img class="participants-list__img" src="pic/speaker_3.jpg" height="194" width="194" alt="">
+                  </div>
+
+                  <h4 class="participants-list__name">Clara Mulligan</h4>
+
+                  <p class="participants-list__info">LET&CONT, Amsterdam</p>
+                  <p class="participants-list__desc">Sharing my experience building loveable UIs. Talking about presentational components and pattern types for build scalable web apps in React.</p>
+
+                  <ul class="socials">
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-tw"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-gh"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-yt"></span></a>
+                      </li>
+                  </ul>
+              </li>
+
+              <li class="participants-list__item">
+                  <div class="participants-list__img-wrap">
+                      <img class="participants-list__img" src="pic/speaker_4.jpg" height="194" width="194" alt="">
+                  </div>
+
+                  <h4 class="participants-list__name">Mark Peck</h4>
+
+                  <p class="participants-list__info">Straw castle, Berlin</p>
+                  <p class="participants-list__desc">Software Engineer at Netflix, specializes in enterprise single-page applications.</p>
+
+                  <ul class="socials">
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-tw"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-gh"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-yt"></span></a>
+                      </li>
+                  </ul>
+              </li>
+
+              <li class="participants-list__item">
+                  <div class="participants-list__img-wrap">
+                      <img class="participants-list__img" src="pic/speaker_5.jpg" height="194" width="194" alt="">
+                  </div>
+
+                  <h4 class="participants-list__name">Stefano Masini</h4>
+
+                  <p class="participants-list__info">Balsamiq, The Netherlands</p>
+                  <p class="participants-list__desc">Software Engineer at Facebook who works on React Native performance. </p>
+
+                  <ul class="socials">
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-tw"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-gh"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-yt"></span></a>
+                      </li>
+                  </ul>
+              </li>
+
+              <li class="participants-list__item">
+                  <div class="participants-list__img-wrap">
+                      <img class="participants-list__img" src="pic/speaker_6.jpg" height="194" width="194" alt="">
+                  </div>
+
+                  <h4 class="participants-list__name">Mike Grabowski</h4>
+
+                  <p class="participants-list__info">Base, London</p>
+                  <p class="participants-list__desc">Director of Open Source at Formidable and the author of libraries like Slick Carousel, McFly, react-music, webpack-dashboard, Spectacle.</p>
+
+                  <ul class="socials">
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-tw"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-gh"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-yt"></span></a>
+                      </li>
+                  </ul>
+              </li>
+
+              <li class="participants-list__item">
+                  <div class="participants-list__img-wrap">
+                      <img class="participants-list__img" src="pic/speaker_7.jpg" height="194" width="194" alt="">
+                  </div>
+
+                  <h4 class="participants-list__name">Clara Mulligan</h4>
+
+                  <p class="participants-list__info">LET&CONT, Amsterdam</p>
+                  <p class="participants-list__desc">Sharing my experience building loveable UIs. Talking about presentational components and pattern types for build scalable web apps in React.</p>
+
+                  <ul class="socials">
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-tw"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-gh"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-yt"></span></a>
+                      </li>
+                  </ul>
+              </li>
+
+              <li class="participants-list__item">
+                  <div class="participants-list__img-wrap">
+                      <img class="participants-list__img" src="pic/speaker_8.jpg" height="194" width="194" alt="">
+                  </div>
+
+                  <h4 class="participants-list__name">Martin Shveller</h4>
+
+                  <p class="participants-list__info">Google, Norway</p>
+                  <p class="participants-list__desc">Software Engineer at Facebook who works on React Native performance. He will talk about React Native architecture and best practices to get all the benefits of using the platform</p>
+
+                  <ul class="socials">
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-tw"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-gh"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-yt"></span></a>
+                      </li>
+                  </ul>
+              </li>
+
+              <li class="participants-list__item">
+                  <div class="participants-list__img-wrap">
+                      <img class="participants-list__img" src="pic/speaker_9.jpg" height="194" width="194" alt="">
+                  </div>
+
+                  <h4 class="participants-list__name">Paul van Dam</h4>
+
+                  <p class="participants-list__topic">Introducing and Implementing React at Coolblue</p>
+                  <p class="participants-list__desc">About the good parts of writing styles in javascript using JSS. Comparison to other existing CSS solutions and points about negative aspects got so far.</p>
+
+                  <ul class="socials">
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-tw"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-gh"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-yt"></span></a>
+                      </li>
+                  </ul>
+              </li>
+
+              <li class="participants-list__item">
+                  <div class="participants-list__img-wrap">
+                      <img class="participants-list__img" src="pic/speaker_10.jpg" height="194" width="194" alt="">
+                  </div>
+
+                  <h4 class="participants-list__name">Mike Grabowski</h4>
+
+                  <p class="participants-list__info">Base, London</p>
+                  <p class="participants-list__desc">Director of Open Source at Formidable and the author of libraries like Slick Carousel, McFly, react-music, webpack-dashboard, Spectacle.</p>
+
+                  <ul class="socials">
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-tw"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-gh"></span></a>
+                      </li>
+
+                      <li class="socials__item">
+                          <a class="socials__link" href="#"><span class="icon-yt"></span></a>
+                      </li>
+                  </ul>
+              </li>-->
+
+    <!--<li class="participants-list__item">-->
+    <!--<p class="participants-list__propose-new">Join the club!</p>-->
+    <!--<a class="basic-btn red participants-list__btn" href="https://docs.google.com/forms/d/19HUzF0niKkdAjV335OVTWrG_i8PnTpW6IYNxHCCYPx8">submit proposal</a>-->
+    <!--</li>-->
+
+    <!--<li class="participants-list__item">-->
+    <!--&lt;!&ndash; empty &ndash;&gt;-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--</section>-->
 
     <!--
 		<section class="section shedule no-flex" id="shedule">
@@ -617,8 +636,8 @@
 			</div>
 		</section>-->
 
-		<section class="section contacts half-height" id="contacts">
-			<div class="container aligner">
+    <section class="section contacts half-height" id="contacts">
+      <div class="container aligner">
 
         <!-- <h2 class="section__title">Organizers</h2>
 
@@ -674,336 +693,337 @@
                     </li>
                 </ul>-->
 
-				<div class="socials-wrap">
-					<p class="socials-wrap__title">Follow us</p>
+        <div class="socials-wrap">
+          <p class="socials-wrap__title">Follow us</p>
 
-					<ul class="socials big red">
-						<li class="socials__item">
-							<a class="socials__link" href="https://twitter.com/amsterdamjs"><span class="icon-tw"></span></a>
-						</li>
+          <ul class="socials big red">
+            <li class="socials__item">
+              <a class="socials__link" href="https://twitter.com/amsterdamjs"><span class="icon-tw"></span></a>
+            </li>
 
-						<li class="socials__item">
-							<a class="socials__link" href="https://www.facebook.com/amsterdamjs/"><span class="icon-fb"></span></a>
-						</li>
+            <li class="socials__item">
+              <a class="socials__link" href="https://www.facebook.com/amsterdamjs/"><span class="icon-fb"></span></a>
+            </li>
 
-						<li class="socials__item">
-							<a class="socials__link" href="https://www.youtube.com/channel/UCQM428Hwrvxla8DCgjGONSQ"><span class="icon-yt"></span></a>
-						</li>
-					</ul>
-				</div>
+            <li class="socials__item">
+              <a class="socials__link" href="https://www.youtube.com/channel/UCQM428Hwrvxla8DCgjGONSQ"><span class="icon-yt"></span></a>
+            </li>
+          </ul>
+        </div>
 
-				<p class="help">
-					<a href="https://frontendamsterdam.com/proposals/AmsterdamJSConference.pdf" class="help__link">Interested in sponsoring?</a>
-					<a href="mailto:hi@frontendamsterdam.com" class="help__link">Interested in volunteering?</a>
-				</p>
+        <p class="help">
+          <a href="https://frontendamsterdam.com/proposals/AmsterdamJSConference.pdf" class="help__link">Interested in
+            sponsoring?</a>
+          <a href="mailto:hi@frontendamsterdam.com" class="help__link">Interested in volunteering?</a>
+        </p>
 
-			</div>
-		</section>
+      </div>
+    </section>
 
 
-	</main><!-- .content -->
+  </main><!-- .content -->
 
-	<footer class="footer">
+  <footer class="footer">
 
-		<div class="f-logo">
-			Event by<br/>
-			<a href="http://frontendamsterdam.com">Foundation Frontend Amsterdam</a>
-		</div>
+    <div class="f-logo">
+      Event by<br/>
+      <a href="http://frontendamsterdam.com">Foundation Frontend Amsterdam</a>
+    </div>
 
-	</footer><!-- .footer -->
+  </footer><!-- .footer -->
 
 </div>
 
 
 <script>
   function initMap() {
-	var mapDiv1 = document.getElementById('map1');
-	var map1 = new google.maps.Map(mapDiv1, {
-		center: {lat: 52.365976, lng: 4.916509},
-		zoom: 18,
-		disableDefaultUI: true,
-		draggable: false,
-		mapTypeId: google.maps.MapTypeId.SATELLITE
-	});
+    var mapDiv1 = document.getElementById('map1');
+    var map1 = new google.maps.Map(mapDiv1, {
+      center: {lat: 52.365976, lng: 4.916509},
+      zoom: 18,
+      disableDefaultUI: true,
+      draggable: false,
+      mapTypeId: google.maps.MapTypeId.SATELLITE
+    });
 
-	var mapDiv2 = document.getElementById('map2');
-	var map2 = new google.maps.Map(mapDiv2, {
-		center: {lat: 52.366378, lng: 4.915141},
-		zoom: 17,
-		disableDefaultUI: true,
-		draggable: false
-	});
+    var mapDiv2 = document.getElementById('map2');
+    var map2 = new google.maps.Map(mapDiv2, {
+      center: {lat: 52.366378, lng: 4.915141},
+      zoom: 17,
+      disableDefaultUI: true,
+      draggable: false
+    });
 
-	var styles = [
-		{
-			"featureType": "all",
-			"elementType": "labels.text.fill",
-			"stylers": [
-				{
-					"visibility": "on"
-				},
-				{
-					"saturation": "0"
-				},
-				{
-					"lightness": "-0"
-				},
-				{
-					"gamma": "2.00"
-				},
-				{
-					"color": "#252525"
-				}
-			]
-		},
-		{
-			"featureType": "all",
-			"elementType": "labels.text.stroke",
-			"stylers": [
-				{
-					"color": "#919191"
-				}
-			]
-		},
-		{
-			"featureType": "all",
-			"elementType": "labels.icon",
-			"stylers": [
-				{
-					"visibility": "on"
-				},
-				{
-					"saturation": "-100"
-				},
-				{
-					"gamma": "0.84"
-				},
-				{
-					"lightness": "-29"
-				}
-			]
-		},
-		{
-			"featureType": "administrative",
-			"elementType": "all",
-			"stylers": [
-				{
-					"saturation": "-100"
-				}
-			]
-		},
-		{
-			"featureType": "landscape",
-			"elementType": "all",
-			"stylers": [
-				{
-					"saturation": -100
-				},
-				{
-					"lightness": 65
-				},
-				{
-					"visibility": "on"
-				}
-			]
-		},
-		{
-			"featureType": "landscape.man_made",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"color": "#919191"
-				}
-			]
-		},
-		{
-			"featureType": "landscape.man_made",
-			"elementType": "geometry.stroke",
-			"stylers": [
-				{
-					"color": "#888888"
-				}
-			]
-		},
-		{
-			"featureType": "landscape.natural",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"color": "#888888"
-				}
-			]
-		},
-		{
-			"featureType": "poi",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"color": "#888888"
-				}
-			]
-		},
-		{
-			"featureType": "road",
-			"elementType": "all",
-			"stylers": [
-				{
-					"visibility": "on"
-				}
-			]
-		},
-		{
-			"featureType": "road",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"color": "#9b9c9c"
-				}
-			]
-		},
-		{
-			"featureType": "road",
-			"elementType": "labels.text.fill",
-			"stylers": [
-				{
-					"color": "#282828"
-				}
-			]
-		},
-		{
-			"featureType": "road.highway",
-			"elementType": "all",
-			"stylers": [
-				{
-					"visibility": "simplified"
-				}
-			]
-		},
-		{
-			"featureType": "road.local",
-			"elementType": "all",
-			"stylers": [
-				{
-					"visibility": "simplified"
-				}
-			]
-		},
-		{
-			"featureType": "road.local",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"color": "#969796"
-				}
-			]
-		},
-		{
-			"featureType": "transit",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"color": "#7c7c7c"
-				}
-			]
-		},
-		{
-			"featureType": "transit",
-			"elementType": "labels.text",
-			"stylers": [
-				{
-					"visibility": "simplified"
-				}
-			]
-		},
-		{
-			"featureType": "water",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"lightness": -25
-				},
-				{
-					"saturation": -97
-				},
-				{
-					"color": "#797979"
-				}
-			]
-		},
-		{
-			"featureType": "water",
-			"elementType": "labels",
-			"stylers": [
-				{
-					"lightness": -25
-				},
-				{
-					"saturation": -100
-				}
-			]
-		},
-		{
-			"featureType": "water",
-			"elementType": "labels.text.fill",
-			"stylers": [
-				{
-					"color": "#252525"
-				}
-			]
-		},
-		{
-			"featureType": "water",
-			"elementType": "labels.text.stroke",
-			"stylers": [
-				{
-					"color": "#ffffff"
-				}
-			]
-		}
-	];
+    var styles = [
+      {
+        "featureType": "all",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "visibility": "on"
+          },
+          {
+            "saturation": "0"
+          },
+          {
+            "lightness": "-0"
+          },
+          {
+            "gamma": "2.00"
+          },
+          {
+            "color": "#252525"
+          }
+        ]
+      },
+      {
+        "featureType": "all",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#919191"
+          }
+        ]
+      },
+      {
+        "featureType": "all",
+        "elementType": "labels.icon",
+        "stylers": [
+          {
+            "visibility": "on"
+          },
+          {
+            "saturation": "-100"
+          },
+          {
+            "gamma": "0.84"
+          },
+          {
+            "lightness": "-29"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative",
+        "elementType": "all",
+        "stylers": [
+          {
+            "saturation": "-100"
+          }
+        ]
+      },
+      {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+          {
+            "saturation": -100
+          },
+          {
+            "lightness": 65
+          },
+          {
+            "visibility": "on"
+          }
+        ]
+      },
+      {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#919191"
+          }
+        ]
+      },
+      {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.stroke",
+        "stylers": [
+          {
+            "color": "#888888"
+          }
+        ]
+      },
+      {
+        "featureType": "landscape.natural",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#888888"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#888888"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+          {
+            "visibility": "on"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#9b9c9c"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#282828"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+          {
+            "visibility": "simplified"
+          }
+        ]
+      },
+      {
+        "featureType": "road.local",
+        "elementType": "all",
+        "stylers": [
+          {
+            "visibility": "simplified"
+          }
+        ]
+      },
+      {
+        "featureType": "road.local",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#969796"
+          }
+        ]
+      },
+      {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#7c7c7c"
+          }
+        ]
+      },
+      {
+        "featureType": "transit",
+        "elementType": "labels.text",
+        "stylers": [
+          {
+            "visibility": "simplified"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "lightness": -25
+          },
+          {
+            "saturation": -97
+          },
+          {
+            "color": "#797979"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "labels",
+        "stylers": [
+          {
+            "lightness": -25
+          },
+          {
+            "saturation": -100
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#252525"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#ffffff"
+          }
+        ]
+      }
+    ];
 
-	var marker1 = new google.maps.Marker({
-		position: new google.maps.LatLng(52.366018, 4.914129),
-		map: map2,
-		title: 'conf',
-		icon: 'svg/marker_1.svg'
-	});
+    var marker1 = new google.maps.Marker({
+      position: new google.maps.LatLng(52.366018, 4.914129),
+      map: map2,
+      title: 'conf',
+      icon: 'svg/marker_1.svg'
+    });
 
-	var marker2 = new google.maps.Marker({
-		position: new google.maps.LatLng(52.365548, 4.914928),
-		map: map2,
-		title: 'coffee break',
-		icon: 'svg/marker_2.svg'
-	});
+    var marker2 = new google.maps.Marker({
+      position: new google.maps.LatLng(52.365548, 4.914928),
+      map: map2,
+      title: 'coffee break',
+      icon: 'svg/marker_2.svg'
+    });
 
-	var marker3 = new google.maps.Marker({
-		position: new google.maps.LatLng(52.365553, 4.916189),
-		map: map2,
-		title: 'dinner',
-		icon: 'svg/marker_3.svg',
-		zIndex:99999999
-	});
+    var marker3 = new google.maps.Marker({
+      position: new google.maps.LatLng(52.365553, 4.916189),
+      map: map2,
+      title: 'dinner',
+      icon: 'svg/marker_3.svg',
+      zIndex: 99999999
+    });
 
-	var marker4 = new google.maps.Marker({
-		position: new google.maps.LatLng(52.364561, 4.918036),
-		map: map2,
-		title: 'lunch',
-		icon: 'svg/marker_4.svg'
-	});
+    var marker4 = new google.maps.Marker({
+      position: new google.maps.LatLng(52.364561, 4.918036),
+      map: map2,
+      title: 'lunch',
+      icon: 'svg/marker_4.svg'
+    });
 
-	var marker4 = new google.maps.Marker({
-		position: new google.maps.LatLng(52.366641, 4.918892),
-		map: map2,
-		title: 'lunch',
-		icon: 'svg/marker_5.svg'
-	});
+    var marker4 = new google.maps.Marker({
+      position: new google.maps.LatLng(52.366641, 4.918892),
+      map: map2,
+      title: 'lunch',
+      icon: 'svg/marker_5.svg'
+    });
 
-	map2.setOptions({styles: styles});
+    map2.setOptions({styles: styles});
   }
 </script>
 
 <script async defer
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-ZEocFpuybFyJZg92LhWsvIJdo56S34s&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-ZEocFpuybFyJZg92LhWsvIJdo56S34s&callback=initMap">
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -1011,11 +1031,11 @@
 
 <script type="text/javascript">
   var _gauges = _gauges || [];
-  (function() {
-    var t   = document.createElement('script');
-    t.type  = 'text/javascript';
+  (function () {
+    var t = document.createElement('script');
+    t.type = 'text/javascript';
     t.async = true;
-    t.id    = 'gauges-tracker';
+    t.id = 'gauges-tracker';
     t.setAttribute('data-site-id', '58496fdd4b2ffa62230141f0');
     t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
     t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';

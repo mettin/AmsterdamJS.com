@@ -52,6 +52,10 @@
 		position: relative;
 		display: inline-block;
 
+        &_red {
+          background-color: rgba(237, 4, 16, .65);
+        }
+
 		&:hover{
 			&:after{
 				transform: translateY(-100%);
