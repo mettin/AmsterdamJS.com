@@ -3,6 +3,16 @@
 
 /*==========  Non-Mobile First Method  ==========*/
 
+@media only screen and (max-width : 1340px) {
+
+	.location{
+
+		&__desc{
+			height: 863px;
+			padding: 60px 170px;
+		}
+	}
+}
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	.home{
@@ -44,11 +54,19 @@
 
 		&__desc{
 			height: 863px;
-			padding: 30px 0;
+			padding: 30px 120px;
 		}
 
 		&__info{
 			margin: 20px 0 30px;
+		}
+
+		.slider-nav{
+			.slick-next,
+			.slick-prev{
+				width: 100px;
+				height: 100px;
+			}
 		}
 	}
 
@@ -235,6 +253,15 @@
 		}
 	}
 
+
+	.location{
+
+		&__desc{
+			height: 863px;
+			padding: 30px 0;
+		}
+	}
+
 	.slider-nav{
 		bottom: 20px;
 	}
@@ -283,6 +310,10 @@
 				margin: 0;
 			}
 		}
+	}
+
+	.slider-nav{
+		display: none;
 	}
 
 	.socials{

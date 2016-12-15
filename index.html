@@ -108,19 +108,49 @@
 		</section>
 
 		<section class="section location no-flex" id="location">
+			<div class="slider-wrap clearfix">
+				<div class="slider-nav"></div>
+				
+				<ul class="slider">
+					<li class="slider__item" style="background: url(pic/place.jpg) center center no-repeat; background-size: cover;">
+						<div class="location__desc">
+							<div class="container aligner">
+								<h2 class="section__title">location</h2>
+								<p class="section__subtitle">Natura Artis Magistra</p>
+								<p class="section__desc">
+									The oldest Zoo in The Netherlands and one of the oldest nature parks of mainland Europe. Artis Royal Zoo is an unique place both for carefully treated animals and visitors of all ages.<br>The Zoo territory includes few event spaces, aquarium, planetarium and 27 monumental buildings, most of which are used as enclosures for the animals, making Artis a unique cultural heritage of the 19th century.
+								</p>
+							</div>
+						</div>
+					</li>
 
-			<div class="location__desc">
-				<div class="container aligner">
-					<h2 class="section__title">location</h2>
-					<p class="section__subtitle">Natura Artis Magistra</p>
-					<p class="section__desc">
-            The oldest Zoo in The Netherlands and one of the oldest nature parks of mainland Europe. Artis Royal Zoo is an unique place both for carefully treated animals and visitors of all ages.<br>
-            The Zoo territory includes few event spaces, aquarium, planetarium and 27 monumental buildings, most of which are used as enclosures for the animals, making Artis a unique cultural heritage of the 19th century.
-          </p>
-				</div>
+					<li class="slider__item" style="background: url(pic/place_1.jpg) center center no-repeat; background-size: cover;">
+						<div class="location__desc">
+							<div class="container aligner">
+								<h2 class="section__title">location</h2>
+								<p class="section__subtitle">Natura Artis Magistra</p>
+								<p class="section__desc">
+									The oldest Zoo in The Netherlands and one of the oldest nature parks of mainland Europe. Artis Royal Zoo is an unique place both for carefully treated animals and visitors of all ages.<br>The Zoo territory includes few event spaces, aquarium, planetarium and 27 monumental buildings, most of which are used as enclosures for the animals, making Artis a unique cultural heritage of the 19th century.
+								</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="slider__item" style="background: url(pic/place_1.jpg) center center no-repeat; background-size: cover;">
+						<div class="location__desc">
+							<div class="container aligner">
+								<h2 class="section__title">location</h2>
+								<p class="section__subtitle">Natura Artis Magistra</p>
+								<p class="section__desc">
+									The oldest Zoo in The Netherlands and one of the oldest nature parks of mainland Europe. Artis Royal Zoo is an unique place both for carefully treated animals and visitors of all ages.<br>The Zoo territory includes few event spaces, aquarium, planetarium and 27 monumental buildings, most of which are used as enclosures for the animals, making Artis a unique cultural heritage of the 19th century.
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
 			</div>
 
-			<!-- <div class="map">
+			 <div class="map">
 				<div class="map__content">
 					<div class="map__desc">
 						<p class="map__title">Plantage Kerklaan 38-40<br/>
@@ -131,7 +161,7 @@
 				</div>
 
 				<div id="map2"></div>
-			</div>-->
+			</div>
 		</section>
 
 		<!--<section class="section speakers half-height" id="speakers">-->
@@ -672,289 +702,297 @@
 
 </div>
 
-<!--<script>-->
-  <!--function initMap() {-->
-	<!--var mapDiv1 = document.getElementById('map1');-->
-	<!--var map1 = new google.maps.Map(mapDiv1, {-->
-		<!--center: {lat: 52.365976, lng: 4.916509},-->
-		<!--zoom: 18,-->
-		<!--disableDefaultUI: true,-->
-		<!--draggable: false,-->
-		<!--mapTypeId: google.maps.MapTypeId.SATELLITE-->
-	<!--});-->
 
-	<!--var mapDiv2 = document.getElementById('map2');-->
-	<!--var map2 = new google.maps.Map(mapDiv2, {-->
-		<!--center: {lat: 52.366633, lng: 4.915365},-->
-		<!--zoom: 17,-->
-		<!--disableDefaultUI: true,-->
-		<!--draggable: false-->
-	<!--});-->
+<script>
+  function initMap() {
+	var mapDiv1 = document.getElementById('map1');
+	var map1 = new google.maps.Map(mapDiv1, {
+		center: {lat: 52.365976, lng: 4.916509},
+		zoom: 18,
+		disableDefaultUI: true,
+		draggable: false,
+		mapTypeId: google.maps.MapTypeId.SATELLITE
+	});
 
-	<!--var styles = [-->
-		<!--{-->
-			<!--"featureType": "all",-->
-			<!--"elementType": "labels.text.fill",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"visibility": "on"-->
-				<!--},-->
-				<!--{-->
-					<!--"saturation": "0"-->
-				<!--},-->
-				<!--{-->
-					<!--"lightness": "-0"-->
-				<!--},-->
-				<!--{-->
-					<!--"gamma": "2.00"-->
-				<!--},-->
-				<!--{-->
-					<!--"color": "#252525"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "all",-->
-			<!--"elementType": "labels.text.stroke",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"color": "#919191"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "all",-->
-			<!--"elementType": "labels.icon",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"visibility": "on"-->
-				<!--},-->
-				<!--{-->
-					<!--"saturation": "-100"-->
-				<!--},-->
-				<!--{-->
-					<!--"gamma": "0.84"-->
-				<!--},-->
-				<!--{-->
-					<!--"lightness": "-29"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "administrative",-->
-			<!--"elementType": "all",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"saturation": "-100"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "landscape",-->
-			<!--"elementType": "all",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"saturation": -100-->
-				<!--},-->
-				<!--{-->
-					<!--"lightness": 65-->
-				<!--},-->
-				<!--{-->
-					<!--"visibility": "on"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "landscape.man_made",-->
-			<!--"elementType": "geometry.fill",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"color": "#919191"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "landscape.man_made",-->
-			<!--"elementType": "geometry.stroke",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"color": "#888888"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "landscape.natural",-->
-			<!--"elementType": "geometry.fill",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"color": "#888888"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "poi",-->
-			<!--"elementType": "geometry",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"color": "#888888"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "road",-->
-			<!--"elementType": "all",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"visibility": "on"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "road",-->
-			<!--"elementType": "geometry.fill",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"color": "#9b9c9c"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "road",-->
-			<!--"elementType": "labels.text.fill",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"color": "#282828"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "road.highway",-->
-			<!--"elementType": "all",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"visibility": "simplified"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "road.local",-->
-			<!--"elementType": "all",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"visibility": "simplified"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "road.local",-->
-			<!--"elementType": "geometry.fill",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"color": "#969796"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "transit",-->
-			<!--"elementType": "geometry",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"color": "#7c7c7c"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "transit",-->
-			<!--"elementType": "labels.text",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"visibility": "simplified"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "water",-->
-			<!--"elementType": "geometry",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"lightness": -25-->
-				<!--},-->
-				<!--{-->
-					<!--"saturation": -97-->
-				<!--},-->
-				<!--{-->
-					<!--"color": "#797979"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "water",-->
-			<!--"elementType": "labels",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"lightness": -25-->
-				<!--},-->
-				<!--{-->
-					<!--"saturation": -100-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "water",-->
-			<!--"elementType": "labels.text.fill",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"color": "#252525"-->
-				<!--}-->
-			<!--]-->
-		<!--},-->
-		<!--{-->
-			<!--"featureType": "water",-->
-			<!--"elementType": "labels.text.stroke",-->
-			<!--"stylers": [-->
-				<!--{-->
-					<!--"color": "#ffffff"-->
-				<!--}-->
-			<!--]-->
-		<!--}-->
-	<!--];-->
+	var mapDiv2 = document.getElementById('map2');
+	var map2 = new google.maps.Map(mapDiv2, {
+		center: {lat: 52.366378, lng: 4.915141},
+		zoom: 17,
+		disableDefaultUI: true,
+		draggable: false
+	});
 
-	<!--var marker1 = new google.maps.Marker({-->
-		<!--position: new google.maps.LatLng(52.366898, 4.912581),-->
-		<!--map: map2,-->
-		<!--title: 'conf',-->
-		<!--icon: 'svg/marker_1.svg'-->
-	<!--});-->
+	var styles = [
+		{
+			"featureType": "all",
+			"elementType": "labels.text.fill",
+			"stylers": [
+				{
+					"visibility": "on"
+				},
+				{
+					"saturation": "0"
+				},
+				{
+					"lightness": "-0"
+				},
+				{
+					"gamma": "2.00"
+				},
+				{
+					"color": "#252525"
+				}
+			]
+		},
+		{
+			"featureType": "all",
+			"elementType": "labels.text.stroke",
+			"stylers": [
+				{
+					"color": "#919191"
+				}
+			]
+		},
+		{
+			"featureType": "all",
+			"elementType": "labels.icon",
+			"stylers": [
+				{
+					"visibility": "on"
+				},
+				{
+					"saturation": "-100"
+				},
+				{
+					"gamma": "0.84"
+				},
+				{
+					"lightness": "-29"
+				}
+			]
+		},
+		{
+			"featureType": "administrative",
+			"elementType": "all",
+			"stylers": [
+				{
+					"saturation": "-100"
+				}
+			]
+		},
+		{
+			"featureType": "landscape",
+			"elementType": "all",
+			"stylers": [
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": 65
+				},
+				{
+					"visibility": "on"
+				}
+			]
+		},
+		{
+			"featureType": "landscape.man_made",
+			"elementType": "geometry.fill",
+			"stylers": [
+				{
+					"color": "#919191"
+				}
+			]
+		},
+		{
+			"featureType": "landscape.man_made",
+			"elementType": "geometry.stroke",
+			"stylers": [
+				{
+					"color": "#888888"
+				}
+			]
+		},
+		{
+			"featureType": "landscape.natural",
+			"elementType": "geometry.fill",
+			"stylers": [
+				{
+					"color": "#888888"
+				}
+			]
+		},
+		{
+			"featureType": "poi",
+			"elementType": "geometry",
+			"stylers": [
+				{
+					"color": "#888888"
+				}
+			]
+		},
+		{
+			"featureType": "road",
+			"elementType": "all",
+			"stylers": [
+				{
+					"visibility": "on"
+				}
+			]
+		},
+		{
+			"featureType": "road",
+			"elementType": "geometry.fill",
+			"stylers": [
+				{
+					"color": "#9b9c9c"
+				}
+			]
+		},
+		{
+			"featureType": "road",
+			"elementType": "labels.text.fill",
+			"stylers": [
+				{
+					"color": "#282828"
+				}
+			]
+		},
+		{
+			"featureType": "road.highway",
+			"elementType": "all",
+			"stylers": [
+				{
+					"visibility": "simplified"
+				}
+			]
+		},
+		{
+			"featureType": "road.local",
+			"elementType": "all",
+			"stylers": [
+				{
+					"visibility": "simplified"
+				}
+			]
+		},
+		{
+			"featureType": "road.local",
+			"elementType": "geometry.fill",
+			"stylers": [
+				{
+					"color": "#969796"
+				}
+			]
+		},
+		{
+			"featureType": "transit",
+			"elementType": "geometry",
+			"stylers": [
+				{
+					"color": "#7c7c7c"
+				}
+			]
+		},
+		{
+			"featureType": "transit",
+			"elementType": "labels.text",
+			"stylers": [
+				{
+					"visibility": "simplified"
+				}
+			]
+		},
+		{
+			"featureType": "water",
+			"elementType": "geometry",
+			"stylers": [
+				{
+					"lightness": -25
+				},
+				{
+					"saturation": -97
+				},
+				{
+					"color": "#797979"
+				}
+			]
+		},
+		{
+			"featureType": "water",
+			"elementType": "labels",
+			"stylers": [
+				{
+					"lightness": -25
+				},
+				{
+					"saturation": -100
+				}
+			]
+		},
+		{
+			"featureType": "water",
+			"elementType": "labels.text.fill",
+			"stylers": [
+				{
+					"color": "#252525"
+				}
+			]
+		},
+		{
+			"featureType": "water",
+			"elementType": "labels.text.stroke",
+			"stylers": [
+				{
+					"color": "#ffffff"
+				}
+			]
+		}
+	];
 
-	<!--var marker2 = new google.maps.Marker({-->
-		<!--position: new google.maps.LatLng(52.367406, 4.915730),-->
-		<!--map: map2,-->
-		<!--title: 'coffee break',-->
-		<!--icon: 'svg/marker_2.svg'-->
-	<!--});-->
+	var marker1 = new google.maps.Marker({
+		position: new google.maps.LatLng(52.366018, 4.914129),
+		map: map2,
+		title: 'conf',
+		icon: 'svg/marker_1.svg'
+	});
 
-	<!--var marker3 = new google.maps.Marker({-->
-		<!--position: new google.maps.LatLng(52.365919, 4.914963),-->
-		<!--map: map2,-->
-		<!--title: 'dinner',-->
-		<!--icon: 'svg/marker_3.svg',-->
-		<!--zIndex:99999999-->
-	<!--});-->
+	var marker2 = new google.maps.Marker({
+		position: new google.maps.LatLng(52.365548, 4.914928),
+		map: map2,
+		title: 'coffee break',
+		icon: 'svg/marker_2.svg'
+	});
 
-	<!--var marker4 = new google.maps.Marker({-->
-		<!--position: new google.maps.LatLng(52.365251, 4.918772),-->
-		<!--map: map2,-->
-		<!--title: 'lunch',-->
-		<!--icon: 'svg/marker_4.svg'-->
-	<!--});-->
+	var marker3 = new google.maps.Marker({
+		position: new google.maps.LatLng(52.365553, 4.916189),
+		map: map2,
+		title: 'dinner',
+		icon: 'svg/marker_3.svg',
+		zIndex:99999999
+	});
 
-	<!--map2.setOptions({styles: styles});-->
-  <!--}-->
-<!--</script>-->
+	var marker4 = new google.maps.Marker({
+		position: new google.maps.LatLng(52.364561, 4.918036),
+		map: map2,
+		title: 'lunch',
+		icon: 'svg/marker_4.svg'
+	});
 
-<!--<script async defer-->
-	<!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-ZEocFpuybFyJZg92LhWsvIJdo56S34s&callback=initMap">-->
-<!--</script>-->
+	var marker4 = new google.maps.Marker({
+		position: new google.maps.LatLng(52.366641, 4.918892),
+		map: map2,
+		title: 'lunch',
+		icon: 'svg/marker_5.svg'
+	});
+
+	map2.setOptions({styles: styles});
+  }
+</script>
+
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-ZEocFpuybFyJZg92LhWsvIJdo56S34s&callback=initMap">
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
