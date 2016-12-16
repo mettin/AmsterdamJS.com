@@ -7,7 +7,7 @@
   <meta name="keywords" content=""/>
   <meta name="description" content=""/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="css/main.css?16122016"/>
+  <link rel="stylesheet" href="css/main.css?16122016-2"/>
   <link rel="shortcut icon" href="img/favicon.png"/>
 
   <!--[if lt IE 9]>
@@ -43,7 +43,7 @@
   <main class="content">
 
     <section class="section home" id="home">
-      <video class="home__video" preload="auto" muted autoplay loop poster="img/dummy_bg.jpg" id="bgvid">
+      <video class="home__video" preload="auto" muted autoplay loop poster="img/dummy_bg.jpg?v2" id="bgvid">
         <source src="video/video.webm" type="video/webm">
         <source src="video/video.mp4" type="video/mp4">
       </video>
@@ -67,9 +67,6 @@
         </div>
 
       </div>
-
-      <div id="map1"></div>
-
     </section>
 
     <section class="section event no-flex" id="event">
@@ -722,15 +719,6 @@
 
 <script>
   function initMap() {
-    var mapDiv1 = document.getElementById('map1');
-    var map1 = new google.maps.Map(mapDiv1, {
-      center: {lat: 52.365976, lng: 4.916509},
-      zoom: 18,
-      disableDefaultUI: true,
-      draggable: false,
-      mapTypeId: google.maps.MapTypeId.SATELLITE
-    });
-
     var mapDiv2 = document.getElementById('map2');
     var map2 = new google.maps.Map(mapDiv2, {
       center: {lat: 52.366378, lng: 4.915141},

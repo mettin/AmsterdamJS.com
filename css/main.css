@@ -820,7 +820,7 @@ h6 {
     max-width: 770px; }
   .section.home {
     text-align: center;
-    background: url(../img/dummy_bg.jpg) no-repeat;
+    background: url(../img/dummy_bg.jpg?v2) no-repeat center top;
     background-size: cover;
     color: #fff; }
   .section.event {
@@ -876,6 +876,9 @@ h6 {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background-size: cover; }
+    @media all and (max-width: 1024px) {
+      .home__video {
+        display: none; } }
   .home__overlay {
     position: absolute;
     left: 0;
@@ -1259,9 +1262,7 @@ h6 {
   height: 100%; }
   .slider__item {
     position: relative;
-    /*height: 728px;*/
-    background-size: cover;
-    outline: none; }
+    background-size: cover; }
 
 /* Footer
 -----------------------------------------------------------------------------*/
