@@ -7,7 +7,7 @@ var sass = require('gulp-sass');
 var args = minimist(process.argv.slice(2));
 
 gulp.task('deploy', function () {
-  var remotePath = '/domains/amsterdamjs.rocks/';
+  var remotePath = '/domains/amsterdamjs.com/';
   var conn = ftp.create({
     host: 'indigo.elastictech.org',
     user: args.user,
