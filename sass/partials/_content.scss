@@ -268,6 +268,25 @@
 	}
 }
 
+.follow{
+  .icon-tw{
+    position: relative;
+    top: -1px;
+    font-size: 41px;
+  }
+  .icon-fb{
+    font-size: 41px;
+  }
+  .icon-yt{
+    position: relative;
+    top: -2px;
+    font-size: 43px;
+  }
+  .icon-gh{
+    font-size: 41px;
+  }
+}
+
 .socials{
 	padding: 0;
 	margin: 52px 0 87px;
@@ -300,23 +319,6 @@
 			.icon-gh{
 				color: #333;
 			}
-		}
-
-		.icon-tw{
-			position: relative;
-			top: -1px;
-			font-size: 41px;
-		}
-		.icon-fb{
-			font-size: 41px;
-		}
-		.icon-yt{
-			position: relative;
-			top: -2px;
-			font-size: 43px;
-		}
-		.icon-gh{
-			font-size: 20px;
 		}
 	}
 
@@ -410,7 +412,8 @@
 			margin: 16px 0 12px;
 			padding: 0 0 0 45px;
 
-			a{
+			a {
+        text-decoration: underline !important;
 				color: #000;
 			}
 		}
@@ -468,6 +471,7 @@
 		margin: 16px 0;
 
 		a{
+      text-decoration: underline;
 			color: #000;
 		}
 	}

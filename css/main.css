@@ -956,6 +956,22 @@ h6 {
   .socials-wrap .socials {
     margin: 22px 0 22px; }
 
+.follow .icon-tw {
+  position: relative;
+  top: -1px;
+  font-size: 41px; }
+
+.follow .icon-fb {
+  font-size: 41px; }
+
+.follow .icon-yt {
+  position: relative;
+  top: -2px;
+  font-size: 43px; }
+
+.follow .icon-gh {
+  font-size: 41px; }
+
 .socials {
   padding: 0;
   margin: 52px 0 87px;
@@ -979,18 +995,6 @@ h6 {
       color: #e62216; }
     .socials__link:hover .icon-gh {
       color: #333; }
-    .socials__link .icon-tw {
-      position: relative;
-      top: -1px;
-      font-size: 41px; }
-    .socials__link .icon-fb {
-      font-size: 41px; }
-    .socials__link .icon-yt {
-      position: relative;
-      top: -2px;
-      font-size: 43px; }
-    .socials__link .icon-gh {
-      font-size: 20px; }
   .socials.red .socials__link {
     color: #fe020e; }
   .socials.big .socials__item {
@@ -1054,6 +1058,7 @@ h6 {
       margin: 16px 0 12px;
       padding: 0 0 0 45px; }
       .participants-list.orgs .participants-list__desc a {
+        text-decoration: underline !important;
         color: #000; }
     .participants-list.orgs .socials {
       text-align: left;
@@ -1086,6 +1091,7 @@ h6 {
     color: #5a5959;
     margin: 16px 0; }
     .participants-list__desc a {
+      text-decoration: underline;
       color: #000; }
   .participants-list__propose-new {
     font: 26px/1.32 "LatoLight", sans-serif;
