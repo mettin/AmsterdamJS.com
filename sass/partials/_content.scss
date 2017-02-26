@@ -258,6 +258,10 @@
 	margin: 35px 0 35px;
 	text-align: center;
 
+  &_left {
+    text-align: left;
+  }
+
 	&__title{
 		font: 40px/1.6 $lato;
 		margin: 30px 0 22px;
