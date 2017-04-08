@@ -1378,7 +1378,10 @@ h6 {
     max-height: 122px;
     text-align: center; }
   .sponsors-block__img-wrap.silver {
-    width: 20%; }
+    width: 20%;
+    margin-bottom: 0; }
+  .sponsors-block__img-wrap.silver.horizontal {
+    width: 28%; }
   .sponsors-block__img {
     display: inline-block;
     width: auto;
@@ -1620,6 +1623,8 @@ h6 {
     text-align: center; }
   .sponsors-block__img-wrap.silver {
     width: 32%; }
+  .sponsors-block__img-wrap.silver.horizontal {
+    width: 40%; }
   .help__link {
     margin: 10px 0;
     display: block; }

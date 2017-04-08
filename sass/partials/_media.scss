@@ -112,6 +112,11 @@
 
 		&__img-wrap.silver {
 			width: 20%;
+      margin-bottom: 0;
+		}
+
+		&__img-wrap.silver.horizontal {
+			width: 28%;
 		}
 
 		&__img{
@@ -545,6 +550,10 @@
 
 		&__img-wrap.silver {
 			width: 32%;
+		}
+
+		&__img-wrap.silver.horizontal {
+			width: 40%;
 		}
 	}
 
