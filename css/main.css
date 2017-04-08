@@ -1377,6 +1377,8 @@ h6 {
     height: 32%;
     max-height: 122px;
     text-align: center; }
+  .sponsors-block__img-wrap.silver {
+    width: 20%; }
   .sponsors-block__img {
     display: inline-block;
     width: auto;
@@ -1610,6 +1612,14 @@ h6 {
   .sponsors-block__desc {
     font-size: 22px;
     padding: 0 10px; }
+  .sponsors-block__img-wrap {
+    margin: 20px 0;
+    width: 49%;
+    height: 49%;
+    max-height: 122px;
+    text-align: center; }
+  .sponsors-block__img-wrap.silver {
+    width: 32%; }
   .help__link {
     margin: 10px 0;
     display: block; }
