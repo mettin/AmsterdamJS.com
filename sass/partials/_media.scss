@@ -110,6 +110,15 @@
 			text-align: center;
 		}
 
+		&__img-wrap.silver {
+			width: 20%;
+      margin-bottom: 0;
+		}
+
+		&__img-wrap.silver.horizontal {
+			width: 28%;
+		}
+
 		&__img{
 			display: inline-block;
 			width: auto;
@@ -139,7 +148,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 680px) {
-	
+
 	.header{
 		top: 0;
 		bottom: auto;
@@ -372,7 +381,7 @@
 
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
 	.container{
@@ -525,10 +534,26 @@
 	}
 
 	.sponsors-block{
-		
+
 		&__desc{
 			font-size: 22px;
 			padding: 0 10px;
+		}
+
+		&__img-wrap{
+			margin: 20px 0;
+			width: 49%;
+			height: 49%;
+			max-height: 122px;
+			text-align: center;
+		}
+
+		&__img-wrap.silver {
+			width: 32%;
+		}
+
+		&__img-wrap.silver.horizontal {
+			width: 40%;
 		}
 	}
 
