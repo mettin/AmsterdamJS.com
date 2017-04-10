@@ -68,7 +68,7 @@
         </p>
 
         <div class="btn-block">
-          <a href="https://www.eventbrite.com/e/amsterdamjs-conference-2017-tickets-32375653451?aff=sitebtn" class="basic-btn white">Reserve your spot!</a>
+          <a href="https://www.eventbrite.com/e/amsterdamjs-conference-2017-tickets-32375653451?aff=sitebtn" class="basic-btn white" onclick="fbq('track', 'GoToEventbrite');">Reserve your spot!</a>
           <!--<a href="https://docs.google.com/forms/d/19HUzF0niKkdAjV335OVTWrG_i8PnTpW6IYNxHCCYPx8" class="basic-btn white">Submit your proposal</a>-->
           <!--<a href="https://twitter.com/amsterdamjs" class="basic-btn white">Follow us for updates</a>-->
         </div>
@@ -1192,6 +1192,23 @@
     s.parentNode.insertBefore(t, s);
   })();
 </script>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1374905195888955'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=1374905195888955&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
 
 </body>
 </html>
