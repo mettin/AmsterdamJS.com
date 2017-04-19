@@ -614,7 +614,12 @@
 	}
 }
 
+section.sponsors {
+  padding-top: 0;
+}
+
 .sponsors-block{
+  //text-align: center;
 
 	&__desc{
 		font: 22px/1.28 $latoL;
@@ -634,7 +639,7 @@
 	&__img-wrap{
 		display: inline-block;
 		vertical-align: middle;
-		margin: 25px 3.5%;
+		margin: 0px 3.5%;
 	}
 
 	&__img{

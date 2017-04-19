@@ -1218,9 +1218,6 @@ h6 {
   #map2 .gm-style-cc {
     display: none; }
 
-section.sponsors {
-  padding-top: 0; }
-
 .sponsors-block__desc {
   font: 22px/1.28 "LatoLight", sans-serif;
   font-weight: 300;
@@ -1237,7 +1234,7 @@ section.sponsors {
 .sponsors-block__img-wrap {
   display: inline-block;
   vertical-align: middle;
-  margin: 0px 3.5%; }
+  margin: 25px 3.5%; }
 
 .sponsors-block__img {
   display: block; }
