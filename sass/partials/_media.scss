@@ -119,6 +119,24 @@
 			width: 28%;
 		}
 
+		&__img-wrap.bronze {
+			width: 18%;
+      margin-bottom: 0;
+		}
+
+		&__img-wrap.bronze.horizontal {
+			width: 24%;
+		}
+
+		&__img-wrap.partner {
+			width: 15%;
+      margin-bottom: 0;
+		}
+
+		&__img-wrap.partner.horizontal {
+			width: 20%;
+		}
+
 		&__img{
 			display: inline-block;
 			width: auto;

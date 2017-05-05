@@ -1385,6 +1385,16 @@ section.sponsors {
     margin-bottom: 0; }
   .sponsors-block__img-wrap.silver.horizontal {
     width: 28%; }
+  .sponsors-block__img-wrap.bronze {
+    width: 18%;
+    margin-bottom: 0; }
+  .sponsors-block__img-wrap.bronze.horizontal {
+    width: 24%; }
+  .sponsors-block__img-wrap.partner {
+    width: 15%;
+    margin-bottom: 0; }
+  .sponsors-block__img-wrap.partner.horizontal {
+    width: 20%; }
   .sponsors-block__img {
     display: inline-block;
     width: auto;
