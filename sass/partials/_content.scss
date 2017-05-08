@@ -526,6 +526,12 @@
 		@extend .clearfix;
 	}
 
+  &__info {
+    font: 17px/1.64 $lato;
+  color: #434343;
+    margin-top: 5px;
+  }
+
 	&__time{
 		font: 20px/1.2 $latoL;
 		max-width: 9%;

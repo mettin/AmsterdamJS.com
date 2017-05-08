@@ -1156,6 +1156,10 @@ h6 {
     clear: both;
     margin: 0;
     padding: 15px 0; }
+  .shedule-list__info {
+    font: 17px/1.64 "Lato", sans-serif;
+    color: #434343;
+    margin-top: 5px; }
   .shedule-list__time {
     font: 20px/1.2 "LatoLight", sans-serif;
     max-width: 9%;
@@ -1613,7 +1617,7 @@ section.sponsors {
       font-size: 22px;
       font-weight: 600; }
     .shedule-list__desc {
-      padding: 0 0 0 22%; }
+      padding: 0 0 0 10%; }
     .shedule-list__p {
       line-height: 1.4; }
   .socials-wrap {
