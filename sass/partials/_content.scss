@@ -547,14 +547,18 @@
 		float: left;
 	}
 
+	&__speaker.full {
+		max-width: 60%;
+	}
+
 	&__desc{
 		max-width: 60%;
 		flex-grow: 1;
 		float: left;
 	}
 
-	&__title{
-		font: 24px/1.2 $lato;
+	&__title {
+		font: 24px/1.4 $lato;
 		font-weight: 500;
 		margin: 0;
 		padding: 0;
@@ -563,6 +567,10 @@
 			font: 16px/2.2 $lato;
 		}
 	}
+
+  &__title + &__title {
+    margin-top: 15px;
+  }
 
 	&__p{
 		font: 16px/1.9 $lato;
