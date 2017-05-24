@@ -1171,17 +1171,21 @@ h6 {
     max-width: 26%;
     width: 100%;
     float: left; }
+  .shedule-list__speaker.full {
+    max-width: 60%; }
   .shedule-list__desc {
     max-width: 60%;
     flex-grow: 1;
     float: left; }
   .shedule-list__title {
-    font: 24px/1.2 "Lato", sans-serif;
+    font: 24px/1.4 "Lato", sans-serif;
     font-weight: 500;
     margin: 0;
     padding: 0; }
     .shedule-list__title.thin {
       font: 16px/2.2 "Lato", sans-serif; }
+  .shedule-list__title + .shedule-list__title {
+    margin-top: 15px; }
   .shedule-list__p {
     font: 16px/1.9 "Lato", sans-serif;
     margin: 5px 0 0;
@@ -1610,14 +1614,14 @@ section.sponsors {
   .shedule-list {
     font-size: 22px; }
     .shedule-list__time {
-      max-width: 22%; }
+      max-width: 20%; }
     .shedule-list__speaker {
       max-width: 78%; }
     .shedule-list__title {
       font-size: 22px;
       font-weight: 600; }
     .shedule-list__desc {
-      padding: 0 0 0 10%; }
+      padding: 10px 0 0 20%; }
     .shedule-list__p {
       line-height: 1.4; }
   .socials-wrap {
@@ -1647,3 +1651,7 @@ section.sponsors {
     display: block; }
   .footer {
     padding: 45px 0 35px; } }
+
+@media only screen and (max-width: 320px) {
+  .basic-btn {
+    padding: 0 10px !important; } }

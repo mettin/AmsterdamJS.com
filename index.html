@@ -13,7 +13,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@amsterdamjs">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="css/main.css?08052017"/>
+  <link rel="stylesheet" href="css/main.css?21052017"/>
   <link rel="shortcut icon" href="img/favicon.png"/>
 
   <!--[if lt IE 9]>
@@ -33,14 +33,12 @@
 
       <nav class="main-nav">
         <ul class="main-menu">
-          <li class="main-menu__item"><a href="#event" class="main-menu__link">The Event</a></li>
           <li class="main-menu__item"><a href="#location" class="main-menu__link">Location</a></li>
           <li class="main-menu__item"><a href="#speakers" class="main-menu__link">Speakers</a></li>
-          <li class="main-menu__item"><a href="#talks" class="main-menu__link">Talks</a></li>
-          <li class="main-menu__item"><a href="https://www.eventbrite.com/e/amsterdamjs-conference-2017-tickets-32375653451?aff=sitebtn" class="main-menu__link" onclick="fbq('track', 'GoToEventbrite');">Tickets</a></li>
-          <!--<li class="main-menu__item"><a href="#shedule" class="main-menu__link">Schedule</a></li>-->
+          <li class="main-menu__item"><a href="#talks" class="main-menu__link">Talks & Schedule</a></li>
           <!--<li class="main-menu__item"><a href="#sponsors" class="main-menu__link">Sponsors</a></li>-->
           <li class="main-menu__item"><a href="#contacts" class="main-menu__link">Contact us</a></li>
+          <li class="main-menu__item"><a href="https://www.eventbrite.com/e/amsterdamjs-conference-2017-tickets-32375653451?aff=sitebtn" class="main-menu__link" target="_blank" onclick="fbq('track', 'GoToEventbrite');">Tickets</a></li>
           <!--<li class="main-menu__item main-menu__item_red"><a href="https://www.eventbrite.com/e/amsterdamjs-conference-2017-tickets-32375653451?aff=sitebtn" class="main-menu__link">Tickets</a></li>-->
         </ul>
       </nav>
@@ -620,6 +618,47 @@
             </ul>
           </li>
 
+          <li class="participants-list__item">
+            <div class="participants-list__img-wrap">
+              <img class="participants-list__img" src="pic/speakers/rik.jpg" height="194" width="194" alt="">
+            </div>
+
+            <h4 class="participants-list__name">Rik Arends</h4>
+
+            <p class="participants-list__info">Makepad, Amsterdam</p>
+            <p class="participants-list__desc">As a web developer since the early 2000s, Rik has lived through the ups and downs of browsers all the way from IE3 to Chrome 58. After leaving self founded Cloud9 four years ago to explore the new possibilities that WebGL offers for UI, a continuous stream of WebGL-related projects have appeared, including a JavaScript trace debugger, a compile-to-JavaScript language and a live coding prototyping framework.</p>
+
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link" href="https://twitter.com/rikarends"><span class="icon-tw"></span></a>
+              </li>
+
+              <li class="socials__item">
+                <a class="socials__link" href="https://github.com/makepad"><span class="icon-gh"></span></a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="participants-list__item">
+            <div class="participants-list__img-wrap">
+              <img class="participants-list__img" src="pic/speakers/ville.jpg" height="194" width="194" alt="">
+            </div>
+
+            <h4 class="participants-list__name">Ville Himberg</h4>
+
+            <p class="participants-list__info">Reaktor, Amsterdam</p>
+            <p class="participants-list__desc">Ville started his career at Reaktor as a software developer 10 years ago. He has seen Reaktor grow from a small Finnish engineering company to multinational digital powerhouse. Ville is passionate about company culture, branded services as marketing, and making sense of things. He is now the managing director of Reaktor Amsterdam and likes to bike everywhere full-speed.</p>
+
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link" href="https://twitter.com/vhimberg"><span class="icon-tw"></span></a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="participants-list__item"></li>
+          <li class="participants-list__item"></li>
+
           <!-- <li class="participants-list__item">
             <p class="participants-list__propose-new" style="text-align: center;">Join the club!</p>
             <a class="basic-btn red participants-list__btn"
@@ -630,314 +669,508 @@
       </div>
     </section>
 
-		<section class="section shedule no-flex" id="talks">
-			<div class="container">
+    <section class="section shedule no-flex" id="talks">
+      <div class="container">
 
-				<h2 class="section__title">Talks</h2>
+        <h2 class="section__title">Talks & Schedule</h2>
 
-				<ul class="shedule-list clearfix">
-					<!--<li class="shedule-list__item">-->
-						<!--<div class="shedule-list__container">-->
-							<!--<div class="shedule-list__time">10.00</div>-->
-							<!--<div class="shedule-list__speaker">Open up</div>-->
-							<!--<div class="shedule-list__desc">-->
-								<!--<h3 class="shedule-list__title thin">Say, HELLO!</h3>-->
-							<!--</div>-->
-						<!--</div>-->
-					<!--</li>-->
+        <ul class="shedule-list clearfix">
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">08:30</div>
+              <div class="shedule-list__speaker full">Registation & Welcome Breakfast</div>
+            </div>
+          </li>
 
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">09:30</div>
+              <div class="shedule-list__speaker full">Conference Opening</div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">09:40</div>
+              <div class="shedule-list__speaker">
                 Christian Heilmann
                 <div class="shedule-list__info">Microsoft</div>
               </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">JavaScript is a buffet, not the enemy</h3>
-								<p class="shedule-list__p">When you look at the JavaScript world these days you can get disheartened. On the one side there is an overwhelming offer of things you should know but are "considered harmful" by the time you have a chance to look at them. On the other side you have fire and brimstone talks about how relying on JavaScript makes you a terrible person. Let Chris set your mind at ease. Things aren't that grim or complicated.</p>
-							</div>
-						</div>
-					</li>
-
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
-                Michael Stanton
-                <div class="shedule-list__info">Google</div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">JavaScript Is a Buffet, Not the Enemy</h3>
+                <p class="shedule-list__p">When you look at the JavaScript world these days you can get disheartened. On
+                  the one side there is an overwhelming offer of things you should know but are "considered harmful" by
+                  the time you have a chance to look at them. On the other side you have fire and brimstone talks about
+                  how relying on JavaScript makes you a terrible person. Let Chris set your mind at ease. Things aren't
+                  that grim or complicated.</p>
               </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">V8 and How It Listens to You</h3>
-								<p class="shedule-list__p">The JavaScript language gets ever more powerful, but more complex to implement and deliver good performance. V8 has a new compiler pipeline and a unified approach to collecting feedback about your application. I’ll explain how we do it and present some problems. For example, in complex systems, facile "solutions" often distort the environment in unexpected ways. Welcome to the jungle *__*.</p>
-							</div>
-						</div>
-					</li>
+            </div>
+          </li>
 
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
-                Simona Cotin
-                <div class="shedule-list__info">Arista Networks</div>
-              </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">RxJS all things</h3>
-								<p class="shedule-list__p">Managing state in large application applications is hard. Managing async behavior is even harder. Let's talk about why reactive programming is awesome and how it can help with managing complexity, data and scaling your applications. Also, remember the callback hell?! Well, we once have been PROMISED that all will be good. And guess what, we OBSERVED we can do better. Let's deep dive into how observables are much better than promises.</p>
-							</div>
-						</div>
-					</li>
-
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
-                Dustin Whittle
-                <div class="shedule-list__info">Uber</div>
-              </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">Javascript @ Uber</h3>
-								<p class="shedule-list__p">Join this session for a deep dive on how Uber leverages javascript across its engineering orgs. From building frontend properties with a full javascript stack using express and react to the tools and infrastructure we use to automate best practices.</p>
-							</div>
-						</div>
-					</li>
-
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
-                Denis Radin
-                <div class="shedule-list__info">Werkspot</div>
-              </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">A Journey From Web to VR</h3>
-								<p class="shedule-list__p">Virtual Reality is a powerful trend which is not that related to front-end development so far, however it would be beneficial for both technologies to have a possibility to put existing Web applications into virtual worlds. Talk is about approaches you might take to drop your existing Web app into VR in order to provide new experiences for customers and get some fun for yourself</p>
-							</div>
-						</div>
-					</li>
-
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
-                Ahmed El Gabri
-                <div class="shedule-list__info">Lightspeed</div>
-              </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">Automating front-end refactoring</h3>
-								<p class="shedule-list__p">Refactoring or changing an API of a lib you maintain might not be a fun task. But sometimes it is required. If you are going to do it anyway, you don't want to do this manually anyway. So with the power of ASTs & codemods you can automate this & have confidence in the result</p>
-							</div>
-						</div>
-					</li>
-
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
-                Daijirō Wachi
-                <div class="shedule-list__info">CoolGames</div>
-              </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">Doctor Wombat</h3>
-								<p class="shedule-list__p">In the global OSS community, it often takes a time to solve users' problems, due to the differences of the time, language, environment and something the other things. The important thing in order not to waste time is to reduce the number of conversational balls at the issue thread. Daijiro will explain what we can do for them by referring to localization communities, tools, and npm doctor.</p>
-							</div>
-						</div>
-					</li>
-
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
-                Ádám Sándor
-                <div class="shedule-list__info">Container Solutions</div>
-              </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">Why you should care about Docker</h3>
-								<p class="shedule-list__p">Creating a stable and reproducible development environment can be a hassle. The more components you have the less feasible it becomes to run them all together on your laptop. Using Vagrant helps with reproducibility and isolation but putting all components on a single VM is very different from the way they will run in production. Docker comes to the rescue with lightweight containers that isolate each application component with minimal overhead.</p>
-							</div>
-						</div>
-					</li>
-
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">10:15</div>
+              <div class="shedule-list__speaker">
                 Hernán Magrini
                 <div class="shedule-list__info">Udacity</div>
               </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">The Road to Web Performance in 3 Critical Steps</h3>
-								<p class="shedule-list__p">Assuming everyone uses the web with a 10 Mbps connection and a Macbook Pro it's rather utopian. At Udacity we have a daily traffic of millions of page views from people all around the globe and we always aim to serve the best experience possible even if you're browsing the sites with an old Android with a 3G connection. We'll see what critical steps we follow to make sure we are making our sites as fast as possible.</p>
-							</div>
-						</div>
-					</li>
-
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
-                Sam Bellen
-                <div class="shedule-list__info">madewithlove</div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">The Road to Web Performance in 3 Critical Steps</h3>
+                <p class="shedule-list__p">Assuming everyone uses the web with a 10 Mbps connection and a Macbook Pro
+                  it's rather utopian. At Udacity we have a daily traffic of millions of page views from people all
+                  around the globe and we always aim to serve the best experience possible even if you're browsing the
+                  sites with an old Android with a 3G connection. We'll see what critical steps we follow to make sure
+                  we are making our sites as fast as possible.</p>
               </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">Changing live audio with the web-audio-api.</h3>
-								<p class="shedule-list__p">As a guitar player, I usually use some effect-pedals to change the sound of my guitar. I started wondering: “What if, it would be possible to recreate these pedals using the web-audio-api?”</p>
-							</div>
-						</div>
-					</li>
+            </div>
+          </li>
 
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
-                Vasilika Klimova
-                <div class="shedule-list__info">Artec3D</div>
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">10:50</div>
+              <div class="shedule-list__speaker full">Coffee Break</div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">11:20</div>
+              <div class="shedule-list__speaker">
+                Dustin Whittle
+                <div class="shedule-list__info">Uber</div>
               </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">WebGL Practical application</h3>
-								<p class="shedule-list__p">WebGL it's not so scary and difficult as many people think. Let`s have a quick tour over WebGL nature and ecosystem.</p>
-							</div>
-						</div>
-					</li>
-
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
-                Slobodan Stojanovic
-                <div class="shedule-list__info">Cloud Horizon</div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">Javascript @ Uber</h3>
+                <p class="shedule-list__p">Join this session for a deep dive on how Uber leverages javascript across its
+                  engineering orgs. From building frontend properties with a full javascript stack using express and
+                  react to the tools and infrastructure we use to automate best practices.</p>
               </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">The Hitchhiker's Guide to the Serverless Galaxy</h3>
-								<p class="shedule-list__p">What is Serverless, how it works and why are people talking about it? How many servers are there in Serverless computing? But most important of all, how and why Serverless can be important for you?<br> Don’t panic! This talk will take you to the journey through the Serverless Galaxy with Node.js.</p>
-							</div>
-						</div>
-					</li>
+            </div>
+          </li>
 
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
-                Ivano Malavolta
-                <div class="shedule-list__info">Vrije Universiteit Amsterdam</div>
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">11:55</div>
+              <div class="shedule-list__speaker">Lightning Talks</div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">Doctor Wombat</h3>
+                <h3 class="shedule-list__title">Using Custom Vision API to make your own vision intelligence
+                  application</h3>
+                <h3 class="shedule-list__title">Taming the async flow</h3>
+                <h3 class="shedule-list__title">Space as a Service, in JS</h3>
               </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">Are service workers draining my battery?</h3>
-								<p class="shedule-list__p">Mobile web apps represent a large share of the Internet today. However, they still lag behind native apps in terms of user experience. Progressive Web Apps (PWAs) are a new technology introduced by Google that aims at bridging this gap, with a set of APIs known as service workers at its core. In this talk Ivano presents an empirical study that evaluates the impact of service workers on the energy efficiency of PWAs, when operating in different network conditions on two different generations of mobile devices. This talk presents the results of the first empirical investigation on PWAs, showing that the PWA and service workers technology is promising in terms of energy efficiency.</p>
-							</div>
-						</div>
-					</li>
+            </div>
+          </li>
 
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
-                Roman Melnyk
-                <div class="shedule-list__info">Liberty Global (Ziggo)</div>
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">12:40</div>
+              <div class="shedule-list__speaker full">Lunch</div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">13:40</div>
+              <div class="shedule-list__speaker">
+                Michael Stanton
+                <div class="shedule-list__info">Google</div>
               </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">Taming the async flow</h3>
-								<p class="shedule-list__p">The asynchronousity is inevitable. Managing async things might be messy as we don’t know neither when nor even whether the async action takes place.There are a lot of techniques for handling asyncronousity. Let’s align them and point out the main principles of designing the async data flow. Respecting these principles won’t make you spend weekends debugging.</p>
-							</div>
-						</div>
-					</li>
-
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
-                Johan Gorter
-                <div class="shedule-list__info">AFAS</div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">V8 and How It Listens to You</h3>
+                <p class="shedule-list__p">The JavaScript language gets ever more powerful, but more complex to
+                  implement and deliver good performance. V8 has a new compiler pipeline and a unified approach to
+                  collecting feedback about your application. I’ll explain how we do it and present some problems. For
+                  example, in complex systems, facile "solutions" often distort the environment in unexpected ways.
+                  Welcome to the jungle *__*.</p>
               </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">Benefits of Virtual DOM</h3>
-								<p class="shedule-list__p">Virtual DOM is generally considered to give the best performance for web applications. How can this be given it is such an inefficient algorithm? I will give an overview of popular Virtual DOM implementations and I will introduce our Virtual DOM library, MaquetteJS. I will also show how Virtual DOM makes unit testing easy. I will demonstrate how we achieve 100% code coverage on all our visual components using fast-running NodeJS unit tests.</p>
-							</div>
-						</div>
-					</li>
+            </div>
+          </li>
 
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">14:15</div>
+              <div class="shedule-list__speaker">
                 Ingrid Epure
                 <div class="shedule-list__info">Intercom</div>
               </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">The art of keeping your application safe</h3>
-								<p class="shedule-list__p">Let's talk about security. We can all agree it is very important, however the general feeling about it is that it's a difficult and intimidating area to approach.  Furthermore,  is very often seen as something only backend-related, however front-end plays an important role as well.</p>
-							</div>
-						</div>
-					</li>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">The Art of Keeping Your Application Safe</h3>
+                <p class="shedule-list__p">Let's talk about security. We can all agree it is very important, however the
+                  general feeling about it is that it's a difficult and intimidating area to approach. Furthermore, is
+                  very often seen as something only backend-related, however front-end plays an important role as
+                  well.</p>
+              </div>
+            </div>
+          </li>
 
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">14:50</div>
+              <div class="shedule-list__speaker full">Coffee Break</div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">15:20</div>
+              <div class="shedule-list__speaker">
                 Yoshua Wuyts
                 <div class="shedule-list__info">Dat Project</div>
               </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">Browser Framework Fundamentals</h3>
-								<p class="shedule-list__p">Ok, let's try a thing. Close your eyes for a bit. No peeking. Now I want you to imagine the last time you wrote some browser code. Perhaps a component of sorts. Remember what that was like? yeah. Ok. Now I want you to imagine that was the very last time you had to write that component. New framework in town? No problem, still works. Wouldn't that be nice?</p>
-							</div>
-						</div>
-					</li>
-
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
-                Bart Jansen
-                <div class="shedule-list__info">Microsoft</div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">Browser Framework Fundamentals</h3>
+                <p class="shedule-list__p">Ok, let's try a thing. Close your eyes for a bit. No peeking. Now I want you
+                  to imagine the last time you wrote some browser code. Perhaps a component of sorts. Remember what that
+                  was like? yeah. Ok. Now I want you to imagine that was the very last time you had to write that
+                  component. New framework in town? No problem, still works. Wouldn't that be nice?</p>
               </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">Using Custom Vision API to make your own vision intelligence application</h3>
-								<p class="shedule-list__p">Not a Data Scientist, still a JavaScript enthusiast? You are in luck: I’ll be demoing a web application built on top of Microsoft’s new Custom Vision API. It allows you to train your images either programmatically or via a GUI, and with those REST endpoints you can easily add Artificial Intelligence to your (web) application.</p>
-							</div>
-						</div>
-					</li>
+            </div>
+          </li>
 
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">15:55</div>
+              <div class="shedule-list__speaker">
+                Johan Gorter
+                <div class="shedule-list__info">AFAS</div>
+              </div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">Benefits of Virtual DOM</h3>
+                <p class="shedule-list__p">Virtual DOM is generally considered to give the best performance for web
+                  applications. How can this be given it is such an inefficient algorithm? I will give an overview of
+                  popular Virtual DOM implementations and I will introduce our Virtual DOM library, MaquetteJS. I will
+                  also show how Virtual DOM makes unit testing easy. I will demonstrate how we achieve 100% code
+                  coverage on all our visual components using fast-running NodeJS unit tests.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">16:30</div>
+              <div class="shedule-list__speaker full">Coffee Break</div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">17:00</div>
+              <div class="shedule-list__speaker">
+                Ivano Malavolta
+                <div class="shedule-list__info">Vrije Universiteit Amsterdam</div>
+              </div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">Are Service Workers Draining My Battery?</h3>
+                <p class="shedule-list__p">Mobile web apps represent a large share of the Internet today. However, they
+                  still lag behind native apps in terms of user experience. Progressive Web Apps (PWAs) are a new
+                  technology introduced by Google that aims at bridging this gap, with a set of APIs known as service
+                  workers at its core. In this talk Ivano presents an empirical study that evaluates the impact of
+                  service workers on the energy efficiency of PWAs, when operating in different network conditions on
+                  two different generations of mobile devices. This talk presents the results of the first empirical
+                  investigation on PWAs, showing that the PWA and service workers technology is promising in terms of
+                  energy efficiency.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">17:35</div>
+              <div class="shedule-list__speaker">
+                Sam Bellen
+                <div class="shedule-list__info">madewithlove</div>
+              </div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">Changing Live Audio with the Web-Audio-Api</h3>
+                <p class="shedule-list__p">As a guitar player, I usually use some effect-pedals to change the sound of
+                  my guitar. I started wondering: “What if, it would be possible to recreate these pedals using the
+                  web-audio-api?”</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">18:10</div>
+              <div class="shedule-list__speaker full">Closing Words</div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">18:30</div>
+              <div class="shedule-list__speaker full">
+                Afterparty till 21:00
+                <div class="shedule-list__info">by <a href="http://bluefront.nl">Bluefront</a></div>
+              </div>
+            </div>
+          </li>
+
+          <h3 class="section__title">Tigers Track</h3>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">10:15</div>
+              <div class="shedule-list__speaker">
+                Ahmed El Gabri
+                <div class="shedule-list__info">Lightspeed</div>
+              </div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">Automating Front-End Refactoring</h3>
+                <p class="shedule-list__p">Refactoring or changing an API of a lib you maintain might not be a fun task.
+                  But sometimes it is required. If you are going to do it anyway, you don't want to do this manually
+                  anyway. So with the power of ASTs & codemods you can automate this & have confidence in the result</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">10:50</div>
+              <div class="shedule-list__speaker full">Coffee Break</div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">11:20</div>
+              <div class="shedule-list__speaker">
                 Albert Brand
                 <div class="shedule-list__info">Xebia</div>
               </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">WebAssembly - the final frontier</h3>
-								<p class="shedule-list__p">The new kid on the block in browser land is WebAssembly. It allows precompiled code to run at native speed, connected via JavaScript to your browser. But how does it work? What are the (dis)advantages? Can we optimise our SPA with it? With many examples, I will talk you through the setup, pitfalls and rough edges.</p>
-							</div>
-						</div>
-					</li>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">WebAssembly - the Final Frontier</h3>
+                <p class="shedule-list__p">The new kid on the block in browser land is WebAssembly. It allows
+                  precompiled code to run at native speed, connected via JavaScript to your browser. But how does it
+                  work? What are the (dis)advantages? Can we optimise our SPA with it? With many examples, I will talk
+                  you through the setup, pitfalls and rough edges.</p>
+              </div>
+            </div>
+          </li>
 
-					<li class="shedule-list__item">
-						<div class="shedule-list__container">
-							<!--<div class="shedule-list__time">10.30</div>-->
-							<div class="shedule-list__speaker">
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">11:55</div>
+              <div class="shedule-list__speaker">
+                Vasilika Klimova
+                <div class="shedule-list__info">Artec3D</div>
+              </div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">WebGL Practical Application</h3>
+                <p class="shedule-list__p">WebGL it's not so scary and difficult as many people think. Let`s have a
+                  quick tour over WebGL nature and ecosystem.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">12:30</div>
+              <div class="shedule-list__speaker full">Lunch</div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">13:40</div>
+              <div class="shedule-list__speaker">
+                Simona Cotin
+                <div class="shedule-list__info">Arista Networks</div>
+              </div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">RxJS All Things</h3>
+                <p class="shedule-list__p">Managing state in large application applications is hard. Managing async
+                  behavior is even harder. Let's talk about why reactive programming is awesome and how it can help with
+                  managing complexity, data and scaling your applications. Also, remember the callback hell?! Well, we
+                  once have been PROMISED that all will be good. And guess what, we OBSERVED we can do better. Let's
+                  deep dive into how observables are much better than promises.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">14:15</div>
+              <div class="shedule-list__speaker">
+                Rik Arends
+                <div class="shedule-list__info">Makepad</div>
+              </div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">Makepad - Rethinking Web UI's with WebGL</h3>
+                <p class="shedule-list__p">
+                  This talk is about <a href="http://makepad.github.io">makepad</a>, an experimental livecoding environment which renders every UI pixel using webGL and runs multithreaded. Makepad compiles JS to run on the GPU which opens up many powerful angles to styling and datavisualisation.<br>
+                  In this talk i will showcase the editor, rendering architecture and goals of Makepad: find the fun of programming.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">14:50</div>
+              <div class="shedule-list__speaker full">Coffee Break</div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">15:20</div>
+              <div class="shedule-list__speaker">
                 Grigory Petrov
                 <div class="shedule-list__info">Voximplant</div>
               </div>
-							<div class="shedule-list__desc">
-								<h3 class="shedule-list__title">Porting Web SDK from JS into TS</h3>
-								<p class="shedule-list__p">Typescript was warmly welcomed with all our developers from C++, Java and C# background. So it was only a question of time for our public JavaScript SDK to be completely rewritten in Typescript from scratch. In my talk I will focus on good and bad things that we experienced during development, and will tell how our initial thoughts played out.</p>
-							</div>
-						</div>
-					</li>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">Porting Web SDK from JS into TS</h3>
+                <p class="shedule-list__p">Typescript was warmly welcomed with all our developers from C++, Java and C#
+                  background. So it was only a question of time for our public JavaScript SDK to be completely rewritten
+                  in Typescript from scratch. In my talk I will focus on good and bad things that we experienced during
+                  development, and will tell how our initial thoughts played out.</p>
+              </div>
+            </div>
+          </li>
 
-					<!--<li class="shedule-list__item">-->
-						<!--<div class="shedule-list__container">-->
-							<!--<div class="shedule-list__time">17.00</div>-->
-							<!--<div class="shedule-list__speaker">Coffee Break!</div>-->
-							<!--<div class="shedule-list__desc">-->
-								<!--<h3 class="shedule-list__title thin">Lifes good</h3>-->
-							<!--</div>-->
-						<!--</div>-->
-					<!--</li>-->
-				</ul>
-			</div>
-		</section>
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">15:55</div>
+              <div class="shedule-list__speaker">
+                Denis Radin
+                <div class="shedule-list__info">Werkspot</div>
+              </div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">A Journey From Web to VR</h3>
+                <p class="shedule-list__p">Virtual Reality is a powerful trend which is not that related to front-end
+                  development so far, however it would be beneficial for both technologies to have a possibility to put
+                  existing Web applications into virtual worlds. Talk is about approaches you might take to drop your
+                  existing Web app into VR in order to provide new experiences for customers and get some fun for
+                  yourself</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">16:30</div>
+              <div class="shedule-list__speaker full">Coffee Break</div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">17:00</div>
+              <div class="shedule-list__speaker">
+                Ádám Sándor
+                <div class="shedule-list__info">Container Solutions</div>
+              </div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">Why You Should Care About Docker</h3>
+                <p class="shedule-list__p">Creating a stable and reproducible development environment can be a hassle.
+                  The more components you have the less feasible it becomes to run them all together on your laptop.
+                  Using Vagrant helps with reproducibility and isolation but putting all components on a single VM is
+                  very different from the way they will run in production. Docker comes to the rescue with lightweight
+                  containers that isolate each application component with minimal overhead.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <div class="shedule-list__time">17:35</div>
+              <div class="shedule-list__speaker">
+                Slobodan Stojanovic
+                <div class="shedule-list__info">Cloud Horizon</div>
+              </div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">The Hitchhiker's Guide to the Serverless Galaxy</h3>
+                <p class="shedule-list__p">What is Serverless, how it works and why are people talking about it? How
+                  many servers are there in Serverless computing? But most important of all, how and why Serverless can
+                  be important for you?<br> Don’t panic! This talk will take you to the journey through the Serverless
+                  Galaxy with Node.js.</p>
+              </div>
+            </div>
+          </li>
+
+          <h3 class="section__title">Lightning Talks</h3>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <!--<div class="shedule-list__time">13:30</div>-->
+              <div class="shedule-list__speaker">
+                Daijirō Wachi
+                <div class="shedule-list__info">CoolGames</div>
+              </div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">Doctor Wombat</h3>
+                <p class="shedule-list__p">In the global OSS community, it often takes a time to solve users' problems,
+                  due to the differences of the time, language, environment and something the other things. The
+                  important thing in order not to waste time is to reduce the number of conversational balls at the
+                  issue thread. Daijiro will explain what we can do for them by referring to localization communities,
+                  tools, and npm doctor.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <!--<div class="shedule-list__time">10.30</div>-->
+              <div class="shedule-list__speaker">
+                Bart Jansen
+                <div class="shedule-list__info">Microsoft</div>
+              </div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">Using Custom Vision API to make your own vision intelligence
+                  application</h3>
+                <p class="shedule-list__p">Not a Data Scientist, still a JavaScript enthusiast? You are in luck: I’ll be
+                  demoing a web application built on top of Microsoft’s new Custom Vision API. It allows you to train
+                  your images either programmatically or via a GUI, and with those REST endpoints you can easily add
+                  Artificial Intelligence to your (web) application.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <!--<div class="shedule-list__time">10.30</div>-->
+              <div class="shedule-list__speaker">
+                Roman Melnyk
+                <div class="shedule-list__info">Liberty Global (Ziggo)</div>
+              </div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">Taming the async flow</h3>
+                <p class="shedule-list__p">The asynchronousity is inevitable. Managing async things might be messy as we
+                  don’t know neither when nor even whether the async action takes place.There are a lot of techniques
+                  for handling asyncronousity. Let’s align them and point out the main principles of designing the async
+                  data flow. Respecting these principles won’t make you spend weekends debugging.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="shedule-list__item">
+            <div class="shedule-list__container">
+              <!--<div class="shedule-list__time">10.30</div>-->
+              <div class="shedule-list__speaker">
+                Ville Himberg
+                <div class="shedule-list__info">Reaktor</div>
+              </div>
+              <div class="shedule-list__desc">
+                <h3 class="shedule-list__title">Space as a Service, in JS</h3>
+                <p class="shedule-list__p">JavaScript will be a space grade technology and run in the Hello World satellite that we are launching.</p>
+              </div>
+            </div>
+          </li>
+
+          <!--<li class="shedule-list__item">-->
+            <!--<div class="shedule-list__container">-->
+              <!--<div class="shedule-list__time">17.00</div>-->
+              <!--<div class="shedule-list__speaker">Coffee Break!</div>-->
+              <!--<div class="shedule-list__desc">-->
+                <!--<h3 class="shedule-list__title thin">Lifes good</h3>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</li>-->
+        </ul>
+      </div>
+    </section>
 
 		<section class="section sponsors no-flex" id="sponsors" style="border-top: 1px solid #dfdfdf; padding-top: 60px;">
       <div class="container aligner">
@@ -1098,7 +1331,7 @@
         <p class="help">
           <a href="https://frontendamsterdam.com/proposals/AmsterdamJSConference.pdf" class="help__link">Sponsorship Opportunities</a>
           <a href="http://confcodeofconduct.com" class="help__link">Code Of Conduct</a>
-          <a href="mailto:hi@frontendamsterdam.com" class="help__link" target="_blank">Interested in volunteering?</a>
+          <!--<a href="mailto:hi@frontendamsterdam.com" class="help__link" target="_blank">Interested in volunteering?</a>-->
           <a href="mailto:hi@amsterdamjs.com" class="help__link">Email Us!</a>
         </p>
 
@@ -1368,12 +1601,12 @@
       }
     ];
 
-    var marker1 = new google.maps.Marker({
-      position: new google.maps.LatLng(52.366018, 4.914129),
-      map: map2,
-      title: 'conf',
-      icon: 'svg/marker_1.svg'
-    });
+//    var marker1 = new google.maps.Marker({
+//      position: new google.maps.LatLng(52.366018, 4.914129),
+//      map: map2,
+//      title: 'conf',
+//      icon: 'svg/marker_1.svg'
+//    });
 
     var marker2 = new google.maps.Marker({
       position: new google.maps.LatLng(52.365548, 4.914928),
@@ -1413,7 +1646,7 @@
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="js/scripts.js?21052017"></script>
 
 <script type="text/javascript">
   var _gauges = _gauges || [];

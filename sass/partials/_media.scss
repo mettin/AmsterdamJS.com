@@ -192,7 +192,7 @@
 		display: none;
 	}
 
-	.main-menu{
+	.main-menu {
 		padding: 88px 0 0;
 		position: fixed;
 		left: 0;
@@ -226,7 +226,7 @@
 		}
 	}
 
-	.basic-btn{
+	.basic-btn {
 		font: 14px/35px $latoB;
 		padding: 0 10px;
 		height: 40px;
@@ -510,7 +510,7 @@
 		font-size: 22px;
 
 		&__time{
-			max-width: 22%;
+			max-width: 20%;
 		}
 
 		&__speaker{
@@ -523,7 +523,7 @@
 		}
 
 		&__desc{
-			padding: 0 0 0 10%;
+			padding: 10px 0 0 20%;
 		}
 
 		&__p{
@@ -585,5 +585,11 @@
 
 	.footer{
 		padding: 45px 0 35px;
+	}
+}
+
+@media only screen and (max-width : 320px) {
+  .basic-btn {
+    padding: 0 10px !important;
 	}
 }
