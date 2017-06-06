@@ -1245,7 +1245,13 @@ section.sponsors {
 .sponsors-block__img-wrap {
   display: inline-block;
   vertical-align: middle;
-  margin: 0px 3.5%; }
+  margin: 0px 3.5%;
+  text-align: center; }
+  .sponsors-block__img-wrap.silver .sponsors-hiring {
+    opacity: 0;
+    transition: 0.3s opacity; }
+  .sponsors-block__img-wrap.silver:hover .sponsors-hiring {
+    opacity: .7; }
 
 .sponsors-block__img {
   display: block; }
@@ -1314,6 +1320,19 @@ section.sponsors {
   .slider__item {
     position: relative;
     background-size: cover; }
+
+.sponsors-hiring {
+  background: #a5a5a5;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  opacity: .7;
+  transition: 0.3s opacity; }
+  .sponsors-hiring:hover {
+    opacity: 1 !important; }
 
 /* Footer
 -----------------------------------------------------------------------------*/

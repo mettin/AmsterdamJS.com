@@ -654,6 +654,16 @@ section.sponsors {
 		display: inline-block;
 		vertical-align: middle;
 		margin: 0px 3.5%;
+    text-align: center;
+
+    &.silver .sponsors-hiring {
+      opacity: 0;
+      transition: 0.3s opacity;
+    }
+
+    &.silver:hover .sponsors-hiring {
+      opacity: .7;
+    }
 	}
 
 	&__img{
@@ -733,4 +743,20 @@ section.sponsors {
 		position: relative;
 		background-size: cover;
 	}
+}
+
+.sponsors-hiring {
+  background: #a5a5a5;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  opacity: .7;
+  transition: 0.3s opacity;
+
+  &:hover {
+    opacity: 1 !important;
+  }
 }
