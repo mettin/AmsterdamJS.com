@@ -9,7 +9,7 @@ var args = minimist(process.argv.slice(2));
 gulp.task('deploy', function () {
   var remotePath = '/';
   var conn = ftp.create({
-    host: 'indigo2.elastictech.org',
+    host: 'buff.elastictech.org',
     user: args.user,
     password: args.password,
     log: gutil.log
