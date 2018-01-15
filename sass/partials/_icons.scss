@@ -37,7 +37,7 @@
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-	@include transition (color linear .2s);
+	transition: color linear .2s;
 
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;

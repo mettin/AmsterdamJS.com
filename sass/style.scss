@@ -1,10 +1,11 @@
-@import "../node_modules/compass-mixins/lib/_compass.scss";
 @import "partials/variables";
+@import "partials/sprite-svg";
+@import "partials/mixins";
 @import "partials/functions";
 @import "partials/normalize";
 
 * {
-	@include box-sizing(border-box);
+	box-sizing: border-box;
 }
 
 html {
@@ -31,7 +32,7 @@ body {
 a {
 	color: #0680ba;
 	text-decoration: none;
-	@include transition (all linear .2s);
+	transition: all linear .2s;
 }
 
 button::-moz-focus-inner,
@@ -42,16 +43,6 @@ input[type="submit"]::-moz-focus-inner,
 input[type="file"] > input[type="button"]::-moz-focus-inner {/* */
 	border: none;
 	padding: 0;
-}
-
-#{$all-text-inputs-focus},
-textarea:focus,
-select:focus {
-	border-color: rgb(82, 168, 236) !important;
-	outline: 0;
-	outline: thin dotted \9;
-	@include transition(border-color linear 0.2s, box-shadow linear 0.2s);
-	//@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6));
 }
 
 button:focus,

@@ -166,7 +166,7 @@
 		right: 0;
 		bottom: 0;
 		z-index: 1;
-		@include background-image(linear-gradient(bottom, rgba(237,4,16,1) 0%,rgba(0,0,0,0.5) 60%));
+		background-image :linear-gradient(bottom, rgba(237,4,16,1) 0%,rgba(0,0,0,0.5) 60%);
 		/*background: url(../img/overlay_bg.png) center center;*/
 
 	}
@@ -714,10 +714,10 @@ section.sponsors {
 		border: 2px solid #fff;
 		border-radius: 50%;
 		background: url(../svg/arrow_l.svg) center center no-repeat;
-		@include transition (all linear .1s);
+		transition: all linear .1s;
 
 		&:hover{
-			@include transform (scale(0.95));
+			transform: scale(0.95);
 		}
 
 		&.slick-disabled{
