@@ -1,0 +1,33 @@
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+	padding: 70px 0;
+	background: url(../img/f-bg.jpg) center top repeat-x;
+}
+
+.f-logo{
+	font: 18px/1.52 $lato;
+	font-weight: 300;
+	text-align: center;
+	padding: 10px 0 0;
+
+	&__icon{
+		display: block;
+		width: 100px;
+		height: 128px;
+		margin: 18px auto 15px;
+		background: url(../img/f-logo.svg) no-repeat;
+		background-size: 100%;
+	}
+
+	a{
+		font-weight: 400;
+		color: #000;
+		text-decoration: none;
+
+		&:hover{
+			color: $clr-red;
+		}
+	}
+}
