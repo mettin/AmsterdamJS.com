@@ -47,12 +47,15 @@
 
 	&__subtitle{
 		color: #fff;
-		font: 40px/1.16 $latoL;
+		font: 40px/1.16 $lato;
+		font-weight: 300;
 		margin: 44px 0 13px;
 	}
 
 	&__desc{
-		font: 18px/1.9 $latoLI;
+		font: 18px/1.9 $lato;
+		font-weight: 300;
+		font-style: italic;
 		color: $clr-black;
 		margin: 48px 0 38px;
 		max-width: 770px;
@@ -166,26 +169,28 @@
 		right: 0;
 		bottom: 0;
 		z-index: 1;
-		background-image :linear-gradient(bottom, rgba(237,4,16,1) 0%,rgba(0,0,0,0.5) 60%);
+		background-image: linear-gradient(to top, rgba(237,4,16,1) 0%,rgba(0,0,0,0.5) 60%);
 		/*background: url(../img/overlay_bg.png) center center;*/
 
 	}
 
 	&__title{
-		font: 27px/1.08 $latoB;
+		font: 27px/1.08 $lato;
+		font-weight: 900;
 		text-transform: uppercase;
 		margin: 16px 0 34px;
 		letter-spacing: 0.1em;
 
 		span{
-			font: 27px/1.08 $latoL;
+			font: 27px/1.08 $lato;
+			font-weight: 300;
 		}
 	}
 
 	&__desc{
-		font: 54px/1.16 $latoB;
+		font: 54px/1.16 $lato;
+		font-weight: 900;
 		text-transform: uppercase;
-		font-weight: 300;
 		margin: 72px 0 78px;
 		letter-spacing: 0.06em;
 
@@ -202,17 +207,14 @@
 
 	&__tip{
 		text-transform: none;
-		font: 18px/1.58 $latoLI;
-		font-weight: 400;
+		font: 18px/1.58 $lato;
+		font-weight: 300;
+		font-style: italic;
 		letter-spacing: 0.07em;
 		display: block;
 		margin: 28px auto;
 		max-width: 720px;
-    text-shadow: 0px 0px 1px #fff;
-
-    strong {
-      font-family: 'LatoBlack';
-    }
+    	text-shadow: 0px 0px 1px #fff;
 	}
 
 	.container{
@@ -248,7 +250,9 @@
 
 	&__info{
 		max-width: 770px;
-		font: 18px/1.9 $latoLI;
+		font: 18px/1.9 $lato;
+		font-weight: 300;
+		font-style: italic;
 		margin: 20px 0 30px;
 		letter-spacing: 0.03em;
 	}
@@ -412,7 +416,8 @@
 		}
 
 		.participants-list__desc{
-			font: 16px/1.68 $latoL;
+			font: 16px/1.68 $lato;
+			font-weight: 300;
 			margin: 16px 0 12px;
 			padding: 0 0 0 45px;
 
@@ -470,7 +475,9 @@
 	}*/
 
 	&__desc{
-		font: 16px/1.68 $latoLI;
+		font: 16px/1.68 $lato;
+		font-weight: 300;
+		font-style: italic;
 		color: #5a5959;
 		margin: 16px 0;
 
@@ -481,7 +488,8 @@
 	}
 
 	&__propose-new{
-		font: 26px/1.32 $latoL;
+		font: 26px/1.32 $lato;
+		font-weight: 300;
 		margin: 11px 0px;
 	}
 
@@ -533,7 +541,8 @@
   }
 
 	&__time{
-		font: 20px/1.2 $latoL;
+		font: 20px/1.2 $lato;
+		font-weight: 300;
 		max-width: 9%;
 		width: 100%;
 		float: left;
@@ -604,12 +613,14 @@
 	}
 
 	&__title{
-		font: 24px/1.42 $latoL;
+		font: 24px/1.42 $lato;
+		font-weight: 300;
 		margin: 0 0 32px;
 		letter-spacing: 0.05em;
 
 		span{
-			font: 28px/1.38 $latoB;
+			font: 28px/1.38 $lato;
+			font-weight: 900;
 		}
 	}
 
@@ -636,7 +647,7 @@ section.sponsors {
   //text-align: center;
 
 	&__desc{
-		font: 22px/1.28 $latoL;
+		font: 22px/1.28 $lato;
 		font-weight: 300;
 		margin: 62px 0 42px;
 		flex-grow: 1;
@@ -654,7 +665,7 @@ section.sponsors {
 		display: inline-block;
 		vertical-align: middle;
 		margin: 0px 3.5%;
-    text-align: center;
+		text-align: center;
 
     &.silver .sponsors-hiring {
       opacity: 0;
