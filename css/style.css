@@ -772,7 +772,7 @@ h6 {
   position: relative;
   display: flex;
   min-height: 100vh;
-  padding: 34px 0;
+  padding: 0px 0;
   color: #000; }
   .section.half-height {
     min-height: 50vh; }
@@ -805,7 +805,7 @@ h6 {
   .section.event {
     text-align: left;
     color: #3c3c3c;
-    padding: 92px 0 52px; }
+    padding: 92px 0 0px; }
     .section.event .container {
       max-width: 1040px; }
     .section.event .section__subtitle {
