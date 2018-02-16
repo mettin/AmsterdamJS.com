@@ -1032,7 +1032,8 @@ h6 {
     .participants-list.orgs .participants-list__info {
       font: 17px/1.64 "Lato", sans-serif;
       margin: 17px 0 16px;
-      padding: 0 0 0 45px; }
+      padding: 0 0 0 45px;
+      color: #5a595985;}
     .participants-list.orgs .participants-list__desc {
       font: 16px/1.68 "Lato", sans-serif;
       font-weight: 300;
@@ -1067,6 +1068,9 @@ h6 {
     font: 17px/1.64 "Lato", sans-serif;
     margin: 17px 0 16px;
     color: #434343; }
+  .participants-list__desc span {
+    font-weight: bold;
+    color: black; }
   .participants-list__desc {
     font: 16px/1.68 "Lato", sans-serif;
     font-weight: 300;
