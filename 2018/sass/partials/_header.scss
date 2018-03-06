@@ -1,0 +1,297 @@
+/* Header
+-----------------------------------------------------------------------------*/
+
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	/*background: rgba(0, 0, 0, .35);*/
+	z-index: 15;
+	background: transparent;
+	transition: all 0.1s;
+
+	.container{
+		max-width: 1110px;
+		padding: 0;
+		display: flex;
+	}
+
+	@media only screen and (max-width : 1024px) {
+		visibility: hidden;
+		top: 0;
+		bottom: auto;
+		background: transparent;
+
+		.container{
+			height: 100vh;
+		}
+	}
+
+	&.sticky-header{
+		background: rgba(34, 29, 29, 0.75);
+	}
+}
+
+.main-nav{
+	display: flex;
+	background: transparent;
+	justify-content: space-between;
+	flex: 1 1;
+
+	&.closed{
+		display: block;
+	}
+
+	.socials{
+		margin: 7px 0 0 10px;
+
+		@media only screen and (max-width : 1280px) {
+			margin: 12px 0 12px 10px;
+			justify-content: center;
+		}
+	}
+
+	@media only screen and (max-width : 1024px) {
+		background: rgba(0, 0, 0, 0.5);
+		flex-direction: column-reverse;
+		display: flex;
+		visibility: hidden;
+		padding: 0;
+		margin: auto;
+		max-width: 320px;
+		opacity: 0;
+		transition: all 0.2s;
+		z-index: 11;
+
+		.socials{
+			padding: 12px 0;
+			margin: 0;
+		}
+	}
+
+	&.open{
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.menu-toggle{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: none;
+	width: 42px;
+	height: 42px;
+	display: none;
+	cursor: pointer;
+	background: none;
+	justify-content: center;
+	padding: 0;
+	margin: 0 0 0 10px;
+	border: none;
+	outline: none;
+	z-index: 2;
+	visibility: visible;
+
+	/*&:hover{
+		span:nth-child(1){
+			transform: translateX(4px);
+		}
+
+		span:nth-child(2){
+			transform: translateX(0);
+		}
+
+		span:nth-child(3){
+			transform: translateX(-4px);
+		}
+	}*/
+
+	span{
+		display: block;
+		width: 30px;
+		height: 4px;
+		background: #fff;
+		margin: 0 auto;
+		transition: all ease 0.2s;
+
+		&:nth-child(2){
+			margin: 8px auto;
+		}
+	}
+
+	&.open{
+		span{
+			&:nth-child(1){
+				transform: translate(0, 12px) rotate(45deg);
+			}
+			&:nth-child(2){
+				transform: translate(0, 20px);
+				opacity: 0;
+			}
+			&:nth-child(3){
+				transform: translate(0, -12px) rotate(-45deg);
+			}
+		}
+	}
+
+	@media only screen and (max-width : 1024px) {
+		display: block;
+	}
+}
+
+
+.main-menu{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: flex-end;
+	font-weight: 300;
+
+	&:hover{
+		.main-menu__link{
+			opacity: 0.75;
+
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+
+	&__item{
+		position: relative;
+
+		&:after{
+			content: '';
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			top: 0;
+			height: 100%;
+			opacity: 0;
+			transition: all ease-out 0.2s;
+			background: $grd-red-v;
+		}
+
+		&:hover:after{
+			top: 0;
+			opacity: 1;
+		}
+
+		&.accent{
+			.main-menu__link{
+				background: linear-gradient(to bottom, rgba(255, 46, 116, 0.5) 0%, rgba(254, 7, 17, 0.5) 100%);
+			}
+		}
+	}
+
+	&__link{
+		position: relative;
+		font: 12px/50px $lato;
+		display: block;
+		height: 50px;
+		padding: 0 20px;
+		color: #fff;
+		white-space: nowrap;
+		z-index: 1;
+		transition: all linear 0.1s;
+		border: none;
+		letter-spacing: 0.05em;
+
+		/*&:hover{
+			background: #000;
+			color: #fff
+		}*/
+	}
+
+	/*@media only screen and (max-width : 1000px) {
+
+		&__link{
+			padding: 0 10px;
+		}
+	}*/
+
+	@media only screen and (max-width : 1024px) {
+		left: 0;
+		right: 0;
+		flex-direction: column;
+		text-align: center;
+
+		&__item{
+			display: block;
+
+			&:after{
+				display: none;
+			}
+
+			&.accent{
+				margin: 0;
+			}
+		}
+
+		&__link{
+			font-size: 16px;
+		}
+	}
+}
+
+.socials{
+	display: flex;
+	list-style: none;
+	margin: 12px 0 0;
+	padding: 0;
+
+	&.center{
+		margin: 0 auto;
+		justify-content: center;
+	}
+
+	&.med{
+
+		.socials__item{
+			margin: 0 10px;
+		}
+
+		.socials__link{
+
+			&:hover{
+				.socials__img{
+					fill: $clr-red;
+				}
+			}
+		}
+
+		.socials__img{
+			width: 40px;
+			height: 36px;
+		}
+	}
+
+	&__item{
+		margin: 0;
+	}
+
+	&__link{
+		display: block;
+		height: 38px;
+		width: 38px;
+		text-align: center;
+		line-height: 42px;
+
+		&:hover{
+			.socials__img{
+				fill: $clr-red;
+			}
+		}
+	}
+
+	&__img{
+		width: 22px;
+		height: 20px;
+		fill: #fff;
+		transition: all linear .1s;
+	}
+}

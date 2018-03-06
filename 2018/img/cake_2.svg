@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="166" height="175" viewBox="0 0 166 175">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff3078;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1182" y="10706" width="166" height="175" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="1182" y="10706" width="166" height="175" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTY2IiBoZWlnaHQ9IjE3NSIgdmlld0JveD0iMCAwIDE2NiAxNzUiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iNjEuMTg0IiB4Mj0iMTA0LjgxNiIgeTI9IjE3NSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9Ii0wLjI1IiBzdG9wLWNvbG9yPSIjZmYzNTg2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMS4yNSIgc3RvcC1jb2xvcj0iI2ZlMDEwMiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMTY2IiBoZWlnaHQ9IjE3NSIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M1190.74,10854.8v-8.8h17.47v-8.7h34.95v-8.8h34.94v-8.7h34.95v-8.8h26.21v26.3h-26.21v8.7H1278.1v8.8h-34.94v8.7h-34.95v8.8h-17.47v-17.5Zm52.42-35h-34.95v8.7h-17.47v-26.2h17.47v-8.8h34.95v-8.7h34.94v-8.8h34.95v-8.7h26.21v17.5h-8.73v8.7h-17.48v8.8H1278.1v8.7h-34.94v8.8Zm-61.16,0v52.5h8.74v8.7h17.47v-8.7h34.95v-8.8h34.94v-8.7h34.95v-8.8H1348v-96.2h-8.74v-8.8h-17.47v-8.7h-26.21v-8.8h-26.21v-8.7h-17.48v8.7h-8.73v8.8h-8.74v-17.5h8.74v-8.8h-8.74v8.8h-8.74v17.5h-8.73v8.7h-8.74v8.8h8.74v8.7h-8.74v8.8h-8.74v8.7h-8.73v8.8H1182v35Zm34.95-61.3h8.73v8.8h-8.73v-8.8Zm17.47,0h8.74v8.8h-8.74v-8.8Zm8.74,0v-8.7h8.73v8.7h-8.73Zm17.47-8.7h-8.74v-8.8h8.74v8.8Zm-8.74-17.5v8.7h-8.73v-8.7h8.73Zm-34.94,17.5v-8.8h8.73v8.8h-8.73Zm8.73,26.2v-8.7h8.74v8.7h-8.74Z" transform="translate(-1182 -10706)"/>
+</svg>
