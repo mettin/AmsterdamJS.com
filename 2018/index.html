@@ -83,7 +83,13 @@
 
 			</div>
 
-			<div class="invader" data-tilt></div>
+			<div class="column-l"></div>
+			<div class="column-r"></div>
+
+			<div class="invader" data-tilt data-tilt-reset="false" data-tilt-axis="x">
+				<div class="invader__top"></div>
+				<div class="invader__bottom"></div>
+			</div>
 		</section>
 
 		<section class="section event" id="event">
@@ -160,6 +166,11 @@
 		</section>
 
 		<section class="section location info" id="location">
+			<video class="location__video" preload="auto" muted autoplay loop poster="img/dummy_bg.jpg" id="bgvid">
+        <source src="video/video.webm" type="video/webm">
+        <source src="video/video.mp4" type="video/mp4">
+      </video>
+
 			<div class="container">
 
 				<h2 class="info__title">Europe's most enjoyable city</h2>
@@ -431,8 +442,10 @@
 
 				<h2 class="section__title">Speakers</h2>
 
-				<ul class="speakers-list">
-					<li class="speakers-list__item">
+				<div class="speakers-list">
+					<div class="speakers-list__sep"></div>
+
+					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_1.jpg" height="243" width="243">
 							<div class="speakers-list__flag red"></div>
@@ -463,9 +476,9 @@
 								<use xlink:href="img/sprite-inline.svg?v3#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
 							</li>
 						</ul>
-					</li>
+					</div>
 
-					<li class="speakers-list__item">
+					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_2.jpg" height="243" width="243">
 							<div class="speakers-list__flag red"></div>
@@ -496,9 +509,9 @@
 								<use xlink:href="img/sprite-inline.svg?v3#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
 							</li>
 						</ul>
-					</li>
+					</div>
 
-					<li class="speakers-list__item ladder">
+					<div class="speakers-list__item ladder">
 						<ul class="skill-list">
 							<li class="skill-list__item">
 								<svg aria-hidden="true" class="skill-list__flag red" role="img">
@@ -536,9 +549,9 @@
 								</svg> Security
 							</li>
 						</ul>
-					</li>
+					</div>
 
-					<li class="speakers-list__item">
+					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_3.jpg" height="243" width="243">
 							<div class="speakers-list__flag red"></div>
@@ -569,11 +582,13 @@
 								<use xlink:href="img/sprite-inline.svg?v3#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
 							</li>
 						</ul>
-					</li>
+					</div>
 
-					<li class="speakers-list__item ladder"></li>
+					<div class="speakers-list__sep"></div>
 
-					<li class="speakers-list__item">
+					<div class="speakers-list__item ladder"></div>
+
+					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_4.jpg" height="243" width="243">
 							<div class="speakers-list__flag red"></div>
@@ -604,9 +619,9 @@
 								<use xlink:href="img/sprite-inline.svg?v3#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
 							</li>
 						</ul>
-					</li>
+					</div>
 
-					<li class="speakers-list__item">
+					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_5.jpg" height="243" width="243">
 							<div class="speakers-list__flag red"></div>
@@ -637,9 +652,9 @@
 								<use xlink:href="img/sprite-inline.svg?v3#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
 							</li>
 						</ul>
-					</li>
+					</div>
 
-					<li class="speakers-list__item">
+					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_6.jpg" height="243" width="243">
 							<div class="speakers-list__flag red"></div>
@@ -670,9 +685,11 @@
 								<use xlink:href="img/sprite-inline.svg?v3#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
 							</li>
 						</ul>
-					</li>
+					</div>
 
-					<li class="speakers-list__item">
+					<div class="speakers-list__sep"></div>
+
+					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_7.jpg" height="243" width="243">
 							<div class="speakers-list__flag red"></div>
@@ -703,9 +720,9 @@
 								<use xlink:href="img/sprite-inline.svg?v3#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
 							</li>
 						</ul>
-					</li>
+					</div>
 
-					<li class="speakers-list__item">
+					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_8.jpg" height="243" width="243">
 							<div class="speakers-list__flag red"></div>
@@ -736,9 +753,9 @@
 								<use xlink:href="img/sprite-inline.svg?v3#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
 							</li>
 						</ul>
-					</li>
+					</div>
 
-					<li class="speakers-list__item">
+					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_9.jpg" height="243" width="243">
 							<div class="speakers-list__flag red"></div>
@@ -769,9 +786,9 @@
 								<use xlink:href="img/sprite-inline.svg?v3#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
 							</li>
 						</ul>
-					</li>
+					</div>
 
-					<li class="speakers-list__item ladder">
+					<div class="speakers-list__item ladder">
 						
 						<div class="add-speaker">
 							<p class="add-speaker__title">You?</p>
@@ -779,12 +796,19 @@
 							<a class="add-speaker__btn basic-btn small" href="#"><span class="basic-btn__text">SUBMIT PROPOSAL</span></a>
 						</div>
 
-					</li>
-				</ul>
+					</div>
+
+					<div class="speakers-list__sep"></div>
+				</div>
 			</div>
 		</section>
 
 		<section class="section food info" id="food">
+			<video class="food__video" preload="auto" muted autoplay loop poster="img/dummy_bg_dj.jpg" id="bgvid2">
+        <source src="video/video_dj.webm" type="video/webm">
+        <source src="video/video_dj.mp4" type="video/mp4">
+      </video>
+
 			<div class="container">
 				<h2 class="info__title">Food (and drink) for thought</h2>
 
