@@ -47,7 +47,7 @@
 		margin: 7px 0 0 10px;
 
 		@media only screen and (max-width : 1280px) {
-			margin: 12px 0 12px 10px;
+			margin: 7px 0 0 10px;
 			justify-content: center;
 		}
 	}
@@ -213,6 +213,12 @@
 			padding: 0 10px;
 		}
 	}*/
+
+	@media only screen and (max-width : 1280px) {
+		&__link{
+			padding: 0 14px;
+		}
+	}
 
 	@media only screen and (max-width : 1024px) {
 		left: 0;

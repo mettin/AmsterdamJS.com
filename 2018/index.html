@@ -15,6 +15,7 @@
 <body>
 
 <div class="wrapper">
+	<div class="tint"></div>
 
 	<header class="header">
 		<nav class="container">
@@ -75,10 +76,10 @@
 
 				<p class="intro__title">JAVASCRIPT, NO EXCEPTIONS!</p>
 
-				<p class="intro__desc">Enjoy a summer conference brought to you by the longest running<br/> JS community in the Benelux. We're ready to celebrate 6 years in<br/> love with JavaScript on May 31 and June 1 2018</p>
+				<p class="intro__desc">Enjoy a summer conference brought to you by the longest running JS community in the Benelux. We're ready to celebrate 6 years in love with JavaScript on May 31 and June 1 2018</p>
 
 				<div class="intro__btns">
-					<a class="basic-btn" href="#"><span class="basic-btn__text">Grab a ticket</span></a>
+					<a class="intro__btn basic-btn" href="#"><span class="basic-btn__text">Grab a ticket</span></a>
 				</div>
 
 			</div>
@@ -92,7 +93,7 @@
 			</div>
 		</section>
 
-		<section class="section event" id="event">
+		<section class="section event info" id="event">
 			<div class="container">
 
 				<h2 class="section__title">The event</h2>
@@ -123,7 +124,9 @@
 					</div>
 				</div>
 
-				<p class="event__desc">AmsterdamJS is a 2-day event focusing exclusively on JavaScript development. At our conference, inspiring talks meet fresh ideas and good people - you’ll hear all you need to know about the latest trends in JS tech, see stellar speakers, meet new friends and colleagues, and connect with key people in the industry. Plus, all of that in one of Europe's top destinations.</p>
+				<div class="info__desc">
+					<p class="info__p">AmsterdamJS is a 2-day event focusing exclusively on JavaScript development. At our conference, inspiring talks meet fresh ideas and good people - you’ll hear all you need to know about the latest trends in JS tech, see stellar speakers, meet new friends and colleagues, and connect with key people in the industry. Plus, all of that in one of Europe's top destinations.</p>
+				</div>
 
 				<div class="days">
 					<a class="days__item" href="#">
@@ -448,7 +451,9 @@
 					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_1.jpg" height="243" width="243">
-							<div class="speakers-list__flag red"></div>
+							<svg class="speakers-list__flag vue" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v3#flag"></use>
+							</svg>
 						</div>
 
 						<h4 class="speakers-list__name">Andy Mockler</h4>
@@ -481,7 +486,10 @@
 					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_2.jpg" height="243" width="243">
-							<div class="speakers-list__flag red"></div>
+							
+							<svg class="speakers-list__flag angular" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v3#flag"></use>
+							</svg>
 						</div>
 
 						<h4 class="speakers-list__name">Jennifer Voss</h4>
@@ -554,7 +562,10 @@
 					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_3.jpg" height="243" width="243">
-							<div class="speakers-list__flag red"></div>
+							
+							<svg class="speakers-list__flag vanilla" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v3#flag"></use>
+							</svg>
 						</div>
 
 						<h4 class="speakers-list__name">Fatih Acet</h4>
@@ -591,7 +602,10 @@
 					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_4.jpg" height="243" width="243">
-							<div class="speakers-list__flag red"></div>
+							
+							<svg class="speakers-list__flag nsa" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v3#flag"></use>
+							</svg>
 						</div>
 
 						<h4 class="speakers-list__name">Jennifer Voss</h4>
@@ -624,7 +638,10 @@
 					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_5.jpg" height="243" width="243">
-							<div class="speakers-list__flag red"></div>
+							
+							<svg class="speakers-list__flag performance" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v3#flag"></use>
+							</svg>
 						</div>
 
 						<h4 class="speakers-list__name">Diego González</h4>
@@ -657,7 +674,10 @@
 					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_6.jpg" height="243" width="243">
-							<div class="speakers-list__flag red"></div>
+							
+							<svg class="speakers-list__flag testing" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v3#flag"></use>
+							</svg>
 						</div>
 
 						<h4 class="speakers-list__name">Fatih Acet</h4>
@@ -692,7 +712,10 @@
 					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_7.jpg" height="243" width="243">
-							<div class="speakers-list__flag red"></div>
+							
+							<svg class="speakers-list__flag security" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v3#flag"></use>
+							</svg>
 						</div>
 
 						<h4 class="speakers-list__name">Andy Mockler</h4>
@@ -725,7 +748,10 @@
 					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_8.jpg" height="243" width="243">
-							<div class="speakers-list__flag red"></div>
+							
+							<svg class="speakers-list__flag angular" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v3#flag"></use>
+							</svg>
 						</div>
 
 						<h4 class="speakers-list__name">Jennifer Voss</h4>
@@ -758,7 +784,10 @@
 					<div class="speakers-list__item">
 						<div class="speakers-list__img-wrap">
 							<img alt="" class="speakers-list__img" src="pic/speakers/speaker_9.jpg" height="243" width="243">
-							<div class="speakers-list__flag red"></div>
+							
+							<svg class="speakers-list__flag vue" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v3#flag"></use>
+							</svg>
 						</div>
 
 						<h4 class="speakers-list__name">Diego González</h4>

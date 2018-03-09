@@ -1,6 +1,33 @@
 /* Content
 -----------------------------------------------------------------------------*/
 
+
+@media only screen and (max-width : 1024px) {
+	.fade{
+		filter: blur(10px) grayscale(.6);
+		/*transition: all .3s;*/
+	}
+}
+.tint{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s;
+
+	@media only screen and (max-width : 1024px) {
+
+		&.visible{
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+
 .content {
 	min-height: 1200px;
 }
@@ -48,18 +75,26 @@
 		}
 	}
 
-	@media only screen and (max-width : 1148px) {
+	@media only screen and (max-width : 860px) {
 		width: 138px;
 		font-size: 18px;
-		height: 90px;
+		height: 102px;
 
 		&:after{
 			background-size: 75%;
 		}
 
 		&__link{
-			padding: 46px 0 0;
+			padding: 60px 0 0;
 		}
+
+		&__sec-line{
+			font-size: 22px;
+		}
+	}
+
+	@media only screen and (max-width : 480px) {
+		margin: 20px auto;
 	}
 }
 
@@ -86,6 +121,14 @@
 			z-index: -1;
 		}
 	}
+
+	@media only screen and (max-width : 1024px) {
+		padding: 40px 0;
+	}
+
+	@media only screen and (max-width : 480px) {
+		padding: 20px 0;
+	}
 }
 
 .intro{
@@ -94,7 +137,7 @@
 	text-align: center;
 	color: #fff;
 	min-height: 100vh;
-	background: url(../img/bg_intro.jpg) center center no-repeat;
+	background: url(../img/bg_intro.jpg) center top no-repeat;
 	background-color: $clr-black;
 	/*background-size: cover;*/
 
@@ -107,15 +150,6 @@
 		bottom: 0;
 		background: url(../img/scanlines.svg);
 	}
-
-	/*&__overlay{
-		position: absolute;
-		left: 0;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		z-index: 1;
-	}*/
 
 	&__title{
 		font: 72px/1.08 $lato;
@@ -156,9 +190,48 @@
 		}
 	}
 
+	&__btn{
+		height: 68px;
+		font-size: 18px;
+	}
+
 	.container{
 		z-index: 1;
 		max-width: none;
+	}
+
+	@media only screen and (max-width : 1024px) {
+
+		&__title{
+			font-size: 52px;
+			margin: 34px;
+		}
+
+		&__desc{
+			font-size: 20px;
+		}
+	}
+
+	@media only screen and (max-width : 480px) {
+
+		&__title{
+			font-size: 32px;
+			margin: 24px 0;
+		}
+
+		&__desc{
+			font-size: 16px;
+			margin: 24px 0 24px;
+		}
+
+		&__btns{
+			margin: 20px auto;
+		}
+
+		&__btn{
+			height: 60px;
+			font-size: 14px;
+		}
 	}
 }
 
@@ -176,10 +249,10 @@
 	/*z-index: 1;*/
 
 	&__top{
-	width: 1702px;
-	max-width: 100%;
-	margin: 0 auto;
-	height: 214px;
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+		height: 214px;
 		position: relative;
 		/*width: 100%;
 		height: 100%;
@@ -187,26 +260,28 @@
 		top: 0;*/
 		background: url(../img/invader_top.png) center top no-repeat;
 		z-index: 1;
+		background-size: cover;
 	}
 
 	&__bottom{
-	width: 1702px;
-	max-width: 100%;
-	margin: -24px auto 0;
-	height: 260px;
+		width: 100%;
+		max-width: 100%;
+		margin: -24px auto 0;
+		height: 260px;
 		position: relative;
 		/*width: 100%;
 		height: 100%;
 		left: 0;
 		top: 189px;*/
 		background: url(../img/invader_bottom.png) center bottom no-repeat;
+		background-size: cover;
 		z-index: 10;
 	}
 }
 
 .column-l{
 	position: absolute;
-	top: 426px;
+	top: 442px;
 	left: 50%;
 	margin: 0 0 0 -754px;
 	width: 198px;
@@ -230,7 +305,7 @@
 
 .column-r{
 	position: absolute;
-	top: 426px;
+	top: 434px;
 	left: 50%;
 	margin: 0 0 0 573px;
 	width: 223px;
@@ -282,7 +357,8 @@
 	}
 
 	&__num{
-		
+		height: 84px;
+		width: auto;
 	}
 
 	&__num-desc{
@@ -299,6 +375,47 @@
 	&__desc{
 		font: 16px/1.52 $roboto;
 		margin: 24px 0 0;
+	}
+
+	@media only screen and (max-width : 1024px) {
+
+		&__num{
+			height: 60px;
+		}
+
+		&__num-desc{
+			font-size: 14px;
+			width: 60px;
+		}
+	}
+
+	@media only screen and (max-width : 680px) {
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 auto;
+		text-align: center;
+
+		&__item{
+			margin: 18px 0;
+		}
+
+		&__nums{
+			justify-content: center;
+		}
+
+		&__num{
+			height: 48px;
+		}
+
+		&__num-desc{
+			font-size: 12px;
+			width: 52px;
+		}
+
+		&__desc{
+			margin: 12px 0 0;
+		}
 	}
 }
 
@@ -389,6 +506,29 @@
 	.container{
 		max-width: 1112px;
 		z-index: 2;
+	}
+
+	@media only screen and (max-width : 1024px) {
+
+		&__title{
+			font-size: 28px !important;
+		}
+
+		&__desc{
+			font-size: 20px;
+			margin: 12px 0 0;
+		}
+	}
+
+	@media only screen and (max-width : 480px) {
+
+		&__title{
+			font-size: 22px !important;
+		}
+
+		&__desc{
+			font-size: 16px;
+		}
 	}
 	
 }
@@ -512,6 +652,23 @@
 	&__img{
 		display: block;
 		transition: all .2s;
+	}
+
+	@media only screen and (max-width : 1024px) {
+
+		&__img{
+			height: 80px;
+			width: auto;
+		}
+	}
+
+	@media only screen and (max-width : 480px) {
+
+		&__img{
+			height: 60px;
+			width: auto;
+		}
+
 	}
 }
 
@@ -670,6 +827,10 @@
 			margin: 150px 0 0;
 		}
 
+		&__map-wrap{
+			margin: 0 -10px;
+		}
+
 		#map{
 			height: 320px;
 		}
@@ -770,6 +931,14 @@
 		bottom: 0;
 		width: 56px;
 		height: 40px;
+
+		&.vue{fill: #fc0202;}
+		&.angular{fill: #69d8d6;}
+		&.vanilla{fill: #fcdc02;}
+		&.nsa{fill: #fc5a02;}
+		&.performance{fill: #1aad02;}
+		&.testing{fill: #0272fd;}
+		&.security{fill: #5e5e5e;}
 	}
 
 	&__name{
@@ -863,20 +1032,22 @@
 
 	@media only screen and (max-width : 1180px) {
 		margin-bottom: 0;
-
-		&__item{
-			margin-bottom: 30px;
-			min-height: 0;
-			padding-bottom: 30px;
-		}
 	}
 
 	@media only screen and (max-width : 860px) {
 
 		&__item{
 			width: 30%;
-			margin-left: 1.6%;
-			margin-right: 1.7%;
+			margin: 20px 1.7% 20px 1.6%;
+		}
+
+		&__sep{
+			display: none;
+
+			&:first-child,
+			&:last-child{
+				display: flex;
+			}
 		}
 	}
 
@@ -958,6 +1129,10 @@
 		&.green{fill: #1aad02;}
 		&.blue{fill: #0272fd;}
 		&.gray{fill: #5e5e5e;}
+	}
+
+	@media only screen and (max-width : 1024px) {
+		padding: 32px 20px 40px 20px;
 	}
 }
 
@@ -1073,7 +1248,8 @@
 		margin: 0 0 40px;
 
 		&__tab{
-			font-size: 20px;
+			height: 60px;
+			font-size: 18px;
 
 			span{
 				display: none;
@@ -1085,7 +1261,7 @@
 		margin: 0 0 20px;
 
 		&__tab{
-			font-size: 18px;
+			font-size: 16px;
 		}
 	}
 }
@@ -1200,6 +1376,16 @@
 				left: 66px;
 			}
 		}
+
+		&__time,
+		&__speaker,
+		&__title{
+			font-size: 20px;
+		}
+
+		&__p{
+			font-size: 14px;
+		}
 	}
 
 	@media only screen and (max-width : 580px) {
@@ -1215,6 +1401,12 @@
 			&:before{
 				left: 2px;
 			}
+		}
+
+		&__time,
+		&__speaker,
+		&__title{
+			font-size: 18px;
 		}
 
 		&__time{
@@ -1276,6 +1468,29 @@
 		letter-spacing: 0.05em;
 		margin: 20px 0 0px;
 	}
+
+	@media only screen and (max-width : 680px) {
+		
+		&__desc{
+			min-width: 300px;
+			padding: 0 10px;
+		}
+
+		&__item{
+			font-size: 20px;
+		}
+	}
+
+	@media only screen and (max-width : 480px) {
+		
+		&__desc{
+			min-width: 300px;
+		}
+
+		&__item{
+			font-size: 18px;
+		}
+	}
 }
 
 .community{
@@ -1323,7 +1538,7 @@
 	@media only screen and (max-width : 680px) {
 
 		&__desc{
-			font-size: 28px;
+			/*font-size: 28px;*/
 			margin: 40px 0 20px;
 		}
 	}
@@ -1404,5 +1619,10 @@
 
 	.retro-socials{
 		margin: 120px auto;
+
+		@media only screen and (max-width : 1024px) {
+
+			margin: 60px auto;
+		}
 	}
 }

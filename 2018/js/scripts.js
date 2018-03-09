@@ -23,6 +23,14 @@ var VanillaTilt=function(){"use strict";class t{constructor(t,e={}){if(!(t insta
 
 $(function() {
 
+	// Burger menu
+
+	$('.menu-toggle, .tint, .main-menu__link').click(function(){
+		$(this).closest('.wrapper').find('.menu-toggle, .main-nav').toggleClass('open');
+		$(this).closest('.wrapper').children('.tint').toggleClass('visible');
+		$(this).closest('.wrapper').find('.content, .footer').toggleClass('fade');
+	});
+
 	// Sticky header
 
 	$(window).scroll(function(){

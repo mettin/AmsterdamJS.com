@@ -7,6 +7,7 @@
 	max-width: 558px;
 	margin: 58px auto 40px;
 	align-items: center;
+	flex-wrap: wrap;
 
 	&__input{
 		background: transparent;
@@ -32,5 +33,17 @@
 		max-width: 184px;
 		height: 62px;
 		font-size: 16px;
+	}
+
+	@media only screen and (max-width : 1024px) {
+		
+	}
+
+	@media only screen and (max-width : 680px) {
+		flex-direction: column;
+
+		&__input{
+			margin: 0 0 12px;
+		}
 	}
 }
