@@ -1,0 +1,51 @@
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+	height: 356px;
+	padding: 20px 0 20px;
+	background: url(../img/f-bg.png) center top repeat-x;
+	animation: slide 50s linear infinite;
+
+	@media only screen and (max-width : 480px) {
+		height: 290px;
+	}
+}
+
+@keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -1594px 0; }
+}
+
+.f-logo {
+	display: flex;
+	margin: 100px auto;
+	justify-content: center;
+	font: 20px/1.18 $roboto;
+	font-weight: 300;
+	align-content: center;
+	align-items: center;
+
+	&__link{
+		font: 32px/1.18 $lato;
+		padding: 10px 0 10px 112px;
+		margin: 0;
+		color: #fff;
+		height: 92px;
+		background: url(../img/f-logo.png) 22px center no-repeat;
+	}
+
+	@media only screen and (max-width : 480px) {
+		flex-direction: column;
+		margin: 10px auto;
+		height: auto;
+
+		&__link{
+			padding: 110px 10px 10px;
+			margin: 0;
+			background-position: center 10px;
+			height: auto;
+			text-align: center;
+		}
+	}
+}

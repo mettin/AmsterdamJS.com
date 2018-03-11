@@ -1,0 +1,49 @@
+/* Forms
+-----------------------------------------------------------------------------*/
+
+.newsletter-form{
+	display: flex;
+	justify-content: space-between;
+	max-width: 558px;
+	margin: 58px auto 40px;
+	align-items: center;
+	flex-wrap: wrap;
+
+	&__input{
+		background: transparent;
+		border: none;
+		border-bottom: 4px solid #393434;
+		outline: none;
+		width: 344px;
+		height: 42px;
+		padding: 0 10px;
+		color: #fff;
+		font: 20px/1.36 $roboto;
+
+		&::placeholder{
+			color: $clr-red;
+		}
+
+		&:focus{
+			border-bottom-color: #a9a9a9;
+		}
+	}
+
+	&__submit{
+		max-width: 184px;
+		height: 62px;
+		font-size: 16px;
+	}
+
+	@media only screen and (max-width : 1024px) {
+		
+	}
+
+	@media only screen and (max-width : 680px) {
+		flex-direction: column;
+
+		&__input{
+			margin: 0 0 12px;
+		}
+	}
+}
