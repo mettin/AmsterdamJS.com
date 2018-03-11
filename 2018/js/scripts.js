@@ -81,7 +81,7 @@ $(function() {
 
 	/*---------------------------------------------------*/
 
-	$('input[placeholder], textarea[placeholder]').placeholder();
-	
+	// $('input[placeholder], textarea[placeholder]').placeholder();
+
 
 });
