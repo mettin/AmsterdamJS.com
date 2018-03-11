@@ -478,6 +478,15 @@ h5,
 h6 {
   font-weight: bold; }
 
+.slick-prev, .slick-next {
+  z-index: 9999; }
+
+.content-tab__tab {
+  outline: none;
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent; }
+
 /* Slider */
 .slick-slider {
   position: relative;
