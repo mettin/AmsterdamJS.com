@@ -334,7 +334,7 @@
 		letter-spacing: 0.026em;
 		margin: 52px 0;
 	}
-	
+
 	.container{
 		max-width: 1112px;
 	}
@@ -353,7 +353,7 @@
 		display: flex;
 		justify-content: flex-start;
 		/*align-items: flex-start;*/
-		
+
 	}
 
 	&__num{
@@ -426,7 +426,7 @@
 	flex-wrap: wrap;
 	font: 18px/1.36 $lato;
 	font-weight: bold;
-	
+
 	&__item{
 		height: 78px;
 		display: flex;
@@ -502,7 +502,7 @@
 			text-align: center;
 		}
 	}
-	
+
 	.container{
 		max-width: 1112px;
 		z-index: 2;
@@ -530,7 +530,7 @@
 			font-size: 16px;
 		}
 	}
-	
+
 }
 
 .newsletter{
@@ -755,7 +755,7 @@
 	/*position: absolute;
 	bottom: 50px;
 	left: 50%;
-	
+
 	transform: translateX(-50%);
 	height: 492px;
 	width: 100%;
@@ -794,6 +794,7 @@
 	}
 
 	&__map-wrap{
+    opacity: 0.9;
 		padding: 12px;
 		margin: 0 -20px;
 		background: $grd-red-v;
@@ -1194,7 +1195,7 @@
 }
 
 .schedule{
-	
+
 }
 
 .content-tab{
@@ -1470,7 +1471,7 @@
 	}
 
 	@media only screen and (max-width : 680px) {
-		
+
 		&__desc{
 			min-width: 300px;
 			padding: 0 10px;
@@ -1482,7 +1483,7 @@
 	}
 
 	@media only screen and (max-width : 480px) {
-		
+
 		&__desc{
 			min-width: 300px;
 		}

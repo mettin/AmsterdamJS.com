@@ -1410,7 +1410,7 @@ h6 {
   /*position: absolute;
 	bottom: 50px;
 	left: 50%;
-	
+
 	transform: translateX(-50%);
 	height: 492px;
 	width: 100%;
@@ -1439,6 +1439,7 @@ h6 {
     margin: 32px 0 0;
     font-size: 14px; }
   .map__map-wrap {
+    opacity: 0.9;
     padding: 12px;
     margin: 0 -20px;
     background: linear-gradient(to bottom, #ff2e74 0%, #fe0814 100%); }
