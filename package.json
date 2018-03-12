@@ -1,7 +1,7 @@
 {
   "name": "React.Amsterdam",
   "version": "1.0.0",
-  "description": "React Amsterdam Conference website.",
+  "description": "Amsterdam JS Nation.",
   "scripts": {
     "build": "gulp build",
     "dev": "gulp watch",

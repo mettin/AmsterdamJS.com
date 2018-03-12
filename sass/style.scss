@@ -8,47 +8,25 @@
 	box-sizing: border-box;
 }
 
-html {
+html,
+body {
+	width: 100%;
 	height: 100%;
+	font-family: $roboto;
 }
 
 body {
-	width: 100%;
 	background: #fff;
-	color: #000;
-	font: 16px/1.4 $lato;
-	-webkit-font-smoothing: subpixel-antialiased;
-}
-
-@include selection {
-	background: #b3d4fc;
-	text-shadow: none;
-}
-
-@include placeholder {
-	color: #a8a6b7;
+	color: #fff;
+	font-size: $font-size;
+	line-height: 1.36;
+	background: url(../img/scanlines.svg) 0 0;
+	background-color:  #221d1d;
 }
 
 a {
 	color: #0680ba;
-	text-decoration: none;
-	transition: all linear .2s;
-}
-
-button::-moz-focus-inner,
-input[type="reset"]::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner,
-input[type="submit"]::-moz-focus-inner,
-input[type="submit"]::-moz-focus-inner,
-input[type="file"] > input[type="button"]::-moz-focus-inner {/* */
-	border: none;
-	padding: 0;
-}
-
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus {
-	outline: 0;
+	transition: all linear .1s;
 }
 
 .clearfix:after {
@@ -77,16 +55,18 @@ input[type="reset"]:focus {
 
 .container {
 	position: relative;
-	max-width: 1040px;
-	margin: 0 auto;
-	padding: 0 20px;
-	width: 100%;
-	height: 100%;
+	max-width: 1112px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+
+	@media only screen and (max-width : 680px) {
+		padding: 0 10px;
+	}
 }
 
-strong{
-	font-weight: 900;
-	font-style: normal;
+.aligner{
+	margin: auto;
 }
 
 b,
@@ -96,10 +76,19 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: normal;
-	font: 16px/1.4 $lato;
+	font-weight: bold;
 }
 
+.slider-nav {
+  z-index: 9999;
+}
+
+.content-tab__tab {
+  outline: none;
+  outline-style:none;
+  box-shadow:none;
+  border-color:transparent;
+}
 
 @import "vendor/slick";
 
@@ -107,7 +96,6 @@ h6 {
 @import "partials/icons";
 @import "partials/buttons";
 @import "partials/forms";
-@import "partials/subscribe-form";
 
 @import "partials/header";
 @import "partials/content";

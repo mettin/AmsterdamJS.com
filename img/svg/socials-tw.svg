@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.594" height="17.59" viewBox="0 0 21.594 17.59">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00d8ff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="241.969" y="1009.41" width="21.594" height="17.59" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Shape_19_copy" data-name="Shape 19 copy" class="cls-1" d="M241.973,1025.06s8.875,5.67,16.259-2.33c1.752-1.9,3.02-4.69,3.121-8.92a9.224,9.224,0,0,0,2.217-2.34,6.729,6.729,0,0,1-2.5.73,4.691,4.691,0,0,0,1.932-2.5,7.471,7.471,0,0,1-2.85,1.11,4.44,4.44,0,0,0-5.257-.92c-3.262,1.45-2.312,4.97-2.312,4.97a11.962,11.962,0,0,1-9.12-4.69,4.458,4.458,0,0,0,1.235,5.95,3.682,3.682,0,0,1-1.868-.53s-0.412,3.38,3.483,4.4a4.113,4.113,0,0,1-1.932.13s0.349,2.47,4.085,3.07C248.464,1023.19,246.311,1025.31,241.973,1025.06Z" transform="translate(-241.969 -1009.41)"/>
+</svg>

@@ -1,516 +1,1273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <title>AmsterdamJS Conference 2018</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="keywords" content="javasr"/>
-  <meta name="description" content=""/>
+	<meta charset="utf-8" />
+	<title>AmsterdamJS Conference 2018</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="keywords" content="javascript, conference, amsterdamjs, vuejs, react, angular, frameworks" />
+	<meta name="description" content="AmsterdamJS is a 2-day event focusing exclusively on JavaScript development. At our conference, inspiring talks meet fresh ideas and good people - you’ll hear all you need to know about the latest trends in JS tech, see stellar speakers, meet new friends and colleagues, and connect with key people in the industry. Plus, all of that in one of Europe's top destinations." />
   <meta property="og:url" content="https://amsterdamjs.com"/>
-  <meta property="og:title" content="AmsterdamJS - welcome to the biggest and longest running JS community in town!"/>
-  <meta property="og:description" content="Taking our biggest and longest-running JavaScript community forward, we're adding a new event to our family - a full-day conference covering the latest and greatest news and insights from the global JavaScript network. Join us and a group of internationally known JavaScript enthusiasts to share inspiration and spend a great, summer day in one of the most unique Amsterdam locations."/>
-  <meta property="og:image" content="https://amsterdamjs.com/pic/og-dark.png"/>
+  <meta property="og:title" content="AmsterdamJS Conference 2018, May 31 - June 1"/>
+  <meta property="og:description" content="AmsterdamJS is a 2-day event focusing exclusively on JavaScript development. At our conference, inspiring talks meet fresh ideas and good people - you’ll hear all you need to know about the latest trends in JS tech, see stellar speakers, meet new friends and colleagues, and connect with key people in the industry. Plus, all of that in one of Europe's top destinations."/>
+  <meta property="og:image" content="https://amsterdamjs.com/pic/og2018.jpg"/>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@amsterdamjs">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="css/style.css?15122018"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,900">
-  <link rel="shortcut icon" href="img/favicon.png"/>
-
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.min.css?12032018" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Roboto+Mono:400,500,700" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.png" />
 </head>
 
 <body>
 
 <div class="wrapper">
+	<div class="tint"></div>
 
-  <header class="header">
-    <nav class="container">
+	<header class="header">
+		<nav class="container">
 
-      <div class="menu-btn"></div>
+			<button class="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 
-      <nav class="main-nav">
-        <ul class="main-menu">
-          <!--<li class="main-menu__item"><a href="#follow-us" class="main-menu__link">Subscribe for updates</a></li>-->
-          <li class="main-menu__item"><a href="#speakers" class="main-menu__link">Speakers</a></li>
-          <!--<li class="main-menu__item"><a href="#cfp" class="main-menu__link">Call for papers</a></li>-->
-          <!-- <li class="main-menu__item"><a href="#sponsors" class="main-menu__link">Sponsorship opportunities</a></li>-->
-          <li class="main-menu__item"><a href="#contacts" class="main-menu__link">Contact us</a></li>
-          <li class="main-menu__item"><a href="./2017" class="main-menu__link" target="_blank">2017</a></li>
-          <li class="main-menu__item main-menu__item_red"><a href="https://www.eventbrite.com/e/amsterdamjs-conference-2018-tickets-41075996411" target="_blank" class="main-menu__link">Tickets</a></li>
-        </ul>
-      </nav>
-    </nav>
-  </header><!-- .header -->
+			<nav class="main-nav">
 
-  <main class="content">
+				<ul class="socials">
+					<li class="socials__item">
+						<a href="https://twitter.com/amsterdamjs" class="socials__link" target="_blank">
+							<svg class="socials__img" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite-inline.svg?v4#socials-tw"></use>
+							</svg>
+						</a>
+					</li>
 
-    <section class="section home" id="home">
-      <video class="home__video" preload="auto" muted autoplay loop poster="img/dummy_bg.jpg?v2" id="bgvid">
-        <source src="video/video.webm?v2" type="video/webm">
-        <source src="video/video.mp4?v2" type="video/mp4">
+					<li class="socials__item">
+						<a href="https://www.facebook.com/amsterdamjs" class="socials__link" target="_blank">
+							<svg class="socials__img" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#socials-fb"></use>
+							</svg>
+						</a>
+					</li>
+
+					<li class="socials__item">
+						<a href="https://www.youtube.com/channel/UCQM428Hwrvxla8DCgjGONSQ" class="socials__link" target="_blank">
+							<svg class="socials__img" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#socials-yt"></use>
+							</svg>
+						</a>
+					</li>
+
+					<li class="socials__item">
+						<a href="https://medium.com/@amsterdamjs" class="socials__link" target="_blank">
+							<svg class="socials__img" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#socials-med"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="main-menu">
+					<li class="main-menu__item"><a class="main-menu__link" href="#event">The event</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#location">location</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#speakers">speakers</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#schedule">workshops & talks</a></li>
+					<!-- <li class="main-menu__item"><a class="main-menu__link" href="#">Amsterdam exploration day</a></li> -->
+					<!--<li class="main-menu__item"><a class="main-menu__link" href="#sponsors">sponsors</a></li>-->
+					<li class="main-menu__item"><a class="main-menu__link" href="#contacts">contact us</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="/2017" target="_blank">2017</a></li>
+					<li class="main-menu__item accent"><a class="main-menu__link" href="https://www.eventbrite.com/e/amsterdamjs-conference-2018-tickets-41075996411">tickets</a></li>
+				</ul>
+			</nav>
+		</nav>
+	</header>
+
+	<main class="content">
+
+		<section class="section intro" id="intro">
+			<div class="container">
+
+				<h1 class="logo">
+					<a href="/" class="logo__link">
+						Amsterdam<br/>
+						<span class="logo__sec-line">
+							<span>Js</span>Nation
+						</span>
+					</a>
+				</h1>
+
+				<p class="intro__title">JAVASCRIPT, NO EXCEPTIONS!</p>
+
+				<p class="intro__desc">Enjoy a summer conference brought to you by the longest running JS community in the Benelux. We're ready to celebrate 6 years in love with JavaScript on May 31 and June 1 2018</p>
+
+				<div class="intro__btns">
+					<a class="intro__btn basic-btn" href="https://www.eventbrite.com/e/amsterdamjs-conference-2018-tickets-41075996411"><span class="basic-btn__text">Reserve a spot</span></a>
+				</div>
+
+			</div>
+
+			<div class="column-l"></div>
+			<div class="column-r"></div>
+
+			<div class="invader" data-tilt data-tilt-reset="false" data-tilt-reverse="true">
+				<div class="invader__top"></div>
+				<div class="invader__bottom"></div>
+			</div>
+		</section>
+
+		<section class="section event info" id="event">
+			<div class="container">
+
+				<h2 class="section__title">The event</h2>
+
+				<div class="event-stats">
+					<div class="event-stats__item">
+						<div class="event-stats__nums">
+							<img class="event-stats__num" src="img/num_2.svg" alt="2">
+							<p class="event-stats__num-desc">Days</p>
+						</div>
+						<p class="event-stats__desc">Free workshops<br/>+ Conference day</p>
+					</div>
+
+					<div class="event-stats__item">
+						<div class="event-stats__nums">
+							<img class="event-stats__num" src="img/num_2.svg" alt="2">
+							<p class="event-stats__num-desc">tracks</p>
+						</div>
+						<p class="event-stats__desc">Priest hall 450 seats<br/>+ Monastic cell 60 seats</p>
+					</div>
+
+					<div class="event-stats__item">
+						<div class="event-stats__nums">
+							<img class="event-stats__num" src="img/num_500.svg" alt="500">
+							<p class="event-stats__num-desc">Devs</p>
+						</div>
+						<p class="event-stats__desc">JS Fans and lovers</p>
+					</div>
+				</div>
+
+				<div class="info__desc">
+					<p class="info__p">AmsterdamJS is a 2-day event focusing exclusively on JavaScript development. At our conference, inspiring talks meet fresh ideas and good people - you’ll hear all you need to know about the latest trends in JS tech, see stellar speakers, meet new friends and colleagues, and connect with key people in the industry. Plus, all of that in one of Europe's top destinations.</p>
+				</div>
+
+				<!-- <div class="days">
+					<a class="days__item" href="#">
+						Workshops day
+					</a>
+
+					<a class="days__item" href="#">
+						Conference day
+					</a>
+
+					<a class="days__item" href="#">
+						Amsterdam<br/> exploration day
+					</a>
+				</div> -->
+
+				<div class="video">
+					<h4 class="video__title">Last year aftermovie</h4>
+
+					<iframe class="video__vid" width="770" height="320" src="https://www.youtube.com/embed/SBL_e12kdGc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+
+		<section class="section newsletter info" id="newsletter">
+			<div class="container">
+
+				<h2 class="info__title">JavaScript always comes in handy</h2>
+
+				<div class="info__desc">
+					<p class="info__p">We want you to deeply engage with the new tech and have a hands-on experience at AmsterdamJS. That's why one of the two conference days is dedicated to free workshops and extra events that will push your skills and help boost your career.</p>
+
+					<p class="info__p center">Subscribe to our newsletter and be the first to grab a seat.</p>
+				</div>
+
+				<form action="//amsterdam.us13.list-manage.com/subscribe/post?u=910284f989b81c945f27311af&id=05036cab56" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="newsletter-form">
+					<input class="newsletter-form__input" type="email" value="" name="EMAIL" placeholder="Email address" id="mce-EMAIL" required>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_910284f989b81c945f27311af_05036cab56" tabindex="-1" value="">
+          </div>
+					<button class="newsletter-form__submit basic-btn" type="submit" id="mc-embedded-subscribe" name="subscribe"><span class="basic-btn__text">Subscribe</span></button>
+				</form>
+			</div>
+		</section>
+
+		<section class="section location info" id="location">
+			<video class="location__video" preload="auto" muted autoplay loop poster="img/dummy_bg.jpg" id="bgvid">
+        <source src="video/video.webm" type="video/webm">
+        <source src="video/video.mp4" type="video/mp4">
       </video>
 
-      <div class="home__overlay"></div>
+			<div class="container">
 
-      <div class="container aligner">
+				<h2 class="info__title">Europe's most enjoyable city</h2>
 
-        <div class="logo">
-          <a href="/" class="logo__link ir">AmsterdamJs</a>
-        </div>
+				<div class="info__desc">
+					<p class="info__p">Modern, cosmopolitan, and laid-back – Amsterdam's vibe attracts millions of visitors from all corners of the world and AmsterdamJS is here to embody the city's free spirit. Thanks to direct flights from the Americas, Asia, and Africa, the city is within reach for anyone. From within Europe, Amsterdam is also easily accessible by train and bus departing from any bigger city.</p>
 
-        <h1 class="home__title">Amsterdam<span>Js</span></h1>
-        <p class="home__desc">JavaScript, no exceptions!<br/>
-          <span class="home__tip">Enjoy a summer conference brought to you by the longest running JS community in the Benelux. We're ready to celebrate 6 years in love with JavaScript on May 31 and June 1 2018.</span>
-        </p>
+					<p class="info__p center">Follow us on social media for getting hot insights and conference updates.</p>
+				</div>
 
-        <div class="btn-block">
-          <!-- <a href="https://www.twitter.com/amsterdamjs" class="basic-btn white">Follow us for updates</a>-->
-           <a href="https://www.eventbrite.com/e/amsterdamjs-conference-2018-tickets-41075996411" class="basic-btn white" target="_blank">Grab a ticket</a>
-          <!--<a href="https://www.eventbrite.com/e/amsterdamjs-conference-2018-tickets-41075996411" class="basic-btn white" target="_blank">I am a super early bird</a>-->
-      </div>
+				<ul class="retro-socials">
+					<li class="retro-socials__item">
+						<a class="retro-socials__link" href="https://twitter.com/amsterdamjs">
+							<img class="retro-socials__img" src="img/socials_tw.svg" alt="twitter">
+						</a>
+					</li>
 
-      </div>
-    </section>
+					<li class="retro-socials__item">
+						<a class="retro-socials__link" href="https://facebook.com/amsterdamjs">
+							<img class="retro-socials__img" src="img/socials_fb.svg" alt="facebook">
+						</a>
+					</li>
 
-    <section class="section event no-flex" id="event">
-      <div class="container aligner">
+					<li class="retro-socials__item">
+						<a class="retro-socials__link" href="https://www.youtube.com/channel/UCQM428Hwrvxla8DCgjGONSQ">
+							<img class="retro-socials__img" src="img/socials_yt.svg" alt="youtube">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
 
-        <div class="event-info">
-          <div class="event-info__desc">
-            <h3 class="section__subtitle">The event</h3>
-            <div class="section__desc">
-              <p>
-                AmsterdamJS is a two-days event focused on JavaScript development where both inspirational and pragmatic talks meet good people and summer in a special Amsterdamish setup. 2018 AmsterdamJS conference will gather 500 JS fans and lovers at <a href="https://medium.com/@amsterdamjs/5e732163a981" target="_blank">Zuiderkerk, a former church located in Amsterdam’s city center</a> to listen for talks from 25 recognizable speakers. Both Rembrandt and Monet adored this place</a>, and now it’s open for state-of-the-art JavaScript. <br><br>The day before conference free workshops will take place to get some of your desired skills up to a new level.
-              </p>
-              <!-- <p>
-                <img src="./pic/zuiderkerk-amsterdam.png"/>
-              </p>
-              <p>
-                Join internationally known JavaScript enthusiasts to share inspiration and spend a great summer day in one of the most unique Amsterdam locations.
-              </p> -->
-            </div>
+		<section class="section place info" id="place">
 
-            <!-- <div class="socials-wrap socials-wrap_left" id="follow-us">
-              <p class="socials-wrap__title">Follow us for updates</p>
+			<ul class="slider">
+				<li class="slider__item" style="background: url(pic/slider_pic1.jpg) center center no-repeat; background-size: cover;"></li>
+				<li class="slider__item" style="background: url(pic/slider_pic2.png) center center no-repeat; background-size: cover;"></li>
+				<li class="slider__item" style="background: url(pic/slider_pic3.jpg) center center no-repeat; background-size: cover;"></li>
+			</ul>
 
-              <ul class="socials follow">
-                <li class="socials__item">
-                  <a class="socials__link" href="https://twitter.com/amsterdamjs"><span class="icon-tw"></span></a>
-                </li>
+      <div class="slider-nav"></div>
 
-                <li class="socials__item">
-                  <a class="socials__link" href="https://www.facebook.com/amsterdamjs/"><span
-                    class="icon-fb"></span></a>
-                </li>
+			<div class="container">
 
-                <li class="socials__item">
-                  <a class="socials__link" href="https://www.youtube.com/channel/UCQM428Hwrvxla8DCgjGONSQ"><span
-                    class="icon-yt"></span></a>
-                </li>
-              </ul>
+				<h2 class="info__title">Form follows function</h2>
 
-              <form action="//amsterdam.us13.list-manage.com/subscribe/post?u=910284f989b81c945f27311af&id=05036cab56" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="subscribe-form" target="_blank" novalidate>
-                <p class="section__desc">Subscribe for conference email updates to hear about the latest news and special deals:</p>
-                <input type="email" value="" name="EMAIL" class="subscribe-form__email" id="mce-EMAIL" placeholder="email address" required>
-                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                  <input type="text" name="b_910284f989b81c945f27311af_05036cab56" tabindex="-1" value=""></div>
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="basic-btn subscribe-form__submit">
-              </form>
-            </div> -->
+				<div class="info__desc">
+					<p class="info__p">The 2018 Amsterdam JS conference will gather 500 JS pros at Zuiderkerk, a stunning former church located directly in Amsterdam’s city center. Rembrandt and Monet loved this place, and now it’s ready to inspire your state-of-the-art JavaScript.</p>
+
+					<p class="info__p center">
+						Pics or it didn't happen?<br/>
+						We picked a couple of beautiful ones, so check them out<br/>
+						and see what Zuiderkerk is all about.
+					</p>
+				</div>
+
+				<div class="map">
+
+          <div class="map__desc">
+            <p class="map__title">Zuiderkerk</p>
+            <p class="map__address">Zuiderkerkhof 72<br/>Amsterdam, 1011 WB</p>
+
+            <a class="map__btn basic-btn" href="https://goo.gl/maps/poNidU378CT2" target="_blank"><span class="basic-btn__text">View on map</span></a>
           </div>
+
+          <div class="map__map-wrap">
+          	<div id="map"></div>
+          </div>
+
+          <script>
+            function initMap() {
+              var mapDiv = document.getElementById('map');
+              var map = new google.maps.Map(mapDiv, {
+                center: {lat: 52.3700319, lng: 4.8994554},
+                zoom: 15,
+                scrollwheel: false,
+                disableDefaultUI: true,
+                draggable: true
+              });
+
+              var styles = [
+                {
+                  "featureType": "all",
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                    {
+                      "saturation": 36
+                    },
+                    {
+                      "color": "#000000"
+                    },
+                    {
+                      "lightness": 40
+                    }
+                  ]
+                },
+                {
+                  "featureType": "all",
+                  "elementType": "labels.text.stroke",
+                  "stylers": [
+                    {
+                      "visibility": "on"
+                    },
+                    {
+                      "color": "#000000"
+                    },
+                    {
+                      "lightness": 16
+                    }
+                  ]
+                },
+                {
+                  "featureType": "all",
+                  "elementType": "labels.icon",
+                  "stylers": [
+                    {
+                      "visibility": "off"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "administrative",
+                  "elementType": "geometry.fill",
+                  "stylers": [
+                    {
+                      "color": "#000000"
+                    },
+                    {
+                      "lightness": 20
+                    }
+                  ]
+                },
+                {
+                  "featureType": "administrative",
+                  "elementType": "geometry.stroke",
+                  "stylers": [
+                    {
+                      "color": "#000000"
+                    },
+                    {
+                      "lightness": 17
+                    },
+                    {
+                      "weight": 1.2
+                    }
+                  ]
+                },
+                {
+                  "featureType": "landscape",
+                  "elementType": "geometry",
+                  "stylers": [
+                    {
+                      "color": "#000000"
+                    },
+                    {
+                      "lightness": 20
+                    }
+                  ]
+                },
+                {
+                  "featureType": "poi",
+                  "elementType": "geometry",
+                  "stylers": [
+                    {
+                      "color": "#000000"
+                    },
+                    {
+                      "lightness": 21
+                    }
+                  ]
+                },
+                {
+                  "featureType": "road.highway",
+                  "elementType": "geometry.fill",
+                  "stylers": [
+                    {
+                      "color": "#000000"
+                    },
+                    {
+                      "lightness": 17
+                    }
+                  ]
+                },
+                {
+                  "featureType": "road.highway",
+                  "elementType": "geometry.stroke",
+                  "stylers": [
+                    {
+                      "color": "#000000"
+                    },
+                    {
+                      "lightness": 29
+                    },
+                    {
+                      "weight": 0.2
+                    }
+                  ]
+                },
+                {
+                  "featureType": "road.arterial",
+                  "elementType": "geometry",
+                  "stylers": [
+                    {
+                      "color": "#000000"
+                    },
+                    {
+                      "lightness": 18
+                    }
+                  ]
+                },
+                {
+                  "featureType": "road.local",
+                  "elementType": "geometry",
+                  "stylers": [
+                    {
+                      "color": "#000000"
+                    },
+                    {
+                      "lightness": 16
+                    }
+                  ]
+                },
+                {
+                  "featureType": "transit",
+                  "elementType": "geometry",
+                  "stylers": [
+                    {
+                      "color": "#000000"
+                    },
+                    {
+                      "lightness": 19
+                    }
+                  ]
+                },
+                {
+                  "featureType": "water",
+                  "elementType": "geometry",
+                  "stylers": [
+                    {
+                      "color": "#000000"
+                    },
+                    {
+                      "lightness": 17
+                    }
+                  ]
+                }
+              ];
+
+              var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(52.3700319, 4.8994554),
+                map: map,
+                title: 'Zuiderkerk',
+                icon: 'img/marker.svg'
+              });
+
+              map.setOptions({styles: styles});
+            }
+          </script>
+
+          <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-ZEocFpuybFyJZg92LhWsvIJdo56S34s&callback=initMap">
+          </script>
+        </div>
+			</div>
+		</section>
+
+		<section class="section speakers" id="speakers">
+			<div class="container">
+
+				<h2 class="section__title">First speakers</h2>
+
+				<div class="speakers-list">
+					<div class="speakers-list__sep"></div>
+
+					<div class="speakers-list__item">
+						<div class="speakers-list__img-wrap">
+							<img alt="" class="speakers-list__img" src="pic/speakers/douglas.jpg" height="243" width="243">
+							<svg class="speakers-list__flag vanilla" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#flag"></use>
+							</svg>
+						</div>
+
+						<h4 class="speakers-list__name">Douglas Crockford</h4>
+
+						<div class="speakers-list__info">
+							<!-- <a class="speakers-list__company" href="#"><img src="pic/company_shopify.jpg" height="25" width="84"></a> -->
+							PayPal, San Francisco
+						</div>
+
+						<div class="speakers-list__desc">
+							<p class="speakers-list__p">A developer and entrepreneur best known for his ongoing involvement in the development of JavaScript. He popularized JSON and helped develop JSLint and JSMin. He is currently a senior JavaScript architect at PayPal.</p>
+						</div>
+
+						<!-- <ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="https://github.com/MicheleBertoli" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-gh" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://twitter.com/MicheleBertoli" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-tw" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://medium.com/@michelebertoli" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+						</ul> -->
+					</div>
+
+					<div class="speakers-list__item">
+						<div class="speakers-list__img-wrap">
+							<img alt="" class="speakers-list__img" src="pic/speakers/jennifer.jpg" height="243" width="243">
+
+							<svg class="speakers-list__flag testing" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#flag"></use>
+							</svg>
+						</div>
+
+						<h4 class="speakers-list__name">Jennifer Voss</h4>
+
+						<div class="speakers-list__info">
+							<!-- <a class="speakers-list__company" href="#"><img src="pic/company_elsevier.jpg" height="17" width="91"></a>-->
+							Elsevier, Philadelphia
+						</div>
+
+						<div class="speakers-list__desc">
+							<p class="speakers-list__p">Jenn is a software engineer on the Precision Medicine team at Elsevier. She is a Google Developer Expert in web technologies, and organizer of LibertyJS, PhillyJSDev and TacoJS. She likes to automate things, and once built a thermoregulated heat lamp for her pet lizard. Because she loves her lizard - almost as much as not having to get off the couch to flip a switch.</p>
+						</div>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="https://github.com/jennvoss" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-gh" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://twitter.com/VossJenn" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-tw" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<!--<li class="socials__item">
+								<a class="socials__link" href="https://medium.com/@michelebertoli" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li> -->
+						</ul>
+					</div>
+
+					<div class="speakers-list__item ladder">
+						<ul class="skill-list">
+							<li class="skill-list__item">
+								<svg aria-hidden="true" class="skill-list__flag red" role="img">
+									<use xlink:href="img/sprite-inline.svg?v4#flag-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+								</svg> Angular
+							</li>
+							<li class="skill-list__item">
+								<svg aria-hidden="true" class="skill-list__flag sky-blue" role="img">
+									<use xlink:href="img/sprite-inline.svg?v4#flag-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+								</svg> Vue
+							</li>
+							<li class="skill-list__item">
+								<svg aria-hidden="true" class="skill-list__flag yellow" role="img">
+									<use xlink:href="img/sprite-inline.svg?v4#flag-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+								</svg> Vanilla
+							</li>
+							<li class="skill-list__item">
+								<svg aria-hidden="true" class="skill-list__flag green" role="img">
+									<use xlink:href="img/sprite-inline.svg?v4#flag-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+								</svg> Performance
+							</li>
+							<li class="skill-list__item">
+								<svg aria-hidden="true" class="skill-list__flag blue" role="img">
+									<use xlink:href="img/sprite-inline.svg?v4#flag-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+								</svg> Testing
+							</li>
+							<li class="skill-list__item">
+								<svg aria-hidden="true" class="skill-list__flag gray" role="img">
+									<use xlink:href="img/sprite-inline.svg?v4#flag-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+								</svg> Security
+							</li>
+              <li class="skill-list__item">
+                <svg aria-hidden="true" class="skill-list__flag orange" role="img">
+                  <use xlink:href="img/sprite-inline.svg?v4#flag-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                </svg> Other
+              </li>
+						</ul>
+					</div>
+
+					<div class="speakers-list__item">
+						<div class="speakers-list__img-wrap">
+							<img alt="" class="speakers-list__img" src="pic/speakers/asim.png" height="243" width="243">
+
+							<svg class="speakers-list__flag nsa" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#flag"></use>
+							</svg>
+						</div>
+
+						<h4 class="speakers-list__name">Asim Hussain</h4>
+
+						<div class="speakers-list__info">
+							<!-- <a class="speakers-list__company" href="#"><img src="pic/company_shopify.jpg" height="25" width="84"></a>-->
+              Microsoft, London
+						</div>
+
+						<div class="speakers-list__desc">
+							<p class="speakers-list__p">A developer, trainer, author and speaker with over 16 years experience working for organisations such as the European Space Agency, Google and now Microsoft, where he is a Senior Cloud Developer Advocate.</p>
+						</div>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="https://github.com/jawache" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-gh" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://twitter.com/jawache" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-tw" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://medium.com/@jawache" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="speakers-list__sep"></div>
+
+					<div class="speakers-list__item ladder"></div>
+
+					<div class="speakers-list__item">
+						<div class="speakers-list__img-wrap">
+							<img alt="" class="speakers-list__img" src="pic/speakers/fatih.jpg" height="243" width="243">
+
+							<svg class="speakers-list__flag angular" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#flag"></use>
+							</svg>
+						</div>
+
+						<h4 class="speakers-list__name">Fatih Acet</h4>
+
+						<div class="speakers-list__info">
+							<!--<a class="speakers-list__company" href="#"><img src="pic/company_shopify.jpg" height="25" width="84"></a>-->
+							GitLab, Amsterdam
+						</div>
+
+						<div class="speakers-list__desc">
+							<p class="speakers-list__p">A Senior Frontend Engineer at GitLab responsible for the maintenance of GitLab's frontend. He is passionate about delivering solid frontend code and loves to see the things he created being used by thousands of others.</p>
+						</div>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="https://github.com/fatihacet" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-gh" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://twitter.com/fatihacet" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-tw" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://medium.com/@fatihacet" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="speakers-list__item">
+						<div class="speakers-list__img-wrap">
+							<img alt="" class="speakers-list__img" src="pic/speakers/diekus.jpg" height="243" width="243">
+
+							<svg class="speakers-list__flag nsa" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#flag"></use>
+							</svg>
+						</div>
+
+						<h4 class="speakers-list__name">Diego González</h4>
+
+						<div class="speakers-list__info">
+							<!-- <a class="speakers-list__company" href="#"><img src="pic/company_shopify.jpg" height="25" width="84"></a> -->
+							Samsung, London
+						</div>
+
+						<div class="speakers-list__desc">
+							<p class="speakers-list__p">A Senior Engineer at Samsung Research UK. He works as a Developer Advocate in the Samsung Internet team. Combining his interests in 3D in apps, GUIs, VR, creative uses of technology, and video game , he spends time wandering the VR fields in search of sense.</p>
+						</div>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="https://github.com/diekus/" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-gh" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://twitter.com/diekus" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-tw" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://medium.com/@diekus" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="speakers-list__item">
+						<div class="speakers-list__img-wrap">
+							<img alt="" class="speakers-list__img" src="pic/speakers/claudia.jpg" height="243" width="243">
+
+							<svg class="speakers-list__flag vanilla" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#flag"></use>
+							</svg>
+						</div>
+
+						<h4 class="speakers-list__name">Claudia Hernández</h4>
+
+						<div class="speakers-list__info">
+							<!--<a class="speakers-list__company" href="#"><img src="pic/company_shopify.jpg" height="25" width="84"></a>-->
+							Auth0, Mexico
+						</div>
+
+						<div class="speakers-list__desc">
+							<p class="speakers-list__p">A frontend developer at Auth0. She has previously worked at Dailymotion in Paris and on projects for companies such as Air France, EDF, Groupe SEB and Aeroport de Paris. She has a computer science background and loves learning emerging web technologies.</p>
+						</div>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="https://github.com/claudiahdz" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-gh" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://twitter.com/koste4" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-tw" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<!-- <li class="socials__item">
+								<a class="socials__link" href="https://medium.com/@michelebertoli" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>-->
+						</ul>
+					</div>
+
+					<div class="speakers-list__sep"></div>
+
+					<div class="speakers-list__item">
+						<div class="speakers-list__img-wrap">
+							<img alt="" class="speakers-list__img" src="pic/speakers/andy.jpg" height="243" width="243">
+
+							<svg class="speakers-list__flag nsa" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#flag"></use>
+							</svg>
+						</div>
+
+						<h4 class="speakers-list__name">Andy Mockler</h4>
+
+						<div class="speakers-list__info">
+							<!--<a class="speakers-list__company" href="#"><img src="pic/company_shopify.jpg" height="25" width="84"></a>-->
+              Shopify, Chicago
+						</div>
+
+						<div class="speakers-list__desc">
+							<p class="speakers-list__p">A front-end developer at Shopify breaking and building things as part of the merchant analytics team. His previous projects included contributions to large open source projects like React Native, as well as a project that powered a small online business he ran.</p>
+						</div>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="https://github.com/asmockler" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-gh" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://twitter.com/asmockler" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-tw" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://medium.com/@andymockler" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="speakers-list__item">
+						<div class="speakers-list__img-wrap">
+							<img alt="" class="speakers-list__img" src="pic/speakers/sebastian.jpg" height="243" width="243">
+
+							<svg class="speakers-list__flag nsa" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#flag"></use>
+							</svg>
+						</div>
+
+						<h4 class="speakers-list__name">Sebastian Golasch</h4>
+
+						<div class="speakers-list__info">
+							<!-- <a class="speakers-list__company" href="#"><img src="pic/company_shopify.jpg" height="25" width="84"></a>-->
+              Deutsche Telekom, Cologne
+						</div>
+
+						<div class="speakers-list__desc">
+							<p class="speakers-list__p">Sebastian works as a “Specialist Senior Manager Software Developer” at Deutsche Telekom, after some time developing backend applications with Java and PHP he became a citizen of the JavaScript world. Recently he´s getting his hands dirty with Python and Rust. For the last six years Sebastian tries to improve our lives, working on Deutsche Telekoms Smart Home platform Qivicon.
+
+                Famous last words:
+                “If I would’ve wanted to work in ‘Enterprise’, I’d have joined Starfleet…”</p>
+						</div>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="https://github.com/asciidisco" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-gh" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://twitter.com/asciidisco" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-tw" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://medium.com/@asciidisco" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="speakers-list__item">
+						<div class="speakers-list__img-wrap">
+							<img alt="" class="speakers-list__img" src="pic/speakers/imad.jpg" height="243" width="243">
+
+							<svg class="speakers-list__flag performance" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v4#flag"></use>
+							</svg>
+						</div>
+
+						<h4 class="speakers-list__name">Imad Elyafi</h4>
+
+						<div class="speakers-list__info">
+							<!--<a class="speakers-list__company" href="#"><img src="pic/company_shopify.jpg" height="25" width="84"></a>-->
+              Pinterest, San Francisco
+						</div>
+
+						<div class="speakers-list__desc">
+							<p class="speakers-list__p">A software engineer on Core Experience Team at Pinterest. Before, he worked as a software engineer on Newsfeed and Search at Facebook. He’s passionate about Javascript and cutting edge web technologies.</p>
+						</div>
+
+						<ul class="socials">
+							<li class="socials__item">
+								<a class="socials__link" href="https://github.com/eelyafi" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+								<use xlink:href="img/sprite-inline.svg?v4#socials-gh" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+							</li>
+						</ul>
+					</div>
+
+          <div class="speakers-list__item">
+            <div class="speakers-list__img-wrap">
+              <img alt="" class="speakers-list__img" src="pic/speakers/armagan.jpg" height="243" width="243">
+
+              <svg class="speakers-list__flag nsa" role="img" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v3#flag"></use>
+              </svg>
+            </div>
+
+            <h4 class="speakers-list__name">Armagan Amcalar</h4>
+
+            <div class="speakers-list__info">
+              <!--<a class="speakers-list__company" href="#"><img src="pic/company_shopify.jpg" height="25" width="84"></a>-->
+              unu GmbH, Berlin
+            </div>
+
+            <div class="speakers-list__desc">
+              <p class="speakers-list__p">Specialist Senior Manager Software Developer at Deutsche Telekom. After some time developing backend applications with Java and PHP, he became a citizen of the JS world. For the last six years, he’s worked on Deutsche Telekom’s Smart Home platform Qivicon.</p>
+            </div>
+
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link" href="https://github.com/dashersw" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+                  <use xlink:href="img/sprite-inline.svg?v3#socials-gh" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="https://twitter.com/dashersw" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+                  <use xlink:href="img/sprite-inline.svg?v3#socials-tw" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="https://medium.com/@dashersw" target="_blank"><svg aria-hidden="true" class="socials__img" role="img">
+                  <use xlink:href="img/sprite-inline.svg?v3#socials-med" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+              </li>
+            </ul>
+          </div>
+
+					<!-- <div class="speakers-list__item ladder">
+
+						<div class="add-speaker">
+							<p class="add-speaker__title">You?</p>
+							<p class="add-speaker__p">CFP is open until 1st March</p>
+							<a class="add-speaker__btn basic-btn small" href="#"><span class="basic-btn__text">SUBMIT PROPOSAL</span></a>
+						</div>
+
+					</div>-->
+
+					<div class="speakers-list__sep"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section food info" id="food">
+			<video class="food__video" preload="auto" muted autoplay loop poster="img/dummy_bg_dj.jpg" id="bgvid2">
+        <source src="video/video_dj.webm" type="video/webm">
+        <source src="video/video_dj.mp4" type="video/mp4">
+      </video>
+
+			<div class="container">
+				<h2 class="info__title">Food (and drink) for thought</h2>
+
+				<div class="info__desc">
+					<p class="info__p">JavaScript has the potential to change lives and the world we live in. So don’t be shy and explore it with us! If you feel like seeing the most beautiful places in Amsterdam, tasting great food and discovering the city’s hidden perks, we got you covered with free city tours. Being friendly is the default in Amsterdam, even when it comes to ecology, and you can easily rent a bike or hop on public transport to explore any part of the city.</p>
+
+					<p class="info__p center">And, of course, the conference wouldn’t be complete without an afterparty! Amsterdam is known for its wild nightlife and all our attendees get an invitation to join in.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section schedule" id="schedule">
+			<div class="container">
+				<h2 class="section__title">Schedule</h2>
+
+				<div class="content-tab">
+
+          <button class="content-tab__tab js-tabs__tab active" id="react-tab">Conference &nbsp;<span>day</span></button>
+          <button class="content-tab__tab js-tabs__tab" id="general-tab">Workshops &nbsp;<span>day</span></button>
         </div>
 
-      </div>
-    </section>
-
-    <section class="section speakers half-height" id="speakers">
-      <div class="container aligner">
-
-        <h2 class="section__title">First speakers</h2>
-
-        <ul class="participants-list">
-          <li class="participants-list__item">
-            <div class="participants-list__img-wrap">
-              <img class="participants-list__img" src="pic/speakers/douglas.jpg" height="194" width="194" alt="">
+        <ul class="schedule-list js-tabs__panel" id="general-panel">
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Hackages team</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">Vue.js HackJam Workshop</h3>
+              <p class="schedule-list__p">
+                During this 3-hour HackJam workshop you’ll learn about the basics of Vue such as state, props, components, lifecycle hooks,... Understand how to use @vue/cli to bootstrap your Vue applications and discover the ecosystem of this progressive JavaScript framework.<br>
+                You'll learn a lot with the hands-on approach of this HackJam: we'll give you a broken application which you will have to fix, using Vue technology.
+              </p>
             </div>
+          </li>
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Roman Liutikov</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">ClojureScript Workshop</h3>
+              <p class="schedule-list__p">
+                ClojureScript is a compiler for Clojure language that targets JavaScript. It is a modern Lisp with strong emphasis on pragmatic functional programming. ClojureScript favors immutability and simplicity, it proved that React is actually faster with immutable data structures. Today the language is being heavily used for building UIs with React that runs on the web and mobile, with React Native, as well as backend services with Node and JVM. This workshop covers basics of the language through a set of lectures and exercises. We are going to explore ClojureScript’s idioms, learn syntax, data structures, standard library of the language and see how it is used to model UIs.
+              </p>
+            </div>
+          </li>
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Maurice de Beijer</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">Advanced React Components Workshop</h3>
+              <p class="schedule-list__p">
+                In this half day workshop, you are going to learn how to create better React components. We will start of simple and compare controlled versus uncontrolled components and when you want to use which of the two options. Then you will learn how to use the React.Fragment class to reduce the number of DOM nodes you need to create at runtime.<br>
 
-            <h4 class="participants-list__name">Douglas Crockford</h4>
+After the intro you will learn how to use Reacts Component componentDidCatch() lifecycle function to catch errors and make your applications more resilient to failure. We will also take a look at the sorts of errors that componentDidCatch() doesn’t catch for you.<br>
 
-            <p class="participants-list__info">PayPal, San Francisco</p>
-            <p class="participants-list__desc">Keynote topic from the creator of JSON and author of "JavaScript Good Parts" to be announced.</p>
+Next you will learn about two different ways of adding cross cutting concerns like error handling to React components. First, we will look at creating higher order components like the Redux connect function. While higher order components are a great way of extending components, they aren’t without their drawbacks. So, we will investigate an alternative approach using render props. This is another great mechanism, and a more flexible approach as well.<br>
 
-            <!-- <ul class="socials">
-              <li class="socials__item">
-                <a class="socials__link" href="https://twitter.com/jawache"><span class="icon-tw"></span></a>
-              </li>
-
-              <li class="socials__item">
-                <a class="socials__link" href="https://github.com/jawache"><span class="icon-gh"></span></a>
-              </li>
-            </ul>-->
+Finally, you will learn how to use the new React Context that will ship with React 16.3 to make it even more convenient to pass data from one component to another<br>
+              </p>
+            </div>
+          </li>
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Ivan Jovanovic</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">Testing JavaScript applications</h3>
+              <p class="schedule-list__p">
+                Testing JavaScript applications workshop will show you how to use modern testing tools to test JS full stack applications. It will cover frontend and backend side (React and NodeJS) and will explain what are the best practices for testing. We will go through tools like Jest, Mocha, Jasmine, Cypress etc. Since React is the most popular framework, frontend tests will be testing React apps.<br>
+After this workshop, attendees will be able to efficiently test their JS applications, from UI frontend side to backend side. They will understand what are the best practices and best tools for building testing environment.
+              </p>
+            </div>
+          </li>
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Nikolas Burk</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">GraphQL Workshop</h3>
+              <p class="schedule-list__p">
+                TBD
+              </p>
+            </div>
           </li>
 
-          <li class="participants-list__item">
-            <div class="participants-list__img-wrap">
-              <img class="participants-list__img" src="pic/speakers/asim.png" height="194" width="194" alt="">
-            </div>
-
-            <h4 class="participants-list__name">Asim Hussain</h4>
-
-            <p class="participants-list__info">Microsoft, London</p>
-            <p class="participants-list__desc"><span>Scaling your SPA</span> If you are building an SPA, you can take advantage of optimizations that give you epic scalability, with low latencies at a fraction of the cost.</p>
-
-            <ul class="socials">
-              <li class="socials__item">
-                <a class="socials__link" href="https://twitter.com/jawache"><span class="icon-tw"></span></a>
-              </li>
-
-              <li class="socials__item">
-                <a class="socials__link" href="https://github.com/jawache"><span class="icon-gh"></span></a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="participants-list__item">
-            <div class="participants-list__img-wrap">
-              <img class="participants-list__img" src="pic/speakers/claudia.jpg" height="194" width="194" alt="">
-            </div>
-
-            <h4 class="participants-list__name">Claudia Hernández</h4>
-
-            <p class="participants-list__info">Auth0, Mexico</p>
-            <p class="participants-list__desc"><span>How to sort your socks using Javascript.</span> Let’s get our computer science hat on and explore some useful sorting algorithms currently implemented by JS engines used by Node such as Chrome's V8 and Microsoft's Chakra.</p>
-
-            <ul class="socials">
-              <li class="socials__item">
-                <a class="socials__link" href="https://twitter.com/koste4"><span class="icon-tw"></span></a>
-              </li>
-
-              <li class="socials__item">
-                <a class="socials__link" href="https://github.com/claudiahdz"><span class="icon-gh"></span></a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="participants-list__item">
-            <div class="participants-list__img-wrap">
-              <img class="participants-list__img" src="pic/speakers/imad.jpg" height="194" width="194" alt="">
-            </div>
-
-            <h4 class="participants-list__name">Imad Elyafi</h4>
-
-            <p class="participants-list__info">Pinterest, San Francisco</p>
-            <p class="participants-list__desc"><span>Bringing Mobile Web back to Life.</span> In Pinterest we rebuilt the whole mobile web experience for authenticated users which now looks and feels just like our native apps while maintaining the fast load times expected of mobile web. We used cutting edge technologies which led to a 40% increase in each of our core engagement metrics and up to 30% in time spent. But it was not all sunshine and rainbows...</p>
-
-            <ul class="socials">
-              <li class="socials__item">
-                <a class="socials__link" href="https://github.com/eelyafi"><span class="icon-gh"></span></a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="participants-list__item">
-            <div class="participants-list__img-wrap">
-              <img class="participants-list__img" src="pic/speakers/andy.jpg" height="194" width="194" alt="">
-            </div>
-
-            <h4 class="participants-list__name">Andy Mockler</h4>
-
-            <p class="participants-list__info">Shopify, Chicago</p>
-            <p class="participants-list__desc"><span>TypeScript Ruined My Life (In a Good Way).</span> Some tools are so useful that once you've used them in one project, it is hard to work on other projects without them. React was certainly that way for me when I first started, and now TypeScript has become the same way.</p>
-
-            <ul class="socials">
-              <li class="socials__item">
-                <a class="socials__link" href="https://twitter.com/asmockler"><span class="icon-tw"></span></a>
-              </li>
-
-              <li class="socials__item">
-                <a class="socials__link" href="https://github.com/asmockler"><span class="icon-gh"></span></a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="participants-list__item">
-            <div class="participants-list__img-wrap">
-              <img class="participants-list__img" src="pic/speakers/jennifer.jpg" height="194" width="194" alt="">
-            </div>
-
-            <h4 class="participants-list__name">Jennifer Voss</h4>
-
-            <p class="participants-list__info">Elsevier, Philadelphia</p>
-            <p class="participants-list__desc"><span>Tales from the QA crypt.</span> JavaScript has all the tools required to cover your automated testing needs, and writing tests in the same language as your app is a no brainer. We'll cover the tools available today and the logistics of merging your QA and dev teams.</p>
-
-            <ul class="socials">
-              <li class="socials__item">
-                <a class="socials__link" href="https://twitter.com/VossJenn"><span class="icon-tw"></span></a>
-              </li>
-
-              <li class="socials__item">
-                <a class="socials__link" href="https://github.com/jennvoss"><span class="icon-gh"></span></a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="participants-list__item">
-            <div class="participants-list__img-wrap">
-              <img class="participants-list__img" src="pic/speakers/diekus.jpg" height="194" width="194" alt="">
-            </div>
-
-            <h4 class="participants-list__name">Diego González</h4>
-
-            <p class="participants-list__info">Samsung, London</p>
-            <p class="participants-list__desc"><span>Look ma! No hands!.</span> We will combine on stage different hardware devices (controllers, camera, microphone, …) and Web APIs (Gamepad, Web Speech, …) to make sure your experience can be enjoyed even without 6DoF controllers, yes, even with no hands.</p>
-
-            <ul class="socials">
-              <li class="socials__item">
-                <a class="socials__link" href="https://twitter.com/diekus"><span class="icon-tw"></span></a>
-              </li>
-
-              <li class="socials__item">
-                <a class="socials__link" href="https://github.com/diekus/"><span class="icon-gh"></span></a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="participants-list__item">
-            <div class="participants-list__img-wrap">
-              <img class="participants-list__img" src="pic/speakers/fatih.jpg" height="194" width="194" alt="">
-            </div>
-
-            <h4 class="participants-list__name">Fatih Acet</h4>
-
-            <p class="participants-list__info">GitLab, Amsterdam</p>
-            <p class="participants-list__desc"><span>Vue JS Best Practices</span> According to State of the JavaScript 2017 report, 43% of the Frontend Developers want to learn Vue JS. It's a really simple and elegant framework and in this talk we will talk about the best parts of Vue JS.</p>
-
-            <ul class="socials">
-              <li class="socials__item">
-                <a class="socials__link" href="https://twitter.com/fatihacet"><span class="icon-tw"></span></a>
-              </li>
-
-              <li class="socials__item">
-                <a class="socials__link" href="https://github.com/fatihacet"><span class="icon-gh"></span></a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="participants-list__item">
-            <div class="participants-list__img-wrap">
-              <img class="participants-list__img" src="pic/speakers/sebastian.jpg" height="194" width="194" alt="">
-            </div>
-
-            <h4 class="participants-list__name">Sebastian Golasch</h4>
-
-            <p class="participants-list__info">Deutsche Telekom, Cologne</p>
-            <p class="participants-list__desc"><span>The dark ages of IoT.</span> Based on NodeJS examples I´ll explain (with code, examples & hardware demos), where we are today, what problems are still waiting to be solved
-              and how modern (so-called) artificial intelligence (don't like that term) used to solve the biggest problem of all: The human <-> computer interface.</p>
-
-            <ul class="socials">
-              <li class="socials__item">
-                <a class="socials__link" href="https://twitter.com/asciidisco"><span class="icon-tw"></span></a>
-              </li>
-
-              <li class="socials__item">
-                <a class="socials__link" href="https://github.com/asciidisco"><span class="icon-gh"></span></a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="participants-list__item">
-            <div class="participants-list__img-wrap">
-              <img class="participants-list__img" src="pic/speakers/armagan.jpg" height="194" width="194" alt="">
-            </div>
-
-            <h4 class="participants-list__name">Armagan Amcalar</h4>
-
-            <p class="participants-list__info">unu GmbH, Berlin</p>
-            <p class="participants-list__desc"><span>console.log(brain).</span> Demonstration of an open-source Brain-Computer Interface that is completely developed with JavaScript, from the ground up, using neural networks and signal processing.</p>
-
-            <ul class="socials">
-              <li class="socials__item">
-                <a class="socials__link" href="https://twitter.com/dashersw"><span class="icon-tw"></span></a>
-              </li>
-
-              <li class="socials__item">
-                <a class="socials__link" href="https://github.com/dashersw"><span class="icon-gh"></span></a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="participants-list__item"></li>
-          <li class="participants-list__item"></li>
-
-          <!--<li class="participants-list__item">-->
-            <!--<div class="participants-list__img-wrap">-->
-              <!--<img src="pic/speakers/paper-plane.png" height="194" width="194" alt="">-->
+          <!--<li class="schedule-list__item">-->
+            <!--<div class="schedule-list__time">19.30</div>-->
+            <!--<div class="schedule-list__speaker">Afterparty</div>-->
+            <!--<div class="schedule-list__desc">-->
+              <!--<h3 class="schedule-list__title">This is for all the devs who care about performance and who think twice before adding any external library</h3>-->
+              <!--<p class="schedule-list__p">-->
+              	<!--<img class="schedule-list__pic" src="pic/speaker_pic1.jpg" height="163" width="241">React Native allows for building great native apps by utilising native mobile components. Apparently handling touch and gestures is quite tricky as it often needs javascript VM.</p>-->
             <!--</div>-->
-
-            <!--<h4 id="cfp" class="participants-list__name">You?</h4>-->
-
-            <!--<p class="participants-list__info">CFP is open until 1st March</p>-->
-
-            <!--<a class="basic-btn red subscribe-form__submit" style="margin: 0 0 70px 0; min-height: 0;"-->
-               <!--href="https://docs.google.com/forms/d/19HUzF0niKkdAjV335OVTWrG_i8PnTpW6IYNxHCCYPx8">submit proposal</a>-->
           <!--</li>-->
-
         </ul>
-      </div>
-    </section>
 
-    <section class="section event no-flex" id="event" style="padding: 0;">
-      <div class="container aligner">
-
-        <div class="event-info">
-          <div class="event-info__desc">
-            <h3 class="section__subtitle">Last year aftermovie</h3>
-            <div class="section__desc">
-              <p>
-                <div style="position:relative;height:0;padding-bottom:41.4%"><iframe src="https://www.youtube.com/embed/SBL_e12kdGc?list=PLfIM4SvaiIyzaLhvwGEa4QzPb9oTD0Ioc&amp;ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="870" height="360" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
+        <ul class="schedule-list js-tabs__panel active" id="react-panel">
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Armagan Amcalar</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">console.log(brain)</h3>
+              <p class="schedule-list__p">
+                What if you could log your brain to the developer console, typing with your brain signals? This talk is a demonstration of an open-source Brain-Computer Interface that is completely developed with JavaScript, from the ground up, using neural networks and signal processing. Armagan hits the stage with a wireless EEG headset, shows how to read signals from the brain in JavaScript using native C++ Node.js modules over USB, and the implementation in Electron, Node.js and Vue.js.
               </p>
-              <!-- <p>
-                <img src="./pic/zuiderkerk-amsterdam.png"/>
-              </p>
-              <p>
-                Join internationally known JavaScript enthusiasts to share inspiration and spend a great summer day in one of the most unique Amsterdam locations.
-              </p> -->
             </div>
-          </div>
-        </div>
+          </li>
 
-      </div>
-    </section>
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Fatih Acet</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">Vue JS Best Practices</h3>
+              <p class="schedule-list__p">
+                At GitLab we use Vue JS in production more than a year. I refactored old parts of GitLab with Vue and created many new features using the framework. We are really impressed how Vue is simple yet powerful. First 10 mins of the talk are an introduction for new comers, then deep dive into the best techniques, like state management, reactivity, tooling and also the experiences about new feature development and migrating a legacy featue to Vue.
+              </p>
+            </div>
+          </li>
 
-		<section class="section sponsors no-flex" id="sponsors">
-      <div class="container aligner">
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Imad Elyafi</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">Bringing Mobile Web back to Life</h3>
+              <p class="schedule-list__p">
+                We rebuilt the whole Pinterest mobile web experience for authenticated users. It looks and feels just like our native apps while maintaining the fast load times expected of mobile web. We used cutting edge technologies which led to a 40% increase in each of our core engagement metrics and up to 30% in time spent. But it was not all sunshine and rainbows ! In this talk I will share challenges, technologies and best practices that we used for the new Mobile Website.
+              </p>
+            </div>
+          </li>
+
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Diego González</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">Look ma! No hands!</h3>
+              <p class="schedule-list__p">
+                The main points of the presentation will be focused on tips and best practices regarding WebXR UX. I will have a several VR devices ready to show how an experience can be adapted to run independently of the hardware that's available to the user. Main point is to teach developers how can they make their content truly accessible with as little as possible.
+              </p>
+            </div>
+          </li>
+
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Claudia Hernández</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">How to sort your socks using Javascript</h3>
+              <p class="schedule-list__p">
+                No matter your experience in JS, you have probably came across the Array#sort method at some point. Do you remember the first time you tried sorting numbers? You were probably astonished that the sort method does not sort things out quite as we might expect.
+                Believe it or not, there is actually much more going on than meets the eye! Let’s get our computer science hat on and explore some useful sorting algorithms currently implemented by JS engines used by Node such as Chrome's V8 and Microsoft's Chakra. As a developer, learning how these algorithms work, why and when to use them will help you create more performant and consistent applications!
+              </p>
+            </div>
+          </li>
+
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Andy Mockler</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">TypeScript Ruined My Life (In a Good Way)</h3>
+              <p class="schedule-list__p">
+                Some tools are so useful that once you've used them in one project, it is hard to work on other projects without them. React was certainly that way for me when I first started, and now TypeScript has become the same way.
+                This talk will cover why typed JavaScript, especially in large codebases, is worth the added effort. I will discuss my personal experiences - the good, the bad, and the ugly - and talk about why I can't seem to start a project without `npm install typescript`.
+              </p>
+            </div>
+          </li>
+
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Jennifer Voss</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">Tales from the QA crypt</h3>
+              <p class="schedule-list__p">
+                An anthology of QA horror stories from the past, and how to avoid such situations with TDD. When tests are built in from the beginning and not tacked on after features are built, fewer defects are created and development moves faster. JavaScript has all the tools required to cover your automated testing needs, and writing tests in the same language as your app is a no brainer. We'll cover the tools available today and the logistics of merging your QA and dev teams.
+              </p>
+            </div>
+          </li>
+
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Sebastian Golasch</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">The dark ages of IoT</h3>
+              <p class="schedule-list__p">
+                Advertisements suggest that we are at the zenith of mankind's scientific knowledge and technological power, but when it comes to IoT and the so-called 'Smart Home', we are clearly not. In fact, we are in the middle of the dark age. I'll explain the challenges that we're facing today (from an implementors perspective), what's 'wrong' with our current products & show you how a smart 'Smart Home' experience could look like in the near future.
+              </p>
+            </div>
+          </li>
+
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Asim Hussain</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">How to scale an SPA?</h3>
+              <p class="schedule-list__p">
+                I'm going to tell you a secret. If you are building an SPA, you can take advantage of optimisations that give you epic scalability, with super low latencies at a fraction of the cost.
+                To understand the secret, I'll need to teach you a few things such as the actors involved in transferring data from your server to the browser; and about the ancient technology called 'serverless' which you might be surprised to learn is something you've already been using for years.
+                By the end, you'll know the secret of how to architect an SPA for scale without breaking the bank.
+              </p>
+            </div>
+          </li>
+        </ul>
+			</div>
+		</section>
+
+		<!--<section class="section award" id="award">-->
+			<!--<div class="container">-->
+				<!--<h2 class="info__title">JS Open Source Awards</h2>-->
+
+				<!--<div class="nominations">-->
+					<!--<div class="nominations__cake1"><img src="img/cake_1.svg"></div>-->
+					<!--<div class="nominations__desc">-->
+						<!--<h3 class="nominations__title">Nominations</h3>-->
+						<!--<p class="nominations__item">Breakthrough of the year</p>-->
+						<!--<p class="nominations__item">The most exciting use of technology</p>-->
+						<!--<p class="nominations__item">Fun side project of the year</p>-->
+						<!--<p class="nominations__item">Productivity booster</p>-->
+					<!--</div>-->
+					<!--<div class="nominations__cake2"><img src="img/cake_2.svg"></div>-->
+				<!--</div>-->
+
+				<!--<div class="info__desc">-->
+					<!--<p class="info__p">We’re looking specifically at open source projects or initiatives, with or without a code, but following an open and transparent culture, open for collaboration and contributions from any person interested.</p>-->
+
+					<!--<p
+					 class="info__p">Github stars are not our criteria, and we’re looking for hidden gems (non yet maintstream), that may not have enough marketing power or huge companies behind them. The main goal of the project is to shed some light on great projects, that weren’t enough noticed in a competitive environment and hype.</p>-->
+				<!--</div>-->
+
+				<!--&lt;!&ndash; <a class="basic-btn" href="#"><span class="basic-btn__text">More about JS Open Source Awards</span></a> &ndash;&gt;-->
+			<!--</div>-->
+		<!--</section>-->
+
+		<section class="section community" id="community">
+			<div class="container">
+				<h2 class="info__title">Giving back to community</h2>
+
+				<div class="info__desc">
+					<p class="info__p">When we established our JS meetup 6 years ago, we never imagined we would welcome NUMBER attendees at our events and organize NUMBER meetups and multiple spin-offs in Europe. Our secret? We welcome people from all walks of life in our community, and we are a proud partner of initiatives like Unicorns in Tech, the global tech network for LGBT professionals and straight allies.</p>
+
+					<p class="info__p">We know that supporting diversity inside and outside IT must not end at mere statements, which is why are now developing diversity scholarship programs that will be announced in the coming weeks.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section sponsors" id="sponsors">
+			<div class="container">
+
+				<h2 class="section__title">Partners</h2>
+
+				<div class="sponsors-block">
+					<!--<p class="sponsors-block__desc">Gold</p>-->
+
+					<!--<div class="sponsors-gold">-->
+						<!--<div class="sponsors-block__img-wrap">-->
+							<!--<a href="http://zoover.nl/jobs"><img src="pic/sponsors/zoover.png" height="59" width="280" alt="Zoover" class="sponsors-block__img"></a>-->
+						<!--</div>-->
+						<!--<div class="sponsors-block__img-wrap">-->
+							<!--<a href="http://www.onior.com"><img src="pic/sponsors/orion.png" height="76" width="290" alt="Onior" class="sponsors-block__img"></a>-->
+						<!--</div>-->
+						<!--<div class="sponsors-block__img-wrap">-->
+							<!--<a href="https://www.evision-software.com"><img src="pic/sponsors/envision.png" height="77" width="280" alt="eVision" class="sponsors-block__img"></a>-->
+						<!--</div>-->
+						<!--<a class="sponsors-block__img-wrap" href="https://www.jetbrains.com">-->
+							<!--<img src="pic/sponsors/jetbrains.png" height="173" width="159" alt="Jetbrains" class="sponsors-block__img">-->
+						<!--</a>-->
+						<!--<div class="sponsors-block__img-wrap">-->
+							<!--<a href="https://www.linkedin.com/company-beta/6444396"><img src="pic/sponsors/shopco.png" height="87" width="317" alt="Shop.com" class="sponsors-block__img"></a>-->
+						<!--</div>-->
+					<!--</div>-->
+
+					<!--<p class="sponsors-block__desc">Silver</p>-->
+
+					<!--<div class="sponsors-silver">-->
+						<!--<a class="sponsors-block__img-wrap" href="https://facebook.com">-->
+							<!--<img class="sponsors-block__img" src="pic/sponsors/partner_1.png" height="51" width="220" alt="Facebook">-->
+						<!--</a>-->
+						<!--<a class="sponsors-block__img-wrap" href="https://facebook.com">-->
+							<!--<img class="sponsors-block__img" src="pic/sponsors/partner_2.png" height="39" width="142" alt="Facebook">-->
+						<!--</a>-->
+						<!--<a class="sponsors-block__img-wrap" href="https://facebook.com">-->
+							<!--<img class="sponsors-block__img" src="pic/sponsors/partner_3.png" height="40" width="223" alt="Facebook">-->
+						<!--</a>-->
+						<!--<a class="sponsors-block__img-wrap" href="https://facebook.com">-->
+							<!--<img class="sponsors-block__img" src="pic/sponsors/partner_4.png" height="58" width="108" alt="Facebook">-->
+						<!--</a>-->
+						<!--<a class="sponsors-block__img-wrap" href="https://facebook.com">-->
+							<!--<img class="sponsors-block__img" src="pic/sponsors/partner_5.png" height="29" width="231" alt="Facebook">-->
+						<!--</a>-->
+						<!--<a class="sponsors-block__img-wrap" href="https://facebook.com">-->
+							<!--<img class="sponsors-block__img" src="pic/sponsors/partner_6.png" height="78" width="180" alt="Facebook">-->
+						<!--</a>-->
+						<!--<a class="sponsors-block__img-wrap" href="https://facebook.com">-->
+							<!--<img class="sponsors-block__img" src="pic/sponsors/partner_7.png" height="69" width="219" alt="Facebook">-->
+						<!--</a>-->
+					<!--</div>-->
+
+					<!--<p class="sponsors-block__desc">Bronze</p>-->
+
+					<!--<div class="sponsors-bronze">-->
+						<!--<a class="sponsors-block__img-wrap" href="https://facebook.com">-->
+							<!--<img class="sponsors-block__img" src="pic/sponsors/partner_8.png" height="35" width="143" alt="Facebook">-->
+						<!--</a>-->
+						<!--<a class="sponsors-block__img-wrap" href="https://facebook.com">-->
+							<!--<img class="sponsors-block__img" src="pic/sponsors/partner_9.png" height="100" width="118" alt="Facebook">-->
+						<!--</a>-->
+						<!--<a class="sponsors-block__img-wrap" href="https://facebook.com">-->
+							<!--<img class="sponsors-block__img" src="pic/sponsors/partner_10.png" height="47" width="162" alt="Facebook">-->
+						<!--</a>-->
+						<!--<a class="sponsors-block__img-wrap" href="https://facebook.com">-->
+							<!--<img class="sponsors-block__img" src="pic/sponsors/partner_11.png" height="43" width="109" alt="Facebook">-->
+						<!--</a>-->
+						<!--<a class="sponsors-block__img-wrap" href="https://facebook.com">-->
+							<!--<img class="sponsors-block__img" src="pic/sponsors/partner_12.png" height="61" width="108" alt="Facebook">-->
+						<!--</a>-->
+						<!--<a class="sponsors-block__img-wrap" href="https://facebook.com">-->
+							<!--<img class="sponsors-block__img" src="pic/sponsors/partner_13.png" height="35" width="171" alt="Facebook">-->
+						<!--</a>-->
+					<!--</div>-->
+
+					<!--<p class="sponsors-block__desc">Partners</p>-->
+
+					<div class="sponsors-bronze">
+						<a class="sponsors-block__img-wrap" href="https://www.microsoft.com">
+							<img class="sponsors-block__img" src="pic/sponsors/microsoft.png" width="120" alt="Microsoft" />
+						</a>
+						<a class="sponsors-block__img-wrap" href="https://www.google.com/">
+							<img class="sponsors-block__img" src="pic/sponsors/google.png" width="120" alt="Google" />
+						</a>
+						<a class="sponsors-block__img-wrap" href="https://www.uber.com/">
+							<img class="sponsors-block__img" src="pic/sponsors/uber-inverted.png" width="120" alt="Uber" />
+						</a>
+						<a class="sponsors-block__img-wrap" href="https://www.udacity.com/">
+							<img class="sponsors-block__img" src="pic/sponsors/udacity.png" width="80" alt="Udacity" />
+						</a>
+						<a class="sponsors-block__img-wrap" href="https://devfriendly.io">
+							<img class="sponsors-block__img" src="pic/sponsors/silver/devfriendly.png" width="180" alt="DevFriendly.io" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section contacts" id="contacts">
+			<div class="container">
+
+				<h2 class="section__title">contact us</h2>
+
+				<ul class="retro-socials small">
+					<li class="retro-socials__item">
+						<a class="retro-socials__link" href="https://twitter.com/amsterdamjs">
+							<img class="retro-socials__img" src="img/socials_tw.svg" alt="twitter">
+						</a>
+					</li>
+
+					<li class="retro-socials__item">
+						<a class="retro-socials__link" href="https://www.facebook.com/amsterdamjs">
+							<img class="retro-socials__img" src="img/socials_fb.svg" alt="facebook">
+						</a>
+					</li>
+
+					<li class="retro-socials__item">
+						<a class="retro-socials__link" href="https://www.youtube.com/channel/UCQM428Hwrvxla8DCgjGONSQ">
+							<img class="retro-socials__img" src="img/socials_yt.svg" alt="youtube">
+						</a>
+					</li>
+				</ul>
+
+				<p class="help">
+					<a class="help__link" href="/sponsors">Sponsorship Opportunities</a>
+					<a class="help__link" href="http://confcodeofconduct.com" target="_blank">Code Of Conduct</a>
+					<a class="help__link" href="/2017" target="_blank">Last year's event (2017)</a>
+					<a class="help__link" href="mailto:hi@amsterdamjs.com">Email Us!</a>
+				</p>
 
 
-        <!-- <div class="sponsors-block">
-          <div class="sponsors-block__img-wrap">
-            <a href="https://www.evolutiongaming.com">
-              <img src="pic/sponsors/eg.png" width="250" alt="Evolution Gaming" class="sponsors-block__img">
-            </a>
-            <a href="https://www.smartrecruiters.com/EvolutionGaming/114468023-javascript-developer" class="sponsors-hiring">Hiring</a>
-          </div>
+			</div>
+		</section>
 
-          <div class="sponsors-block__img-wrap silver">
-            <a href="http://bluefront.nl/">
-              <img src="pic/sponsors/bluefront.png" width="150" alt="Bluefront" class="sponsors-block__img">
-            </a>
-            <a href="http://bluefront.nl/vacature.html" class="sponsors-hiring">Hiring</a>
-          </div>
-
-          <div class="sponsors-block__img-wrap silver">
-            <a href="https://usabilla.com/">
-              <img src="pic/sponsors/usabilla.jpg?v3" width="150" alt="Usabilla" class="sponsors-block__img">
-            </a>
-            <a href="http://jobs.usabilla.com/o/frontend-developer" class="sponsors-hiring">Hiring</a>
-          </div>
-
-          <div class="sponsors-block__img-wrap silver">
-            <a  href="http://libertyglobal.com/">
-              <img src="pic/sponsors/liberty-global.jpg?v2" width="150" alt="Liberty Global" class="sponsors-block__img">
-            </a>
-            <a href="https://www.linkedin.com/jobs/view/279234905/?recommendedFlavor=HIDDEN_GEM&refId=604830181496316532482&trk=d_flagship3_search_srp_jobs" class="sponsors-hiring">Hiring</a>
-          </div>
-
-          <div class="sponsors-block__img-wrap silver horizontal">
-            <a href="https://voximplant.com/?lang=en">
-              <img src="pic/sponsors/voximplant.png" width="180" alt="Voximplant" class="sponsors-block__img">
-            </a>
-            <a href="http://voximplant.com/vacancy-bizdev/" class="sponsors-hiring">Hiring</a>
-          </div>
-
-          <div class="sponsors-block__img-wrap silver horizontal">
-            <a href="https://www.debijenkorf.nl">
-              <img src="pic/sponsors/bijenkorf.png" width="180" alt="de Bijenkorf" class="sponsors-block__img">
-            </a>
-            <a href="https://www.werkenbijdebijenkorf.nl/Vacatures/Vacature-Front-End-Developerr" class="sponsors-hiring">Hiring</a>
-          </div>
-
-          <div class="sponsors-block__img-wrap silver horizontal">
-            <a href="https://www.reaktor.com/">
-              <img src="pic/sponsors/reaktor.png" width="180" alt="Reaktor" class="sponsors-block__img">
-            </a>
-            <a href="https://www.reaktor.com/careers/full-stack-software-developer/" class="sponsors-hiring">Hiring</a>
-          </div>
-
-          <div class="sponsors-block__img-wrap silver horizontal">
-            <a href="https://www.adyen.com/">
-              <img src="pic/sponsors/adyen.png" width="180" alt="Adyen" class="sponsors-block__img">
-            </a>
-            <a href="https://www.adyen.com/careers/vacancies/development/position/510980/senior-javascript--front-end-developer" class="sponsors-hiring">Hiring</a>
-          </div>
-
-          <a class="sponsors-block__img-wrap bronze horizontal" href="https://www.thefrontendlab.com/">
-            <img src="pic/sponsors/thefrontendlab.png?v2" width="150" alt="thefrontendlab" class="sponsors-block__img">
-          </a>
-
-          <a class="sponsors-block__img-wrap bronze horizontal" href="http://pixelsprocessor.com/">
-            <img src="pic/sponsors/pixelsprocessor.png?v2" width="180" alt="Pixels Processor" class="sponsors-block__img">
-          </a>
-
-          <a class="sponsors-block__img-wrap bronze" href="http://nescio.co/">
-            <img src="pic/sponsors/nescio.jpg" width="150" alt="Startup Studio Nescio" class="sponsors-block__img">
-          </a>-->
-
-          <p class="sponsors-block__desc">Partners</p>
-
-          <a class="sponsors-block__img-wrap partner" href="https://www.microsoft.com/">
-            <img src="pic/sponsors/microsoft.png" width="120" alt="Microsoft" class="sponsors-block__img">
-          </a>
-          <a class="sponsors-block__img-wrap horizontal partner" href="https://www.google.com/">
-            <img src="pic/sponsors/google.png" width="120" alt="Google" class="sponsors-block__img">
-          </a>
-          <a class="sponsors-block__img-wrap partner" href="https://www.uber.com/" style="padding: 15px;">
-            <img src="pic/sponsors/uber.png" width="70" alt="Uber" class="sponsors-block__img">
-          </a>
-          <a class="sponsors-block__img-wrap partner" href="https://www.udacity.com/" style="padding: 15px;">
-            <img src="pic/sponsors/udacity.png" width="80" alt="Udacity" class="sponsors-block__img">
-          </a>
-          <a class="sponsors-block__img-wrap bronze horizontal" href="https://devfriendly.io">
-            <img src="pic/sponsors/devfriendly.png" width="180" alt="DevFriendly.io" class="sponsors-block__img">
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section contacts half-height" id="contacts">
-      <div class="container aligner">
-
-        <div class="socials-wrap">
-          <p class="socials-wrap__title">Contact us</p>
-
-          <ul class="socials big red">
-            <li class="socials__item">
-              <a class="socials__link" href="https://twitter.com/amsterdamjs"><span class="icon-tw"></span></a>
-            </li>
-
-            <li class="socials__item">
-              <a class="socials__link" href="https://www.facebook.com/amsterdamjs/"><span class="icon-fb"></span></a>
-            </li>
-
-            <li class="socials__item">
-              <a class="socials__link" href="https://www.youtube.com/channel/UCQM428Hwrvxla8DCgjGONSQ"><span
-                class="icon-yt"></span></a>
-            </li>
-          </ul>
-        </div>
-
-        <p class="help">
-          <a href="/sponsors" class="help__link">Sponsorship Opportunities</a>
-          <a href="http://confcodeofconduct.com" class="help__link">Code Of Conduct</a>
-          <!--<a href="mailto:hi@amsterdamjs.com" class="help__link" target="_blank">Interested in volunteering?</a>-->
-          <a href="mailto:hi@amsterdamjs.com" class="help__link">Email Us!</a>
-        </p>
-
-      </div>
-    </section>
-
-    <div style="display: none;"><!--LiveInternet counter--><script type="text/javascript">
+<div style="display: none;"><!--LiveInternet counter--><script type="text/javascript">
     document.write("<a href='//www.liveinternet.ru/click' "+
       "target=_blank><img src='//counter.yadro.ru/hit?t42.6;r"+
       escape(document.referrer)+((typeof(screen)=="undefined")?"":
@@ -521,21 +1278,19 @@
       "border='0' width='31' height='31'><\/a>")
   </script><!--/LiveInternet--></div>
 
-
-  </main><!-- .content -->
+	</main><!-- .content -->
 
   <footer class="footer">
-
     <div class="f-logo">
-      Event by <a href="http://frontendamsterdam.com">Foundation Frontend Amsterdam</a>
+      Event by <a class="f-logo__link" href="https://frontendamsterdam.com">Frontend<br/> Amsterdam</a>
     </div>
-
   </footer><!-- .footer -->
 
 </div>
 
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="js/scripts.js?21052017"></script>
+<script src="js/scripts.js?12032018"></script>
 
 <script type="text/javascript">
   var _gauges = _gauges || [];
@@ -567,7 +1322,6 @@
 /></noscript>
 <!-- DO NOT MODIFY -->
 <!-- End Facebook Pixel Code -->
-
 
 </body>
 </html>

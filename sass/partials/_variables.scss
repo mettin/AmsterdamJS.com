@@ -1,56 +1,26 @@
+/*----- FONTS -----*/
+
+$roboto:							'Roboto Mono', monospace;
+$lato:								'Lato', sans-serif;;
 
 
-$lato:					'Lato', sans-serif;
-$ssans:					'Source Sans Pro', Arial, Helvetica, sans-serif;
+$font-size: 18px;
+
+// end FONT
+
+/*
+$_________:					'________', Arial, Helvetica, sans-serif;
+$_________:					'________', Arial, Helvetica, sans-serif;
+*/
 
 
-$clr-red:			#fe020e;
-$clr-yellow:		#fedd01;
-$clr-black:			#3c3c3c;
+/*----- COLORS -----*/
 
-$inputs-list: 'input[type="email"]',
-              'input[type="number"]',
-              'input[type="password"]',
-              'input[type="search"]',
-              'input[type="tel"]',
-              'input[type="text"]',
-              'input[type="url"]',
+$clr-text:			#000000;
+$clr-black:			#221d1d;
+$clr-red:			#fe1b43;
 
-              // Webkit & Gecko may change the display of these in the future
-              'input[type="color"]',
-              'input[type="date"]',
-              'input[type="datetime"]',
-              'input[type="datetime-local"]',
-              'input[type="month"]',
-              'input[type="time"]',
-              'input[type="week"]';
+$grd-red-v:			linear-gradient(to bottom, #ff2e74 0%,#fe0814 100%);
+$grd-red-h:			linear-gradient(to right, #ff2e74 0%,#fe0814 100%);
 
-$unquoted-inputs-list: ();
-
-@each $input-type in $inputs-list {
-  $unquoted-inputs-list: append($unquoted-inputs-list, unquote($input-type), comma) !global;
-}
-$all-text-inputs: $unquoted-inputs-list;
-
-
-$inputs-list-f:'input[type="email"]:focus',
-                'input[type="number"]:focus',
-                'input[type="password"]:focus',
-                'input[type="search"]:focus',
-                'input[type="tel"]:focus',
-                'input[type="text"]:focus',
-                'input[type="url"]:focus',
-                'input[type="color"]:focus',
-                'input[type="date"]:focus',
-                'input[type="datetime"]:focus',
-                'input[type="datetime-local"]:focus',
-                'input[type="month"]:focus',
-                'input[type="time"]:focus',
-                'input[type="week"]:focus';
-
-$unquoted-inputs-list-f: ();
-@each $input-type-f in $inputs-list-f {
-  $unquoted-inputs-list-f: append($unquoted-inputs-list-f, unquote($input-type-f), comma) !global;
-}
-
-$all-text-inputs-focus: $unquoted-inputs-list-f;
+// end COLORS
