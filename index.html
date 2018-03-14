@@ -596,26 +596,7 @@
       </div>
     </section>
 
-		<section class="section newsletter info" id="newsletter">
-			<div class="container">
 
-				<h2 class="info__title">JavaScript always comes in handy</h2>
-
-				<div class="info__desc">
-					<p class="info__p">We want you to deeply engage with the new tech and have a hands-on experience at AmsterdamJS. That's why one of the two conference days is dedicated to free workshops and extra events that will push your skills and help boost your career.</p>
-
-					<p class="info__p center">Subscribe to our newsletter and be the first to grab a seat.</p>
-				</div>
-
-				<form action="//amsterdam.us13.list-manage.com/subscribe/post?u=910284f989b81c945f27311af&id=05036cab56" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="newsletter-form">
-					<input class="newsletter-form__input" type="email" value="" name="EMAIL" placeholder="Email address" id="mce-EMAIL" required>
-          <div style="position: absolute; left: -5000px;" aria-hidden="true">
-            <input type="text" name="b_910284f989b81c945f27311af_05036cab56" tabindex="-1" value="">
-          </div>
-					<button class="newsletter-form__submit basic-btn" type="submit" id="mc-embedded-subscribe" name="subscribe"><span class="basic-btn__text">Subscribe</span></button>
-				</form>
-			</div>
-		</section>
 
 		<section class="section location info" id="location">
 			<video class="location__video" preload="auto" muted autoplay loop poster="img/dummy_bg.jpg" id="bgvid">
@@ -654,6 +635,195 @@
 				</ul>
 			</div>
 		</section>
+
+    <section class="section schedule" id="schedule">
+      <div class="container">
+        <h2 class="section__title">Schedule</h2>
+
+        <div class="content-tab">
+
+          <button class="content-tab__tab js-tabs__tab active" id="react-tab">Conference &nbsp;<span>day</span></button>
+          <button class="content-tab__tab js-tabs__tab" id="general-tab">Workshops &nbsp;<span>day</span></button>
+        </div>
+
+        <ul class="schedule-list js-tabs__panel" id="general-panel">
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Hackages team</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">Vue.js HackJam Workshop</h3>
+              <p class="schedule-list__p">
+                During this 3-hour HackJam workshop you’ll learn about the basics of Vue such as state, props, components, lifecycle hooks,... Understand how to use @vue/cli to bootstrap your Vue applications and discover the ecosystem of this progressive JavaScript framework.<br>
+                You'll learn a lot with the hands-on approach of this HackJam: we'll give you a broken application which you will have to fix, using Vue technology.
+              </p>
+            </div>
+          </li>
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Roman Liutikov</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">ClojureScript Workshop</h3>
+              <p class="schedule-list__p">
+                ClojureScript is a compiler for Clojure language that targets JavaScript. It is a modern Lisp with strong emphasis on pragmatic functional programming. ClojureScript favors immutability and simplicity, it proved that React is actually faster with immutable data structures. Today the language is being heavily used for building UIs with React that runs on the web and mobile, with React Native, as well as backend services with Node and JVM. This workshop covers basics of the language through a set of lectures and exercises. We are going to explore ClojureScript’s idioms, learn syntax, data structures, standard library of the language and see how it is used to model UIs.
+              </p>
+            </div>
+          </li>
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Maurice de Beijer</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">Advanced React Components Workshop</h3>
+              <p class="schedule-list__p">
+                In this half day workshop, you are going to learn how to create better React components. We will start of simple and compare controlled versus uncontrolled components and when you want to use which of the two options. Then you will learn how to use the React.Fragment class to reduce the number of DOM nodes you need to create at runtime.<br>
+
+                After the intro you will learn how to use Reacts Component componentDidCatch() lifecycle function to catch errors and make your applications more resilient to failure. We will also take a look at the sorts of errors that componentDidCatch() doesn’t catch for you.<br>
+
+                Next you will learn about two different ways of adding cross cutting concerns like error handling to React components. First, we will look at creating higher order components like the Redux connect function. While higher order components are a great way of extending components, they aren’t without their drawbacks. So, we will investigate an alternative approach using render props. This is another great mechanism, and a more flexible approach as well.<br>
+
+                Finally, you will learn how to use the new React Context that will ship with React 16.3 to make it even more convenient to pass data from one component to another<br>
+              </p>
+            </div>
+          </li>
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Ivan Jovanovic</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">Testing JavaScript applications</h3>
+              <p class="schedule-list__p">
+                Testing JavaScript applications workshop will show you how to use modern testing tools to test JS full stack applications. It will cover frontend and backend side (React and NodeJS) and will explain what are the best practices for testing. We will go through tools like Jest, Mocha, Jasmine, Cypress etc. Since React is the most popular framework, frontend tests will be testing React apps.<br>
+                After this workshop, attendees will be able to efficiently test their JS applications, from UI frontend side to backend side. They will understand what are the best practices and best tools for building testing environment.
+              </p>
+            </div>
+          </li>
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Nikolas Burk</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">GraphQL Workshop</h3>
+              <p class="schedule-list__p">
+                GraphQL has drastically changed the way how we interact with APIs by providing a strongly-typed layer for client-server communication. This notably improves performance by letting clients request the specific data they need using a simple and declarative syntax. Thanks to the GraphQL schema which serves as the contract for all possible API operations, GraphQL further introduces many benefits to local development workflows (such as compile-time error checks and editor auto-completion) and the overall API tooling space.<br>
+                In this workshop, you will learn how to build a fully-featured GraphQL server (including realtime GraphQL subscriptions) with Node.js that takes advantage of the latest GraphQL tooling and is based on a modern stack.
+              </p>
+            </div>
+          </li>
+
+          <!--<li class="schedule-list__item">-->
+          <!--<div class="schedule-list__time">19.30</div>-->
+          <!--<div class="schedule-list__speaker">Afterparty</div>-->
+          <!--<div class="schedule-list__desc">-->
+          <!--<h3 class="schedule-list__title">This is for all the devs who care about performance and who think twice before adding any external library</h3>-->
+          <!--<p class="schedule-list__p">-->
+          <!--<img class="schedule-list__pic" src="pic/speaker_pic1.jpg" height="163" width="241">React Native allows for building great native apps by utilising native mobile components. Apparently handling touch and gestures is quite tricky as it often needs javascript VM.</p>-->
+          <!--</div>-->
+          <!--</li>-->
+        </ul>
+
+        <ul class="schedule-list js-tabs__panel active" id="react-panel">
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Armagan Amcalar</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">console.log(brain)</h3>
+              <p class="schedule-list__p">
+                What if you could log your brain to the developer console, typing with your brain signals? This talk is a demonstration of an open-source Brain-Computer Interface that is completely developed with JavaScript, from the ground up, using neural networks and signal processing. Armagan hits the stage with a wireless EEG headset, shows how to read signals from the brain in JavaScript using native C++ Node.js modules over USB, and the implementation in Electron, Node.js and Vue.js.
+              </p>
+            </div>
+          </li>
+
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Fatih Acet</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">Vue JS Best Practices</h3>
+              <p class="schedule-list__p">
+                At GitLab we use Vue JS in production more than a year. I refactored old parts of GitLab with Vue and created many new features using the framework. We are really impressed how Vue is simple yet powerful. First 10 mins of the talk are an introduction for new comers, then deep dive into the best techniques, like state management, reactivity, tooling and also the experiences about new feature development and migrating a legacy featue to Vue.
+              </p>
+            </div>
+          </li>
+
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Imad Elyafi</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">Bringing Mobile Web back to Life</h3>
+              <p class="schedule-list__p">
+                We rebuilt the whole Pinterest mobile web experience for authenticated users. It looks and feels just like our native apps while maintaining the fast load times expected of mobile web. We used cutting edge technologies which led to a 40% increase in each of our core engagement metrics and up to 30% in time spent. But it was not all sunshine and rainbows ! In this talk I will share challenges, technologies and best practices that we used for the new Mobile Website.
+              </p>
+            </div>
+          </li>
+
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Diego González</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">Look ma! No hands!</h3>
+              <p class="schedule-list__p">
+                The main points of the presentation will be focused on tips and best practices regarding WebXR UX. I will have a several VR devices ready to show how an experience can be adapted to run independently of the hardware that's available to the user. Main point is to teach developers how can they make their content truly accessible with as little as possible.
+              </p>
+            </div>
+          </li>
+
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Claudia Hernández</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">How to sort your socks using Javascript</h3>
+              <p class="schedule-list__p">
+                No matter your experience in JS, you have probably came across the Array#sort method at some point. Do you remember the first time you tried sorting numbers? You were probably astonished that the sort method does not sort things out quite as we might expect.
+                Believe it or not, there is actually much more going on than meets the eye! Let’s get our computer science hat on and explore some useful sorting algorithms currently implemented by JS engines used by Node such as Chrome's V8 and Microsoft's Chakra. As a developer, learning how these algorithms work, why and when to use them will help you create more performant and consistent applications!
+              </p>
+            </div>
+          </li>
+
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Andy Mockler</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">TypeScript Ruined My Life (In a Good Way)</h3>
+              <p class="schedule-list__p">
+                Some tools are so useful that once you've used them in one project, it is hard to work on other projects without them. React was certainly that way for me when I first started, and now TypeScript has become the same way.
+                This talk will cover why typed JavaScript, especially in large codebases, is worth the added effort. I will discuss my personal experiences - the good, the bad, and the ugly - and talk about why I can't seem to start a project without `npm install typescript`.
+              </p>
+            </div>
+          </li>
+
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Jennifer Voss</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">Tales from the QA crypt</h3>
+              <p class="schedule-list__p">
+                An anthology of QA horror stories from the past, and how to avoid such situations with TDD. When tests are built in from the beginning and not tacked on after features are built, fewer defects are created and development moves faster. JavaScript has all the tools required to cover your automated testing needs, and writing tests in the same language as your app is a no brainer. We'll cover the tools available today and the logistics of merging your QA and dev teams.
+              </p>
+            </div>
+          </li>
+
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Sebastian Golasch</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">The dark ages of IoT</h3>
+              <p class="schedule-list__p">
+                Advertisements suggest that we are at the zenith of mankind's scientific knowledge and technological power, but when it comes to IoT and the so-called 'Smart Home', we are clearly not. In fact, we are in the middle of the dark age. I'll explain the challenges that we're facing today (from an implementors perspective), what's 'wrong' with our current products & show you how a smart 'Smart Home' experience could look like in the near future.
+              </p>
+            </div>
+          </li>
+
+          <li class="schedule-list__item">
+            <!--<div class="schedule-list__time">09.40</div>-->
+            <div class="schedule-list__speaker">Asim Hussain</div>
+            <div class="schedule-list__desc">
+              <h3 class="schedule-list__title">How to scale an SPA?</h3>
+              <p class="schedule-list__p">
+                I'm going to tell you a secret. If you are building an SPA, you can take advantage of optimisations that give you epic scalability, with super low latencies at a fraction of the cost.
+                To understand the secret, I'll need to teach you a few things such as the actors involved in transferring data from your server to the browser; and about the ancient technology called 'serverless' which you might be surprised to learn is something you've already been using for years.
+                By the end, you'll know the secret of how to architect an SPA for scale without breaking the bank.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
 		<section class="section place info" id="place">
 
@@ -889,7 +1059,26 @@
 			</div>
 		</section>
 
+    <section class="section newsletter info" id="newsletter">
+      <div class="container">
 
+        <h2 class="info__title">JavaScript always comes in handy</h2>
+
+        <div class="info__desc">
+          <p class="info__p">We want you to deeply engage with the new tech and have a hands-on experience at AmsterdamJS. That's why one of the two conference days is dedicated to free workshops and extra events that will push your skills and help boost your career.</p>
+
+          <p class="info__p center">Subscribe to our newsletter and be the first to grab a seat.</p>
+        </div>
+
+        <form action="//amsterdam.us13.list-manage.com/subscribe/post?u=910284f989b81c945f27311af&id=05036cab56" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="newsletter-form">
+          <input class="newsletter-form__input" type="email" value="" name="EMAIL" placeholder="Email address" id="mce-EMAIL" required>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_910284f989b81c945f27311af_05036cab56" tabindex="-1" value="">
+          </div>
+          <button class="newsletter-form__submit basic-btn" type="submit" id="mc-embedded-subscribe" name="subscribe"><span class="basic-btn__text">Subscribe</span></button>
+        </form>
+      </div>
+    </section>
 
 		<section class="section food info" id="food">
 			<video class="food__video" preload="auto" muted autoplay loop poster="img/dummy_bg_dj.jpg" id="bgvid2">
@@ -905,195 +1094,6 @@
 
 					<p class="info__p center">And, of course, the conference wouldn’t be complete without an afterparty! Amsterdam is known for its wild nightlife and all our attendees get an invitation to join in.</p>
 				</div>
-			</div>
-		</section>
-
-		<section class="section schedule" id="schedule">
-			<div class="container">
-				<h2 class="section__title">Schedule</h2>
-
-				<div class="content-tab">
-
-          <button class="content-tab__tab js-tabs__tab active" id="react-tab">Conference &nbsp;<span>day</span></button>
-          <button class="content-tab__tab js-tabs__tab" id="general-tab">Workshops &nbsp;<span>day</span></button>
-        </div>
-
-        <ul class="schedule-list js-tabs__panel" id="general-panel">
-          <li class="schedule-list__item">
-            <!--<div class="schedule-list__time">09.40</div>-->
-            <div class="schedule-list__speaker">Hackages team</div>
-            <div class="schedule-list__desc">
-              <h3 class="schedule-list__title">Vue.js HackJam Workshop</h3>
-              <p class="schedule-list__p">
-                During this 3-hour HackJam workshop you’ll learn about the basics of Vue such as state, props, components, lifecycle hooks,... Understand how to use @vue/cli to bootstrap your Vue applications and discover the ecosystem of this progressive JavaScript framework.<br>
-                You'll learn a lot with the hands-on approach of this HackJam: we'll give you a broken application which you will have to fix, using Vue technology.
-              </p>
-            </div>
-          </li>
-          <li class="schedule-list__item">
-            <!--<div class="schedule-list__time">09.40</div>-->
-            <div class="schedule-list__speaker">Roman Liutikov</div>
-            <div class="schedule-list__desc">
-              <h3 class="schedule-list__title">ClojureScript Workshop</h3>
-              <p class="schedule-list__p">
-                ClojureScript is a compiler for Clojure language that targets JavaScript. It is a modern Lisp with strong emphasis on pragmatic functional programming. ClojureScript favors immutability and simplicity, it proved that React is actually faster with immutable data structures. Today the language is being heavily used for building UIs with React that runs on the web and mobile, with React Native, as well as backend services with Node and JVM. This workshop covers basics of the language through a set of lectures and exercises. We are going to explore ClojureScript’s idioms, learn syntax, data structures, standard library of the language and see how it is used to model UIs.
-              </p>
-            </div>
-          </li>
-          <li class="schedule-list__item">
-            <!--<div class="schedule-list__time">09.40</div>-->
-            <div class="schedule-list__speaker">Maurice de Beijer</div>
-            <div class="schedule-list__desc">
-              <h3 class="schedule-list__title">Advanced React Components Workshop</h3>
-              <p class="schedule-list__p">
-                In this half day workshop, you are going to learn how to create better React components. We will start of simple and compare controlled versus uncontrolled components and when you want to use which of the two options. Then you will learn how to use the React.Fragment class to reduce the number of DOM nodes you need to create at runtime.<br>
-
-After the intro you will learn how to use Reacts Component componentDidCatch() lifecycle function to catch errors and make your applications more resilient to failure. We will also take a look at the sorts of errors that componentDidCatch() doesn’t catch for you.<br>
-
-Next you will learn about two different ways of adding cross cutting concerns like error handling to React components. First, we will look at creating higher order components like the Redux connect function. While higher order components are a great way of extending components, they aren’t without their drawbacks. So, we will investigate an alternative approach using render props. This is another great mechanism, and a more flexible approach as well.<br>
-
-Finally, you will learn how to use the new React Context that will ship with React 16.3 to make it even more convenient to pass data from one component to another<br>
-              </p>
-            </div>
-          </li>
-          <li class="schedule-list__item">
-            <!--<div class="schedule-list__time">09.40</div>-->
-            <div class="schedule-list__speaker">Ivan Jovanovic</div>
-            <div class="schedule-list__desc">
-              <h3 class="schedule-list__title">Testing JavaScript applications</h3>
-              <p class="schedule-list__p">
-                Testing JavaScript applications workshop will show you how to use modern testing tools to test JS full stack applications. It will cover frontend and backend side (React and NodeJS) and will explain what are the best practices for testing. We will go through tools like Jest, Mocha, Jasmine, Cypress etc. Since React is the most popular framework, frontend tests will be testing React apps.<br>
-After this workshop, attendees will be able to efficiently test their JS applications, from UI frontend side to backend side. They will understand what are the best practices and best tools for building testing environment.
-              </p>
-            </div>
-          </li>
-          <li class="schedule-list__item">
-            <!--<div class="schedule-list__time">09.40</div>-->
-            <div class="schedule-list__speaker">Nikolas Burk</div>
-            <div class="schedule-list__desc">
-              <h3 class="schedule-list__title">GraphQL Workshop</h3>
-              <p class="schedule-list__p">
-                GraphQL has drastically changed the way how we interact with APIs by providing a strongly-typed layer for client-server communication. This notably improves performance by letting clients request the specific data they need using a simple and declarative syntax. Thanks to the GraphQL schema which serves as the contract for all possible API operations, GraphQL further introduces many benefits to local development workflows (such as compile-time error checks and editor auto-completion) and the overall API tooling space.<br>
-In this workshop, you will learn how to build a fully-featured GraphQL server (including realtime GraphQL subscriptions) with Node.js that takes advantage of the latest GraphQL tooling and is based on a modern stack.
-              </p>
-            </div>
-          </li>
-
-          <!--<li class="schedule-list__item">-->
-            <!--<div class="schedule-list__time">19.30</div>-->
-            <!--<div class="schedule-list__speaker">Afterparty</div>-->
-            <!--<div class="schedule-list__desc">-->
-              <!--<h3 class="schedule-list__title">This is for all the devs who care about performance and who think twice before adding any external library</h3>-->
-              <!--<p class="schedule-list__p">-->
-              	<!--<img class="schedule-list__pic" src="pic/speaker_pic1.jpg" height="163" width="241">React Native allows for building great native apps by utilising native mobile components. Apparently handling touch and gestures is quite tricky as it often needs javascript VM.</p>-->
-            <!--</div>-->
-          <!--</li>-->
-        </ul>
-
-        <ul class="schedule-list js-tabs__panel active" id="react-panel">
-          <li class="schedule-list__item">
-            <!--<div class="schedule-list__time">09.40</div>-->
-            <div class="schedule-list__speaker">Armagan Amcalar</div>
-            <div class="schedule-list__desc">
-              <h3 class="schedule-list__title">console.log(brain)</h3>
-              <p class="schedule-list__p">
-                What if you could log your brain to the developer console, typing with your brain signals? This talk is a demonstration of an open-source Brain-Computer Interface that is completely developed with JavaScript, from the ground up, using neural networks and signal processing. Armagan hits the stage with a wireless EEG headset, shows how to read signals from the brain in JavaScript using native C++ Node.js modules over USB, and the implementation in Electron, Node.js and Vue.js.
-              </p>
-            </div>
-          </li>
-
-          <li class="schedule-list__item">
-            <!--<div class="schedule-list__time">09.40</div>-->
-            <div class="schedule-list__speaker">Fatih Acet</div>
-            <div class="schedule-list__desc">
-              <h3 class="schedule-list__title">Vue JS Best Practices</h3>
-              <p class="schedule-list__p">
-                At GitLab we use Vue JS in production more than a year. I refactored old parts of GitLab with Vue and created many new features using the framework. We are really impressed how Vue is simple yet powerful. First 10 mins of the talk are an introduction for new comers, then deep dive into the best techniques, like state management, reactivity, tooling and also the experiences about new feature development and migrating a legacy featue to Vue.
-              </p>
-            </div>
-          </li>
-
-          <li class="schedule-list__item">
-            <!--<div class="schedule-list__time">09.40</div>-->
-            <div class="schedule-list__speaker">Imad Elyafi</div>
-            <div class="schedule-list__desc">
-              <h3 class="schedule-list__title">Bringing Mobile Web back to Life</h3>
-              <p class="schedule-list__p">
-                We rebuilt the whole Pinterest mobile web experience for authenticated users. It looks and feels just like our native apps while maintaining the fast load times expected of mobile web. We used cutting edge technologies which led to a 40% increase in each of our core engagement metrics and up to 30% in time spent. But it was not all sunshine and rainbows ! In this talk I will share challenges, technologies and best practices that we used for the new Mobile Website.
-              </p>
-            </div>
-          </li>
-
-          <li class="schedule-list__item">
-            <!--<div class="schedule-list__time">09.40</div>-->
-            <div class="schedule-list__speaker">Diego González</div>
-            <div class="schedule-list__desc">
-              <h3 class="schedule-list__title">Look ma! No hands!</h3>
-              <p class="schedule-list__p">
-                The main points of the presentation will be focused on tips and best practices regarding WebXR UX. I will have a several VR devices ready to show how an experience can be adapted to run independently of the hardware that's available to the user. Main point is to teach developers how can they make their content truly accessible with as little as possible.
-              </p>
-            </div>
-          </li>
-
-          <li class="schedule-list__item">
-            <!--<div class="schedule-list__time">09.40</div>-->
-            <div class="schedule-list__speaker">Claudia Hernández</div>
-            <div class="schedule-list__desc">
-              <h3 class="schedule-list__title">How to sort your socks using Javascript</h3>
-              <p class="schedule-list__p">
-                No matter your experience in JS, you have probably came across the Array#sort method at some point. Do you remember the first time you tried sorting numbers? You were probably astonished that the sort method does not sort things out quite as we might expect.
-                Believe it or not, there is actually much more going on than meets the eye! Let’s get our computer science hat on and explore some useful sorting algorithms currently implemented by JS engines used by Node such as Chrome's V8 and Microsoft's Chakra. As a developer, learning how these algorithms work, why and when to use them will help you create more performant and consistent applications!
-              </p>
-            </div>
-          </li>
-
-          <li class="schedule-list__item">
-            <!--<div class="schedule-list__time">09.40</div>-->
-            <div class="schedule-list__speaker">Andy Mockler</div>
-            <div class="schedule-list__desc">
-              <h3 class="schedule-list__title">TypeScript Ruined My Life (In a Good Way)</h3>
-              <p class="schedule-list__p">
-                Some tools are so useful that once you've used them in one project, it is hard to work on other projects without them. React was certainly that way for me when I first started, and now TypeScript has become the same way.
-                This talk will cover why typed JavaScript, especially in large codebases, is worth the added effort. I will discuss my personal experiences - the good, the bad, and the ugly - and talk about why I can't seem to start a project without `npm install typescript`.
-              </p>
-            </div>
-          </li>
-
-          <li class="schedule-list__item">
-            <!--<div class="schedule-list__time">09.40</div>-->
-            <div class="schedule-list__speaker">Jennifer Voss</div>
-            <div class="schedule-list__desc">
-              <h3 class="schedule-list__title">Tales from the QA crypt</h3>
-              <p class="schedule-list__p">
-                An anthology of QA horror stories from the past, and how to avoid such situations with TDD. When tests are built in from the beginning and not tacked on after features are built, fewer defects are created and development moves faster. JavaScript has all the tools required to cover your automated testing needs, and writing tests in the same language as your app is a no brainer. We'll cover the tools available today and the logistics of merging your QA and dev teams.
-              </p>
-            </div>
-          </li>
-
-          <li class="schedule-list__item">
-            <!--<div class="schedule-list__time">09.40</div>-->
-            <div class="schedule-list__speaker">Sebastian Golasch</div>
-            <div class="schedule-list__desc">
-              <h3 class="schedule-list__title">The dark ages of IoT</h3>
-              <p class="schedule-list__p">
-                Advertisements suggest that we are at the zenith of mankind's scientific knowledge and technological power, but when it comes to IoT and the so-called 'Smart Home', we are clearly not. In fact, we are in the middle of the dark age. I'll explain the challenges that we're facing today (from an implementors perspective), what's 'wrong' with our current products & show you how a smart 'Smart Home' experience could look like in the near future.
-              </p>
-            </div>
-          </li>
-
-          <li class="schedule-list__item">
-            <!--<div class="schedule-list__time">09.40</div>-->
-            <div class="schedule-list__speaker">Asim Hussain</div>
-            <div class="schedule-list__desc">
-              <h3 class="schedule-list__title">How to scale an SPA?</h3>
-              <p class="schedule-list__p">
-                I'm going to tell you a secret. If you are building an SPA, you can take advantage of optimisations that give you epic scalability, with super low latencies at a fraction of the cost.
-                To understand the secret, I'll need to teach you a few things such as the actors involved in transferring data from your server to the browser; and about the ancient technology called 'serverless' which you might be surprised to learn is something you've already been using for years.
-                By the end, you'll know the secret of how to architect an SPA for scale without breaking the bank.
-              </p>
-            </div>
-          </li>
-        </ul>
 			</div>
 		</section>
 
