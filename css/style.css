@@ -1951,11 +1951,10 @@ h6 {
     .sponsors-gold .sponsors-block__img-wrap {
       width: 40%;
       text-align: center; }
-    .sponsors-bronze .sponsors-block__img-wrap,
     .sponsors-silver .sponsors-block__img-wrap {
-      width: 25%; }
-    .sponsors-block.sponsors-partners .sponsors-block__img-wrap {
-      width: 10%; }
+      width: 30%; }
+    .sponsors-bronze .sponsors-block__img-wrap {
+      width: 20%; }
     .sponsors-block__img {
       display: inline-block;
       width: 100%;

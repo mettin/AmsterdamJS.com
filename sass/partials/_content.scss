@@ -1551,13 +1551,12 @@
 			text-align: center;
 		}
 
-		.sponsors-bronze &__img-wrap,
 		.sponsors-silver &__img-wrap {
-			width: 25%;
+			width: 30%;
 		}
 
-		&.sponsors-partners &__img-wrap {
-			width: 10%;
+		.sponsors-bronze &__img-wrap {
+			width: 20%;
 		}
 
 		&__img {
